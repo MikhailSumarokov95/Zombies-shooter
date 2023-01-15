@@ -1,0 +1,855 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 4087 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ykpon/Desktop/Unity/Shooter-Sci-FI/Shooter Sci-FI
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60866
+Successfully changed project path to: C:/Users/ykpon/Desktop/Unity/Shooter-Sci-FI/Shooter Sci-FI
+C:/Users/ykpon/Desktop/Unity/Shooter-Sci-FI/Shooter Sci-FI
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4696] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3278946406 [EditorId] 3278946406 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EPQHHOF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4696] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3278946406 [EditorId] 3278946406 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EPQHHOF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 263.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ykpon/Desktop/Unity/Shooter-Sci-FI/Shooter Sci-FI/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTS 450 (ID=0x1245)
+    Vendor:   NVIDIA
+    VRAM:     969 MB
+    Driver:   23.21.13.9135
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.055932 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 175.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.767 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1769ms)
+		BeginReloadAssembly (321ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1148ms)
+			LoadAssemblies (319ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (590ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (131ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (176ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.048353 seconds.
+Android Extension - Scanning For ADB Devices 5149 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.568 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2570ms)
+		BeginReloadAssembly (265ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (2093ms)
+			LoadAssemblies (425ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (537ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (94ms)
+			SetupLoadedEditorAssemblies (1030ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (51ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (174ms)
+				ProcessInitializeOnLoadAttributes (740ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3415 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (115.0 KB). Loaded Objects now: 3876.
+Memory consumption went from 125.5 MB to 125.4 MB.
+Total: 15.315300 ms (FindLiveObjects: 0.778100 ms CreateObjectMapping: 0.208100 ms MarkObjects: 13.157100 ms  DeleteObjects: 1.169400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7907.619988 seconds.
+  path: Assets/Lowpoly Style/ForestPack/DemoScene/Forest_PPP_V2_Linear.asset
+  artifactKey: Guid(e05fb214c7f6e9a40a32c3359905e2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/DemoScene/Forest_PPP_V2_Linear.asset using Guid(e05fb214c7f6e9a40a32c3359905e2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9795177748075c3e386de77c94baabd') in 0.075026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/Base.prefab
+  artifactKey: Guid(76c2a0a1776bbc94ca3cd9a49a7a2f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/Base.prefab using Guid(76c2a0a1776bbc94ca3cd9a49a7a2f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72dc7c6e3c62c292d2d09781c2d417e1') in 0.246988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse2_WoodBase.prefab
+  artifactKey: Guid(3447ef148ee565c4ea1b70357a8657bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse2_WoodBase.prefab using Guid(3447ef148ee565c4ea1b70357a8657bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9704054c1dc2bd5cd95355dec1d1ce9d') in 0.820958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Asia_PPP_V2_Linear.asset
+  artifactKey: Guid(4b74077d62223e24298f4bf706ef5ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Asia_PPP_V2_Linear.asset using Guid(4b74077d62223e24298f4bf706ef5ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35189dd135dcd7a86cd942afd04e6e6a') in 0.028848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_2.prefab
+  artifactKey: Guid(bf8307f387a5ed94f8c311fbf634f1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_2.prefab using Guid(bf8307f387a5ed94f8c311fbf634f1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55322a09fa7cbf606a1f4d4cc68c77d2') in 0.162002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/BuddhaStatue.prefab
+  artifactKey: Guid(264ffd13253eb674381b7d1b64201614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/BuddhaStatue.prefab using Guid(264ffd13253eb674381b7d1b64201614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f6c00f23c666842cf9ee2858a99570') in 0.037351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/BuildingWoodBaseM.prefab
+  artifactKey: Guid(d92c903d9d87ac540b995ec0f067d64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/BuildingWoodBaseM.prefab using Guid(d92c903d9d87ac540b995ec0f067d64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c05447dafc56fc3f31db730a1de467') in 0.034282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/TorchBig_Burning.prefab
+  artifactKey: Guid(1372699b5540c7a4ebb2474edecfeada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/TorchBig_Burning.prefab using Guid(1372699b5540c7a4ebb2474edecfeada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a99ef844f9b6729e4d2693e5842ab5') in 0.093631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Lowpoly Style/ForestPack/DemoScene/Forest_PPP_V1_Linear.asset
+  artifactKey: Guid(ba166d24cbbf0244f959ae506d8f7628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/DemoScene/Forest_PPP_V1_Linear.asset using Guid(ba166d24cbbf0244f959ae506d8f7628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf61ef5fad9324c519beb0c211f05bd') in 0.014804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/HangingBridge.prefab
+  artifactKey: Guid(b3359a8d43e26ad4cb5971dea869bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/HangingBridge.prefab using Guid(b3359a8d43e26ad4cb5971dea869bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73ab25eb251bac4b443fbcaf5c716d8') in 0.040584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Conifer_Proxy.prefab
+  artifactKey: Guid(d75f32ad1b2a5904b933319a60c94cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Conifer_Proxy.prefab using Guid(d75f32ad1b2a5904b933319a60c94cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46650edf288ec591541925b869acf22e') in 0.094874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_2_RockBase.prefab
+  artifactKey: Guid(4ec246fd8a45e9641a128a6429f3abd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_2_RockBase.prefab using Guid(4ec246fd8a45e9641a128a6429f3abd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04ba06fb938b7a71e3ba65355f25588') in 0.080629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3.prefab
+  artifactKey: Guid(1ece6fe14e3ee684f8c2d61eeb8bfed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3.prefab using Guid(1ece6fe14e3ee684f8c2d61eeb8bfed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24671a27e4e4c82c4e31932db9cadecf') in 0.064549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Lowpoly Style/ForestPack/DemoScene/RP_VALLEY.exr
+  artifactKey: Guid(47abe2a2c1d3e0947b6371005e084170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/DemoScene/RP_VALLEY.exr using Guid(47abe2a2c1d3e0947b6371005e084170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565873a85eaf7158048138c284ec7d40') in 0.079506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Conifer1_Distant.prefab
+  artifactKey: Guid(e77994032267b81458f4b4db8df70f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Conifer1_Distant.prefab using Guid(e77994032267b81458f4b4db8df70f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d62ff421e47cfb89364a4eb495f039e') in 0.032988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Conifer2_Low.prefab
+  artifactKey: Guid(566a3d4ae392f68468089d7a53e1f985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Conifer2_Low.prefab using Guid(566a3d4ae392f68468089d7a53e1f985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ada7ff75017e97595e644b7d682d97') in 0.032860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/BuddhaTemplePrefab.prefab
+  artifactKey: Guid(2f35b5f6c61333f4caaa41941f8d7c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/BuddhaTemplePrefab.prefab using Guid(2f35b5f6c61333f4caaa41941f8d7c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2306d8645a3190975ad18d769930568f') in 0.071141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Mushrooms.prefab
+  artifactKey: Guid(80a058a220ca402439f4cb98c421847b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Mushrooms.prefab using Guid(80a058a220ca402439f4cb98c421847b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd891199f4b26d85e1a034a066f82ae27') in 0.031100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Asia_PPP_V1_Linear.asset
+  artifactKey: Guid(53d4425dddb88124eb82eaf616459dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Asia_PPP_V1_Linear.asset using Guid(53d4425dddb88124eb82eaf616459dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8256c67f8f1844bc2b80349443cab0') in 0.012105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_RockBaseS.prefab
+  artifactKey: Guid(b40aef832ca84b3489bd8801bac0590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_RockBaseS.prefab using Guid(b40aef832ca84b3489bd8801bac0590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd017e9827bc95087e016628e21554542') in 0.062830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Conifer2_Distant.prefab
+  artifactKey: Guid(a63c539d4a2a1824fbc5018158426484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Conifer2_Distant.prefab using Guid(a63c539d4a2a1824fbc5018158426484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3e343fc6c4cffe0ad6408ac841e973') in 0.036827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Lowpoly Style/ForestPack/DemoScene/RP_Cave.exr
+  artifactKey: Guid(77f02cf14fb044849a191a075f125594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/DemoScene/RP_Cave.exr using Guid(77f02cf14fb044849a191a075f125594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eeab02dd83b050323e7e122fe72362f') in 0.036644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Ladder.prefab
+  artifactKey: Guid(af037777d89b8c040b5f6c3c04568c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Ladder.prefab using Guid(af037777d89b8c040b5f6c3c04568c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c89ec29af3b0d275bbee5b75b3a9b72') in 0.030626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Bush.prefab
+  artifactKey: Guid(41113eaa73613bf46b4a11e8f0f7986e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Bush.prefab using Guid(41113eaa73613bf46b4a11e8f0f7986e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92a5bc14e3bdc006a8b5146e416b3e5') in 0.030782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Bush2.prefab
+  artifactKey: Guid(578b79da386ab7d4fa2a018ea2019638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Bush2.prefab using Guid(578b79da386ab7d4fa2a018ea2019638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ce84329295fa418f52452864a414af') in 0.033293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/DistantBackgroundMountains.prefab
+  artifactKey: Guid(b2bb711bfd6ace548b67c0a89694d295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/DistantBackgroundMountains.prefab using Guid(b2bb711bfd6ace548b67c0a89694d295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050c732ff7753cbca660cbbc791a2955') in 0.031676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Lowpoly Style/ForestPack/DemoScene/RP_Waterfall.exr
+  artifactKey: Guid(c50fa92408245ef45b7a9bdf14dca4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/DemoScene/RP_Waterfall.exr using Guid(c50fa92408245ef45b7a9bdf14dca4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4a653fff1eb0bed4aadabe6059a841') in 0.052624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_RockBaseM.prefab
+  artifactKey: Guid(dfb9bbc5b1991ec4984e2482f1d09b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_RockBaseM.prefab using Guid(dfb9bbc5b1991ec4984e2482f1d09b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745a89dd9c6afc237a60dd2580e9e765') in 0.062184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/Conifer1_Low.prefab
+  artifactKey: Guid(f071f93f5b6e6724c9c07a5c0254a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/Conifer1_Low.prefab using Guid(f071f93f5b6e6724c9c07a5c0254a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc151c4002fa8e03c1f14b16e9a3751') in 0.035372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_WoodBase.prefab
+  artifactKey: Guid(9f3a2bd181678744496f9aad0bb1dae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/Prefabs/AsianHouse_Big3_WoodBase.prefab using Guid(9f3a2bd181678744496f9aad0bb1dae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1277f6f5aee2a42516d0ac5d23d1268') in 0.067874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Lowpoly Style/ForestPack/Prefabs/MushroomsYellow.prefab
+  artifactKey: Guid(fb06958f2215c4f43964cc3b9d383d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/ForestPack/Prefabs/MushroomsYellow.prefab using Guid(fb06958f2215c4f43964cc3b9d383d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de36d4da3ef032a6934e6b75738dc86d') in 0.033657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.649856 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo
+  artifactKey: Guid(a03b138979952104882ca7964819d6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo using Guid(a03b138979952104882ca7964819d6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901224feee00c0ea3986288fd0c53f83') in 0.081862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-8.exr
+  artifactKey: Guid(8661d7db332273d40806fad310125e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-8.exr using Guid(8661d7db332273d40806fad310125e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c359a2b489bd898bc9b0241b13482544') in 0.024539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-2.exr
+  artifactKey: Guid(285081e0bc5ada845a62ff63cd1903d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-2.exr using Guid(285081e0bc5ada845a62ff63cd1903d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5feaadaebc3748e2f6075acbc85eb2') in 0.037428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-0.exr
+  artifactKey: Guid(2c57d6a0875908a419b73e584e11c2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-0.exr using Guid(2c57d6a0875908a419b73e584e11c2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fe8600f2a56fd44dd3d304fe1c24f8') in 0.035504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-5.exr
+  artifactKey: Guid(8385b57fe46a0d240b8895c6e2533767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-5.exr using Guid(8385b57fe46a0d240b8895c6e2533767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d5f549a1f30bad5124787ee49ebc5d') in 0.039732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-3.exr
+  artifactKey: Guid(cf1865d538a566d49bc60830fb169e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-3.exr using Guid(cf1865d538a566d49bc60830fb169e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4527f8fdb653b9d9034e8bc32044098b') in 0.038117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-4.exr
+  artifactKey: Guid(f29dd6c45b0c5ed4982d7b579d0adb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-4.exr using Guid(f29dd6c45b0c5ed4982d7b579d0adb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea77f32299419bdb813dbe8b500fa2b') in 0.039967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-7.exr
+  artifactKey: Guid(04e63bfcd4f82e942ba5175eb9f494ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-7.exr using Guid(04e63bfcd4f82e942ba5175eb9f494ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60fe00ed253a35a0e888ef7a817f633') in 0.048876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-6.exr
+  artifactKey: Guid(b114840c8d6f7fd458e378ce6138eb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-6.exr using Guid(b114840c8d6f7fd458e378ce6138eb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54486024130ae90c22def0a901259ae') in 0.049717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-1.exr
+  artifactKey: Guid(c4c78937b4e656148a2dbe6cd43272e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Asia/DemoScene/Demo/ReflectionProbe-1.exr using Guid(c4c78937b4e656148a2dbe6cd43272e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a9e813875963283509621e55f94e20') in 0.042597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.767074 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/BigCliff.prefab
+  artifactKey: Guid(9fa980fd96e005245ab5bfc6ac684e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/BigCliff.prefab using Guid(9fa980fd96e005245ab5bfc6ac684e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58130b87ffc86057a3b422fac6d25208') in 0.026996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/GlacierWall.prefab
+  artifactKey: Guid(35819a8f8106f3b4198e2ca6fc9c77b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/GlacierWall.prefab using Guid(35819a8f8106f3b4198e2ca6fc9c77b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03157602f1050f98966b3ee285239e6') in 0.030018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/CampfireBurning.prefab
+  artifactKey: Guid(283ef34f1eec8c646a4e2dfe4f7bd906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/CampfireBurning.prefab using Guid(283ef34f1eec8c646a4e2dfe4f7bd906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfc4d305ff0efe15134dab4eb0fd2db') in 0.038199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/Cart.prefab
+  artifactKey: Guid(70d2317802f026a429ed5f40de3c6b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/Cart.prefab using Guid(70d2317802f026a429ed5f40de3c6b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfdf06806d81c31866e5c13f6372e4d') in 0.038831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandRed.prefab
+  artifactKey: Guid(e48ff0fa03b2c3a4a92be108909e40ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandRed.prefab using Guid(e48ff0fa03b2c3a4a92be108909e40ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663c8c2c822a16fbbd1720a1c4d84a32') in 0.042935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandSmall.prefab
+  artifactKey: Guid(c3a6af768c4cccd4d8957303547cf4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandSmall.prefab using Guid(c3a6af768c4cccd4d8957303547cf4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06418c534d2e1f56d78d4f6578199b2a') in 0.048006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/BigCliffWithPlants.prefab
+  artifactKey: Guid(3a01601a30abcca4ca0392485d23c0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/BigCliffWithPlants.prefab using Guid(3a01601a30abcca4ca0392485d23c0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10417031767dcbe1353fdb67c7b1af19') in 0.044356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/IceBerg.prefab
+  artifactKey: Guid(b060c82fc5ecfc24fa9d4c53b3ebbe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/IceBerg.prefab using Guid(b060c82fc5ecfc24fa9d4c53b3ebbe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85858c2f340c827f57c253974af1b04') in 0.037973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/CastleCliff.prefab
+  artifactKey: Guid(4bac6e7d0a5106b4e8ecc797d6103333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/CastleCliff.prefab using Guid(4bac6e7d0a5106b4e8ecc797d6103333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a603033127eab6dbf99274b85aaf635') in 0.042940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStand.prefab
+  artifactKey: Guid(b81eb6155720bb545892316d39eaa305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStand.prefab using Guid(b81eb6155720bb545892316d39eaa305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8dfd28b5665c02f02f450a30dcfbea') in 0.038009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/DistantBackgroundMountains.prefab
+  artifactKey: Guid(869b8decb2e7f464ead38a3ade201744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/DistantBackgroundMountains.prefab using Guid(869b8decb2e7f464ead38a3ade201744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927ffcf9b135ca7ca1c71bcb99544621') in 0.029231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandClosed.prefab
+  artifactKey: Guid(e173b58551d604544ab432eefdcd7d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/MarketStandClosed.prefab using Guid(e173b58551d604544ab432eefdcd7d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b6b33799768e11e8102de70786345f') in 0.040447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Lowpoly Style/Arctic Tundra/Prefabs/IceFloeLow.prefab
+  artifactKey: Guid(9f7e5b070b5ac5c48af67b1642c462c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Arctic Tundra/Prefabs/IceFloeLow.prefab using Guid(9f7e5b070b5ac5c48af67b1642c462c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a8a0a7b00316820e670982e5c07894') in 0.041279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.822323 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/AgaveLow.prefab
+  artifactKey: Guid(9c9807f75889e994094efd930fe03ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/AgaveLow.prefab using Guid(9c9807f75889e994094efd930fe03ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3038e8ad8099919a9a2ffc62417a26') in 0.026057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/GrassCliff.prefab
+  artifactKey: Guid(fc687f44772594643a1e9fb173ec82ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/GrassCliff.prefab using Guid(fc687f44772594643a1e9fb173ec82ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c5b8f737ef4f7730c860ab945f79e6') in 0.037129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/Mushroom.prefab
+  artifactKey: Guid(4650d2c8e344b4742ab0546e939b7217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/Mushroom.prefab using Guid(4650d2c8e344b4742ab0546e939b7217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d18fea986f7a3e289f0510cbcbfc74d') in 0.038451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/CubicRocksGrey.prefab
+  artifactKey: Guid(692c1d404d84db94e8992449125bf6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/CubicRocksGrey.prefab using Guid(692c1d404d84db94e8992449125bf6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef51bd3d4ce2f625e8f18f7840cf7248') in 0.039454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/GrassHillFlat.prefab
+  artifactKey: Guid(000822f569a208c4ba124d52aac8a9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/GrassHillFlat.prefab using Guid(000822f569a208c4ba124d52aac8a9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7f25749f75eed1000e4e23e1c6a680') in 0.040586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/HangingBridge.prefab
+  artifactKey: Guid(2857b754a89e4194d879f7284bfd200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/HangingBridge.prefab using Guid(2857b754a89e4194d879f7284bfd200d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce1181d42c4f84e0574ea6db9ab151f') in 0.035898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/OldStoneWall.prefab
+  artifactKey: Guid(b18f73484d83f8c4ea93a8a2fb0c8141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/OldStoneWall.prefab using Guid(b18f73484d83f8c4ea93a8a2fb0c8141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b309a5b6696452c47a9480927c5bbc') in 0.034815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/Mushrooms.prefab
+  artifactKey: Guid(6df69aa4c7dd16842b1448e84b884e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/Mushrooms.prefab using Guid(6df69aa4c7dd16842b1448e84b884e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff1f92b2facc1741c1b93ff6ae54041') in 0.056077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/Barrel.prefab
+  artifactKey: Guid(19ac1104ca7795142a0ed5606b7401c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/Barrel.prefab using Guid(19ac1104ca7795142a0ed5606b7401c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc106d5c00f667916b2bd6c47d381da3') in 0.030774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/Ladder.prefab
+  artifactKey: Guid(4b7b24b478cfd90438180b7362de593d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/Ladder.prefab using Guid(4b7b24b478cfd90438180b7362de593d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9f9e02e74461741239c15fdac5494f') in 0.030973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/DoubleRockShape.prefab
+  artifactKey: Guid(3b0634ba81d1e5a4d8ba99b66d11a6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/DoubleRockShape.prefab using Guid(3b0634ba81d1e5a4d8ba99b66d11a6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14f43e1cbb22beaf462a9259f228632') in 0.038239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/CookingPot.prefab
+  artifactKey: Guid(6cecb8f8cf3206345b6b535cbc70d1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/CookingPot.prefab using Guid(6cecb8f8cf3206345b6b535cbc70d1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d09eae56c0d4846410f45659586f5d') in 0.041718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Lowpoly Style/Alpine Woodland/Prefabs/Bench1.prefab
+  artifactKey: Guid(48436bba6aeee4d43b9c9e648f23a592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lowpoly Style/Alpine Woodland/Prefabs/Bench1.prefab using Guid(48436bba6aeee4d43b9c9e648f23a592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05998e032cf9b034ee73f68ae41bdf0a') in 0.040016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.927096 seconds.
+  path: Assets/Scripts/Progress.cs
+  artifactKey: Guid(d95c692f6f0eb1a458ff6829c4865c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Progress.cs using Guid(d95c692f6f0eb1a458ff6829c4865c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887ce31f184de1d6c2fd2721446c52ae') in 0.036687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.136038 seconds.
+  path: Assets/Gun/Prefabs/Gun.prefab
+  artifactKey: Guid(f6d5eac34c1d95048a369f3faffbcc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gun/Prefabs/Gun.prefab using Guid(f6d5eac34c1d95048a369f3faffbcc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ac2b27be6c13aaf13c2e252ad8695e') in 0.061516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.481851 seconds.
+  path: Assets/Characters/Player/Prefabs/Player.prefab
+  artifactKey: Guid(27bf85dcf50947a4d97dbac610d1ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Player/Prefabs/Player.prefab using Guid(27bf85dcf50947a4d97dbac610d1ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a589d9b4f30963f90692cf3063cba5f6') in 0.050474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 97.424012 seconds.
+  path: Assets/Level
+  artifactKey: Guid(bbceeeb5ede5e8041b0362fd95125a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level using Guid(bbceeeb5ede5e8041b0362fd95125a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3d6fcc5ce2d2f70e0465464d495d54') in 0.016455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.094539 seconds.
+  path: Assets/Level/Scripts
+  artifactKey: Guid(97fcc0d0be1f0b643870f3b5c57eff42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Scripts using Guid(97fcc0d0be1f0b643870f3b5c57eff42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a98caaf3cbda1577e4019d45116f860') in 0.021806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.128917 seconds.
+  path: Assets/Level/Scripts/LevelController.cs
+  artifactKey: Guid(bb10584d1896f7d4999d373417480f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Scripts/LevelController.cs using Guid(bb10584d1896f7d4999d373417480f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba59f7a6af2a05480443a4fb0f6bfb3') in 0.012675 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009849 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.733 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1734ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1331ms)
+			LoadAssemblies (165ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (457ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (574ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (57ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (341ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (81.9 KB). Loaded Objects now: 3917.
+Memory consumption went from 128.5 MB to 128.5 MB.
+Total: 5.280400 ms (FindLiveObjects: 0.643300 ms CreateObjectMapping: 0.179600 ms MarkObjects: 4.283200 ms  DeleteObjects: 0.172000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016518 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.765 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1766ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (1347ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (451ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (593ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (59ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (349ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3391 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (82.0 KB). Loaded Objects now: 3919.
+Memory consumption went from 128.5 MB to 128.4 MB.
+Total: 6.267500 ms (FindLiveObjects: 0.638800 ms CreateObjectMapping: 0.179400 ms MarkObjects: 5.262600 ms  DeleteObjects: 0.184800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 60.088753 seconds.
+  path: Assets/Level/Scripts/SpawnManager.cs
+  artifactKey: Guid(26af347dfa142c448902f285c8a35d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Scripts/SpawnManager.cs using Guid(26af347dfa142c448902f285c8a35d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85a09f63552a9ae75d5804d0d6d52b6') in 0.023238 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010641 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.778 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1779ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1346ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (475ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (570ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (56ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (333ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (82.0 KB). Loaded Objects now: 3923.
+Memory consumption went from 128.5 MB to 128.5 MB.
+Total: 6.254900 ms (FindLiveObjects: 1.007200 ms CreateObjectMapping: 0.176900 ms MarkObjects: 4.872700 ms  DeleteObjects: 0.195000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.056466 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ykpon\Desktop\Unity\Shooter-Sci-FI\Shooter Sci-FI\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.361 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8380ms)
+		BeginReloadAssembly (5609ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (462ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (2409ms)
+		EndReloadAssembly (2437ms)
+			LoadAssemblies (1154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (932ms)
+			ReleaseScriptCaches (20ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (808ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (84ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (500ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (81.9 KB). Loaded Objects now: 3926.
+Memory consumption went from 128.6 MB to 128.5 MB.
+Total: 35.738100 ms (FindLiveObjects: 0.779100 ms CreateObjectMapping: 0.253600 ms MarkObjects: 25.736000 ms  DeleteObjects: 8.966700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
