@@ -10,7 +10,7 @@ public class AIBotController : MonoBehaviour
     private Transform _target;
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
-    private Weapon _gun;
+    private Weapon _weapon;
     private Vector3 _sideIsTargetIsVisible;
     private Animator _animator;
 
@@ -19,13 +19,13 @@ public class AIBotController : MonoBehaviour
         _target = GetComponent<TargetMoveBot>().GetTarget();
         _targetCol = _target.GetComponent<CapsuleCollider>();
         _botMove = GetComponent<BotMove>();
-        _gun = transform.GetComponentInChildren<Weapon>();
+        _weapon = transform.GetComponentInChildren<Weapon>();
         _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (DetermineIfThereObstaclesBetweenTargetAndBot())
+        if (DetermineIfThereObstaclesBetweenTargetAndBot() && AttackDistanceCheck())
             if (TargetVisibilityCheck()) Fire();
             else _botMove.RotateTowardsTarget();
         else _botMove.RunTowardsTarget();
@@ -57,17 +57,6 @@ public class AIBotController : MonoBehaviour
         return false;
     }
 
-    private void Fire()
-    {
-        var isHittingTarget = Random.Range(0, 101) <= hitAccuracy;
-        if (isHittingTarget) _gun.Fire(_sideIsTargetIsVisible);
-        else
-        {
-            var hittingPoint = GetSideIsTargetWithIndent(1.1f)[Random.Range(0, 4)];
-            _gun.Fire(hittingPoint);
-        }
-    }
-
     private Vector3[] GetSideIsTargetWithIndent(float indentFromSide)
     {
         var perpendicularToVectorBetweenTargetAndBot =
@@ -75,10 +64,27 @@ public class AIBotController : MonoBehaviour
         var sideIsTarget = new Vector3[4];
         sideIsTarget[0] = _targetCol.transform.up * indentFromSide * _targetCol.height + _target.position;
         sideIsTarget[1] = _targetCol.transform.up * (1 - indentFromSide) + _target.position;
-        sideIsTarget[2] = - perpendicularToVectorBetweenTargetAndBot * indentFromSide * _targetCol.radius + _target.position +
+        sideIsTarget[2] = -perpendicularToVectorBetweenTargetAndBot * indentFromSide * _targetCol.radius + _target.position +
             _targetCol.transform.up * _targetCol.height / 2;
         sideIsTarget[3] = perpendicularToVectorBetweenTargetAndBot * indentFromSide * _targetCol.radius + _target.position +
             _targetCol.transform.up * _targetCol.height / 2;
         return sideIsTarget;
+    }
+
+    private bool AttackDistanceCheck()
+    {
+        return Vector3.Distance(transform.position, _target.position) < _weapon.DistanceAttack;
+    }
+
+    private void Fire()
+    {
+        _botMove.StopRun();
+        var isHittingTarget = Random.Range(0, 101) <= hitAccuracy;
+        if (isHittingTarget) _weapon.Fire(_sideIsTargetIsVisible, _target.gameObject);
+        else
+        {
+            var hittingPoint = GetSideIsTargetWithIndent(1.1f)[Random.Range(0, 4)];
+            _weapon.Fire(hittingPoint, _target.gameObject);
+        }
     }
 }

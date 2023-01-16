@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
         Vector3 direction;
         if (hit.collider != null) direction = hit.point;
         else direction = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 50f));
-        SearchCurrentWeapon()?.Fire(direction);
+        //SearchCurrentWeapon()?.Fire(direction);
     }
 
     private Weapon SearchCurrentWeapon()

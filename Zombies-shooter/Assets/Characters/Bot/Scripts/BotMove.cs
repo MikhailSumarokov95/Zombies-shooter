@@ -15,6 +15,11 @@ public class BotMove : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    public void StopRun()
+    {
+        _botNMA.isStopped = true;
+    }
+
     public void RunTowardsTarget()
     {
         _animator.SetTrigger("Run");

@@ -17,7 +17,7 @@ public class HealthPoints : MonoBehaviour
         set 
         {
             currentHealth = Mathf.Clamp(value, 0, maxHealth);
-            healthBar.value = currentHealth;
+            if (healthBar != null) healthBar.value = currentHealth;
         }
     }
 
