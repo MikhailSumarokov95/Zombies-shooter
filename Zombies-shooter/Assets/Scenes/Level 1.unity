@@ -508,6 +508,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157454003}
   m_CullTransparentMesh: 1
+--- !u!1 &166142809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 710693711343895722, guid: e4d007de5f0da3c4aa20c5aefc6f6cde, type: 3}
+  m_PrefabInstance: {fileID: 710124435805350086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &180929274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,6 +2336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453642505}
   - component: {fileID: 1453642504}
+  - component: {fileID: 1453642506}
   m_Layer: 0
   m_Name: ---GameManager
   m_TagString: Untagged
@@ -2366,6 +2372,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453642506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453642503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26af347dfa142c448902f285c8a35d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveSpawn:
+  - enemySpawn:
+    - Enemy: {fileID: 0}
+      SpawnCount: 0
+    - Enemy: {fileID: 0}
+      SpawnCount: 0
+  - enemySpawn:
+    - Enemy: {fileID: 0}
+      SpawnCount: 0
+    - Enemy: {fileID: 0}
+      SpawnCount: 0
+  enemySpawnPoints: []
+  numberWaveText: {fileID: 0}
+  _go: {fileID: 166142809}
 --- !u!1 &1486347745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,18 +3093,23 @@ MonoBehaviour:
   - IconIsBuy: {fileID: 679281332}
     IconIsNotBuy: {fileID: 1171592713}
     Weapon: 0
+    Price: 0
   - IconIsBuy: {fileID: 180929274}
     IconIsNotBuy: {fileID: 110482693}
     Weapon: 1
+    Price: 0
   - IconIsBuy: {fileID: 1436296958}
     IconIsNotBuy: {fileID: 1041756762}
     Weapon: 2
+    Price: 0
   - IconIsBuy: {fileID: 128684768}
     IconIsNotBuy: {fileID: 1486347745}
     Weapon: 3
+    Price: 0
   - IconIsBuy: {fileID: 1255187550}
     IconIsNotBuy: {fileID: 1419105563}
     Weapon: 4
+    Price: 0
   transfomIsChoose: -10
 --- !u!1 &2085307398
 GameObject:
