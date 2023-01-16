@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
             _currentEnemy = SpawnEnemies(waviesSpawn[i].Enemies);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
         }
-        numberWaveText.text = "победа";
+        numberWaveText.text = "Победа";
     }
 
     private AIBotController[] SpawnEnemies(EnemySpawn[] enemies)
