@@ -12,6 +12,8 @@ public abstract class Weapon : MonoBehaviour
     protected bool _isPostShotDelay;
     protected bool _isReloading;
 
+    public bool IsAttacking { get; protected set; }
+
     [SerializeField] protected float _distanceAttack = 2;
     public float DistanceAttack { get { return _distanceAttack; } }
     //private int _restOfBulletInMagazine;
@@ -33,7 +35,7 @@ public abstract class Weapon : MonoBehaviour
         //_animator.GetComponent<Animator>();
     }
 
-    public abstract void Fire(Vector3 target, GameObject targetObj);
+    public abstract void Attack(Vector3 target, GameObject targetObj);
     
         //if (_isReloading) return;
         //if (RestOfBulletInMagazine == 0) StartCoroutine(Reloading());
@@ -46,9 +48,12 @@ public abstract class Weapon : MonoBehaviour
 
     protected IEnumerator WaitPostShotDelay()
     {
+        IsAttacking = true;
         _isPostShotDelay = true;
-        yield return new WaitForSecondsRealtime(postShotDelay);
+        yield return new WaitUntil(() => _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"));
+        yield return new WaitForSecondsRealtime(_animator.GetCurrentAnimatorStateInfo(0).length);
         _isPostShotDelay = false;
+        IsAttacking = false;
     }
 
     //protected IEnumerator Reloading()
