@@ -2139,9 +2139,9 @@ MonoBehaviour:
   waviesSpawn:
   - Enemies:
     - Enemy: {fileID: -909773061847165558, guid: 830a4df9e07c5124c91c437b7407489a, type: 3}
-      SpawnCount: 1
+      SpawnCount: 0
     - Enemy: {fileID: 8175648682169623532, guid: 7d3381e8356e4b44b8406cce07830c2f, type: 3}
-      SpawnCount: 1
+      SpawnCount: 0
     - Enemy: {fileID: 2575222795119435182, guid: f7e0b4ea79028d243a58b922af5a1ac7, type: 3}
       SpawnCount: 1
   enemySpawnPoints:

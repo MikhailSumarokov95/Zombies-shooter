@@ -11,7 +11,6 @@ public class AIBotController : MonoBehaviour
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
     private Weapon _weapon;
-    private Vector3 _sideIsTargetIsVisible;
     private Animator _animator;
 
     private void Start()
@@ -51,7 +50,6 @@ public class AIBotController : MonoBehaviour
             if (!Physics.Raycast(eyesTr.position, sideIsTarget[i] - eyesTr.position, out hit)) continue;
             if (hit.collider.gameObject == _target.gameObject)
             {
-                _sideIsTargetIsVisible = sideIsTarget[i];
                 return true;
             }
         }
