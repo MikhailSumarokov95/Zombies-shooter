@@ -27,7 +27,7 @@ public class AIBotController : MonoBehaviour
     {
         if (_weapon.IsAttacking) return;
         if (DetermineIfThereObstaclesBetweenTargetAndBot() && AttackDistanceCheck())
-            if (TargetVisibilityCheck()) Fire();
+            if (TargetVisibilityCheck()) Attack();
             else _botMove.RotateTowardsTarget();
         else _botMove.RunTowardsTarget();
     }
@@ -77,15 +77,9 @@ public class AIBotController : MonoBehaviour
         return Vector3.Distance(transform.position, _target.position) < _weapon.DistanceAttack;
     }
 
-    private void Fire()
+    private void Attack()
     {
         _botMove.StopRun();
-        var isHittingTarget = Random.Range(0, 101) <= hitAccuracy;
-        if (isHittingTarget) _weapon.Attack(_sideIsTargetIsVisible, _target.gameObject);
-        else
-        {
-            var hittingPoint = GetSideIsTargetWithIndent(1.1f)[Random.Range(0, 4)];
-            _weapon.Attack(hittingPoint, _target.gameObject);
-        }
+        _weapon.Attack(_target.gameObject);
     }
 }

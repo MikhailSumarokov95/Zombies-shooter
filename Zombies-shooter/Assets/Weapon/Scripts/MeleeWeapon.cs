@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Hands : Weapon
+public class MeleeWeapon : Weapon
 {
-    [SerializeField] private int damage = 20;
+    [SerializeField] protected int damage = 20;
 
-    public override void Attack(Vector3 target, GameObject targetObj)
+    public override void Attack(GameObject targetObj)
     {
         if (_isPostShotDelay) return;
         targetObj.GetComponent<HealthPoints>().TakeDamage(damage);
