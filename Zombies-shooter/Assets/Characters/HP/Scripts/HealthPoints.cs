@@ -4,9 +4,10 @@ using UnityEngine.UI;
 
 public class HealthPoints : MonoBehaviour
 {
-    public Action OnDead;
     [SerializeField] private int maxHealth;
     [SerializeField] private Slider healthBar;
+    private Life _life;
+
     [SerializeField] private int currentHealth;
     public int CurrentHealth 
     { 
@@ -25,10 +26,12 @@ public class HealthPoints : MonoBehaviour
     {
         healthBar.maxValue = maxHealth;
         CurrentHealth = maxHealth;
+        _life = GetComponent<Life>();
     }
 
     public void TakeDamage(int damage)
     {
+        if (_life.IsDid) return;
         var remainingHealth = CurrentHealth - damage;
         if (remainingHealth <= 0) ToDead();
         CurrentHealth = remainingHealth;
@@ -36,6 +39,7 @@ public class HealthPoints : MonoBehaviour
 
     public void TakeHealth(int health)
     {
+        if (_life.IsDid) return;
         var remainingHealth = CurrentHealth + health;
         if (remainingHealth >= maxHealth) CurrentHealth = maxHealth;
         else CurrentHealth = remainingHealth;
@@ -43,6 +47,11 @@ public class HealthPoints : MonoBehaviour
 
     private void ToDead()
     {
-        OnDead?.Invoke();
+        if (gameObject.CompareTag("Player")) print("you did");
+        else
+        {
+            GetComponent<Animator>().SetTrigger("Did");
+            GetComponent<Life>().OnDid();
+        }
     }
 }

@@ -5,13 +5,10 @@ public class AIBotController : MonoBehaviour
     [SerializeField] private Transform eyesTr;
     [Range(0f, 30f)]
     [SerializeField] private float angleVisibility = 5f;
-    [Range(0, 100)]
-    [SerializeField] private int hitAccuracy = 50;
     private Transform _target;
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
     private Weapon _weapon;
-    private Animator _animator;
 
     private void Start()
     {
@@ -19,7 +16,6 @@ public class AIBotController : MonoBehaviour
         _targetCol = _target.GetComponent<CapsuleCollider>();
         _botMove = GetComponent<BotMove>();
         _weapon = transform.GetComponentInChildren<Weapon>();
-        _animator = GetComponent<Animator>();
     }
 
     private void Update()

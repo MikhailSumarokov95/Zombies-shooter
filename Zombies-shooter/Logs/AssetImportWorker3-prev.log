@@ -1,0 +1,1289 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 4087 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/ykpon/Desktop/Unity/Zombies-shooter/Zombies-shooter
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+58348
+Successfully changed project path to: C:/Users/ykpon/Desktop/Unity/Zombies-shooter/Zombies-shooter
+C:/Users/ykpon/Desktop/Unity/Zombies-shooter/Zombies-shooter
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [3024] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 468401630 [EditorId] 468401630 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EPQHHOF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [3024] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 468401630 [EditorId] 468401630 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EPQHHOF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 292.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ykpon/Desktop/Unity/Zombies-shooter/Zombies-shooter/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTS 450 (ID=0x1245)
+    Vendor:   NVIDIA
+    VRAM:     969 MB
+    Driver:   23.21.13.9135
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018333 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 274.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.298 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1299ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (632ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (121ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (274ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.020109 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 261.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 16.094 seconds
+Domain Reload Profiling:
+	ReloadAssembly (16096ms)
+		BeginReloadAssembly (369ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (169ms)
+		EndReloadAssembly (15526ms)
+			LoadAssemblies (6325ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (644ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (8393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (262ms)
+				BeforeProcessingInitializeOnLoad (181ms)
+				ProcessInitializeOnLoadAttributes (1529ms)
+				ProcessInitializeOnLoadMethodAttributes (6359ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Refreshing native plugins compatible for Editor in 2.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4654 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.3 MB). Loaded Objects now: 5097.
+Memory consumption went from 194.7 MB to 193.3 MB.
+Total: 6.863200 ms (FindLiveObjects: 0.931700 ms CreateObjectMapping: 0.257000 ms MarkObjects: 5.171600 ms  DeleteObjects: 0.500700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38864.679954 seconds.
+  path: Assets/Level/Prefabs/Demo.prefab
+  artifactKey: Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Prefabs/Demo.prefab using Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d6dfdfb3d8e4a8b86c807b6cd82c78') in 18.016011 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015434 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.856 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2857ms)
+		BeginReloadAssembly (389ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (2158ms)
+			LoadAssemblies (286ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (691ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (1036ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (78ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (540ms)
+				ProcessInitializeOnLoadMethodAttributes (229ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (1.3 MB). Loaded Objects now: 5110.
+Memory consumption went from 205.6 MB to 204.3 MB.
+Total: 11.103900 ms (FindLiveObjects: 0.956000 ms CreateObjectMapping: 0.268900 ms MarkObjects: 9.130900 ms  DeleteObjects: 0.745200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9221.905154 seconds.
+  path: Assets/Characters/Bot/Prefabs/Enemy 3 Animation Variant.prefab
+  artifactKey: Guid(f7e0b4ea79028d243a58b922af5a1ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Bot/Prefabs/Enemy 3 Animation Variant.prefab using Guid(f7e0b4ea79028d243a58b922af5a1ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c795f78c79513601d9b061220b21a3') in 0.826593 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016372 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.142 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2143ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1718ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (540ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (816ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (415ms)
+				ProcessInitializeOnLoadMethodAttributes (174ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5113.
+Memory consumption went from 205.6 MB to 204.3 MB.
+Total: 8.698900 ms (FindLiveObjects: 0.910400 ms CreateObjectMapping: 0.253000 ms MarkObjects: 6.995500 ms  DeleteObjects: 0.537500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 97.602824 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_FP_CH.prefab
+  artifactKey: Guid(19eadcf8fbed56b4da77ca94c1b4145f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_FP_CH.prefab using Guid(19eadcf8fbed56b4da77ca94c1b4145f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f8ed10f9653bbc2a928aae918e578b') in 26.919158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001035 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Loading Screen.prefab
+  artifactKey: Guid(eed89470685c13549a37ee96200a1137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Loading Screen.prefab using Guid(eed89470685c13549a37ee96200a1137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079ae1b96fea247320e7238872de2bee') in 0.169093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Shell.prefab
+  artifactKey: Guid(b1dc3feeff112bc49be8b050659c42a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Shell.prefab using Guid(b1dc3feeff112bc49be8b050659c42a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972dc135c1cd61a53212cc510abca6d0') in 0.142837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_03.prefab
+  artifactKey: Guid(4a4b8a3ad4e704d41951ddfdb2797d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_03.prefab using Guid(4a4b8a3ad4e704d41951ddfdb2797d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b55576ab2572bdb6bdffb3d261c2373') in 8.468990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_02.prefab
+  artifactKey: Guid(8e4a73c62bb7a404db9c33a2c4369c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_02.prefab using Guid(8e4a73c62bb7a404db9c33a2c4369c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce081ca6f073f7991a0f788840af2d1a') in 6.182087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Grenade.prefab
+  artifactKey: Guid(6989cb38a5fe92446983747734f14ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Grenade.prefab using Guid(6989cb38a5fe92446983747734f14ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7eaf6256668f18dae3146c50f9efa55') in 0.045290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Doorway_Small.prefab
+  artifactKey: Guid(c56c740fce942b14984455dbeeb55c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Doorway_Small.prefab using Guid(c56c740fce942b14984455dbeeb55c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13c90f44f7c69b1321cdf62f9b26fa0') in 0.352494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_01.prefab
+  artifactKey: Guid(8c7ba79f8ec05794aba7ffdd3d8aba93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_01.prefab using Guid(8c7ba79f8ec05794aba7ffdd3d8aba93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b1f60ea55d56f3a6456208f1875237') in 4.731334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_SMG_01.prefab
+  artifactKey: Guid(f01300d92eca1d34c977ec94fe940f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_SMG_01.prefab using Guid(f01300d92eca1d34c977ec94fe940f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5eb0a52130ba126d5b724c0b21ecf6') in 5.961307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Grenade_01.prefab
+  artifactKey: Guid(7b04fe350ed10a741a1e245447860d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Grenade_01.prefab using Guid(7b04fe350ed10a741a1e245447860d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2472305dc554160d479cafca0be64f2') in 0.228099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_GL.prefab
+  artifactKey: Guid(edf8c9b19ab77cd458707a7f9b3d825d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_GL.prefab using Guid(edf8c9b19ab77cd458707a7f9b3d825d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560a36bde676ce6fe5323299480e28ad') in 0.121076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_RL.prefab
+  artifactKey: Guid(6eff2e3f87451484da970b33bbf1411f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_RL.prefab using Guid(6eff2e3f87451484da970b33bbf1411f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304d1e687dd333aeeaf3d72807e4d5ea') in 4.523315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Barrel.prefab
+  artifactKey: Guid(ba67efa6dcab9a54aac7e607f17f759c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Barrel.prefab using Guid(ba67efa6dcab9a54aac7e607f17f759c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac3f3a9f5360b56202109476b36d3ff') in 0.323016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006797 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Gas_Tank_Destroyed.prefab
+  artifactKey: Guid(95c33a55895ffd7488870c75076605bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Gas_Tank_Destroyed.prefab using Guid(95c33a55895ffd7488870c75076605bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2414de96f99f1f16d8c4680cdda8df7') in 0.040175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Big.prefab
+  artifactKey: Guid(c638dfae3f3edf843b2614dae230a771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Big.prefab using Guid(c638dfae3f3edf843b2614dae230a771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5840b9a289f2eb5acf508495bcda66bc') in 0.097276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031361 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Doorway.prefab
+  artifactKey: Guid(7f740e7c6da5a1d408066ed2e3be4b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Doorway.prefab using Guid(7f740e7c6da5a1d408066ed2e3be4b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cb774766b96de847ce5f3b474eb574') in 0.185377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Information_Text.prefab
+  artifactKey: Guid(cdd74a287d6763748a0da1e717364366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Information_Text.prefab using Guid(cdd74a287d6763748a0da1e717364366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95bc542059a502da361c8307491c80a') in 0.184372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_GL_01.prefab
+  artifactKey: Guid(12038d9fe9b50784c91441fad6056ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_GL_01.prefab using Guid(12038d9fe9b50784c91441fad6056ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5239c2f369483ff26dddc0e381b9ff9f') in 5.419792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Interaction.prefab
+  artifactKey: Guid(8cac84568b5ab634980cf4f69a044fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Interaction.prefab using Guid(8cac84568b5ab634980cf4f69a044fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295f6a15ed43a0e65506c16c8297eaa6') in 0.264977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Canvas.prefab
+  artifactKey: Guid(48d7771c50bd625489d38055025597a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Canvas.prefab using Guid(48d7771c50bd625489d38055025597a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1a2d061586ae0ca5eabd2c3d3644a8') in 0.569989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Portal_Main_Room.prefab
+  artifactKey: Guid(21cf358ae4954d64f8e39990c10befcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Portal_Main_Room.prefab using Guid(21cf358ae4954d64f8e39990c10befcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60500edfb65cac73211941e5a7f7218') in 0.789211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Wall.prefab
+  artifactKey: Guid(e85142d1c78f896448e46cbaebcccc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Wall.prefab using Guid(e85142d1c78f896448e46cbaebcccc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2638d473e554b66505047e035479fec6') in 0.148688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_Inventory.prefab
+  artifactKey: Guid(9482e0a2ae6a92742bbe72e00f29f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_Inventory.prefab using Guid(9482e0a2ae6a92742bbe72e00f29f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5713df8425d0c2543bf5239e767441c8') in 23.324200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Gas_Tank.prefab
+  artifactKey: Guid(62e80a053a5f7c94f9f4c90bc293e432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Gas_Tank.prefab using Guid(62e80a053a5f7c94f9f4c90bc293e432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7b46511585081de98e7a0a49ec2e18') in 0.541127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Roof.prefab
+  artifactKey: Guid(c4f5aeff5b2e5e448a35f860efea9db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Roof.prefab using Guid(c4f5aeff5b2e5e448a35f860efea9db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3439a020b4ca6d4a7618bf1cd4645139') in 0.109263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Grenades.prefab
+  artifactKey: Guid(009b1de3516d0004ba646dfc5b3f70f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Grenades.prefab using Guid(009b1de3516d0004ba646dfc5b3f70f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674c513c3e94ac7f8a9a7818446c7803') in 0.153789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Floor.prefab
+  artifactKey: Guid(ec359f99037709646a1a187546ca52c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Floor.prefab using Guid(ec359f99037709646a1a187546ca52c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c655e385eeb9f05d3b5e109b43bdf0') in 0.052763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Separator_Small.prefab
+  artifactKey: Guid(7cf89b170f33a144ea4e20dbe0257257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Grid_Separator_Small.prefab using Guid(7cf89b170f33a144ea4e20dbe0257257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fafb8541247426ee2f752716abde8b0') in 0.075887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Menu_Quality_Settings.prefab
+  artifactKey: Guid(458b1dae88c7baf46a163b218ce42a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Menu_Quality_Settings.prefab using Guid(458b1dae88c7baf46a163b218ce42a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e958522d85d2c3e0cbd60fe785e0cfcd') in 0.271943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_03.prefab
+  artifactKey: Guid(464d2b315a1ed6b408948cc2fc04e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_03.prefab using Guid(464d2b315a1ed6b408948cc2fc04e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9015afb4b2d5bf5343f637357430dec') in 15.210009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Target.prefab
+  artifactKey: Guid(84e2da24fceb32c45a3059b4c1d82538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Target.prefab using Guid(84e2da24fceb32c45a3059b4c1d82538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0204f0cadaf0f90fea2e4b0f14d451') in 0.316259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_RL_01.prefab
+  artifactKey: Guid(201b59cc0f9baa643817e6c1d0198649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_RL_01.prefab using Guid(201b59cc0f9baa643817e6c1d0198649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2e027246bcca912edf520c05d8acf2') in 17.800636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Bullets.prefab
+  artifactKey: Guid(c55b84a58c1b1a442b8b34805e7616b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Bullets.prefab using Guid(c55b84a58c1b1a442b8b34805e7616b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e992d27c908cc9b5d806f694424d5354') in 0.298160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_04.prefab
+  artifactKey: Guid(6ff85997fd470764cb6d04a3cdb9ef78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_04.prefab using Guid(6ff85997fd470764cb6d04a3cdb9ef78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109fb9af8ff7071230714f457dc47aae') in 14.957889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_02.prefab
+  artifactKey: Guid(f985fca8d5251c049ab9579d483160b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_02.prefab using Guid(f985fca8d5251c049ab9579d483160b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6820b5598307f47c2305ff1b5f186b5b') in 8.777634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_FP_CH_Animations.prefab
+  artifactKey: Guid(b6cdf64ed29be164da4d7b03eb0dcb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_FP_CH_Animations.prefab using Guid(b6cdf64ed29be164da4d7b03eb0dcb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d59ba4d0d0952d24b81a68ee663986') in 2.029952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Barrel_Destroyed.prefab
+  artifactKey: Guid(69583eba87a3a60449692cb2c09f4706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Damageables/P_LPSP_DMG_Barrel_Destroyed.prefab using Guid(69583eba87a3a60449692cb2c09f4706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e24883e2baf1a3c9bb80d5cc3f18f31') in 0.150759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2715c70b92335938c713584650d7ac19') in 0.594306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Portal.prefab
+  artifactKey: Guid(9fd364efedec0d84cb678c79d0027873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Portal.prefab using Guid(9fd364efedec0d84cb678c79d0027873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89111aaa2bad0164b536738c42c64d3a') in 0.295055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Crosshair.prefab
+  artifactKey: Guid(a5b4f9a9515729049a88bf3bf8072402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Interface/P_LPSP_UI_Crosshair.prefab using Guid(a5b4f9a9515729049a88bf3bf8072402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2821adf3a1127975d3d6b19f67dbbddb') in 0.044065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_PP.prefab
+  artifactKey: Guid(433fd354326bb6843b7d0d0152bceaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_PP.prefab using Guid(433fd354326bb6843b7d0d0152bceaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588781127f0f99a704d79739dfeb81c1') in 2.704311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Shotgun_01.prefab
+  artifactKey: Guid(e1be29c2c2f53c947819b92d236806c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Shotgun_01.prefab using Guid(e1be29c2c2f53c947819b92d236806c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c675e5512f5212cd6b67f309f204d251') in 9.361010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Small.prefab
+  artifactKey: Guid(b1995a53a949fac4db5722fc1df9efe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Small.prefab using Guid(b1995a53a949fac4db5722fc1df9efe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0c0a21eaf5bd91efc547079c628f62') in 0.314825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Character.prefab
+  artifactKey: Guid(dc9cc0940cac0e64ba20c3a3c73de163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Character.prefab using Guid(dc9cc0940cac0e64ba20c3a3c73de163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b1f74958726bba73a04facdb240c72') in 0.237166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_01.prefab
+  artifactKey: Guid(d3308534d30856e42b7a585baa7a886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_01.prefab using Guid(d3308534d30856e42b7a585baa7a886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c276d073cc5b56400381eb63521d336') in 8.516892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.200109 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Input/IA_Player.inputactions
+  artifactKey: Guid(d4580ddb403296c4e8150653f661069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Input/IA_Player.inputactions using Guid(d4580ddb403296c4e8150653f661069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f0534c8714967b3cab2c4cf6386d16') in 0.319459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Input/IS_Default.asset
+  artifactKey: Guid(9eb07e2d669e9c94e9d7d3c782a916f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Input/IS_Default.asset using Guid(9eb07e2d669e9c94e9d7d3c782a916f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5f764cb9f0a70327cc84a807c664be') in 0.135433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.582465 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Material.prefab
+  artifactKey: Guid(59b766fa41743f441894e1a8f9e602f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Material.prefab using Guid(59b766fa41743f441894e1a8f9e602f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8d5a575b4489894a79c11881373416') in 0.207753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_VFX.prefab
+  artifactKey: Guid(36bd124c56a646c4a914bc0a07f7efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_VFX.prefab using Guid(36bd124c56a646c4a914bc0a07f7efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc62deb33bb0e9010787ec594a49905e') in 0.330958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_TP_CH_Animations.prefab
+  artifactKey: Guid(65bdae29d6db8e34eaab2a835fddeaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_TP_CH_Animations.prefab using Guid(65bdae29d6db8e34eaab2a835fddeaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9652a273e3b4982e9edee8acb2aa6c') in 0.584390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Weapon.prefab
+  artifactKey: Guid(bf233b567e498eb42bda167e3332a1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Weapon.prefab using Guid(bf233b567e498eb42bda167e3332a1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c407bd305e1f9b7246daf81f5abfd3f') in 0.158864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Model.prefab
+  artifactKey: Guid(8add465fec2dd214982b990c9682d4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Demo/P_Showcase_Model.prefab using Guid(8add465fec2dd214982b990c9682d4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacf8b0130ac5e59a062bc13757d3a32') in 0.185732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.682491 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Physics Materials/PM_Frictionless.physicMaterial
+  artifactKey: Guid(59f700dae9067fd4a979d046ceb0ed04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Physics Materials/PM_Frictionless.physicMaterial using Guid(59f700dae9067fd4a979d046ceb0ed04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74796b93bfb370f25f70904d5cbc88db') in 0.198406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Physics Materials/PM_Grenade.physicMaterial
+  artifactKey: Guid(98422cde6324dcf4c8ad2c756e0516c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Physics Materials/PM_Grenade.physicMaterial using Guid(98422cde6324dcf4c8ad2c756e0516c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab579d44f36746eb114d80ac019e990') in 0.029968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.311802 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Content_Overview.unity
+  artifactKey: Guid(63fdc04a097eb0b4ba4af78a98dac40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Content_Overview.unity using Guid(63fdc04a097eb0b4ba4af78a98dac40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db834cdc4d49955e58d3d3dd3faf5ae') in 0.065826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.287907 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Demo_Defense.unity
+  artifactKey: Guid(5622a2e7311e3e743b6d99e44feb8998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Demo_Defense.unity using Guid(5622a2e7311e3e743b6d99e44feb8998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b09d429970420715a49486ffa7cfdd4') in 0.050124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.105935 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Demo_Desert.unity
+  artifactKey: Guid(8b18da02b00ef7f48b1c4cd497671301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Scenes/S_Demo_Desert.unity using Guid(8b18da02b00ef7f48b1c4cd497671301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadef9b7c891eca4873d374d7fb852c1') in 0.026627 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 2.005326 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 437.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 201.822 seconds
+Domain Reload Profiling:
+	ReloadAssembly (202073ms)
+		BeginReloadAssembly (42913ms)
+			ExecutionOrderSort (24ms)
+			DisableScriptedObjects (3717ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (69ms)
+			CreateAndSetChildDomain (18540ms)
+		EndReloadAssembly (156446ms)
+			LoadAssemblies (4455ms)
+			RebuildTransferFunctionScriptingTraits (214ms)
+			SetupTypeCache (5288ms)
+			ReleaseScriptCaches (1247ms)
+			RebuildScriptCaches (522ms)
+			SetupLoadedEditorAssemblies (144340ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (956ms)
+				SetLoadedEditorAssemblies (11ms)
+				RefreshPlugins (438ms)
+				BeforeProcessingInitializeOnLoad (1479ms)
+				ProcessInitializeOnLoadAttributes (4520ms)
+				ProcessInitializeOnLoadMethodAttributes (136523ms)
+				AfterProcessingInitializeOnLoad (395ms)
+				EditorAssembliesLoaded (18ms)
+			ExecutionOrderSort2 (23ms)
+			AwakeInstancesAfterBackupRestoration (512ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 58.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (1.4 MB). Loaded Objects now: 5131.
+Memory consumption went from 283.2 MB to 281.8 MB.
+Total: 215.126200 ms (FindLiveObjects: 0.924200 ms CreateObjectMapping: 0.337300 ms MarkObjects: 190.939100 ms  DeleteObjects: 22.922000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015487 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.020 seconds
+Domain Reload Profiling:
+	ReloadAssembly (11035ms)
+		BeginReloadAssembly (1266ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (745ms)
+		EndReloadAssembly (9508ms)
+			LoadAssemblies (342ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (6786ms)
+			ReleaseScriptCaches (29ms)
+			RebuildScriptCaches (141ms)
+			SetupLoadedEditorAssemblies (2042ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (347ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (197ms)
+				ProcessInitializeOnLoadAttributes (1175ms)
+				ProcessInitializeOnLoadMethodAttributes (277ms)
+				AfterProcessingInitializeOnLoad (39ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5134.
+Memory consumption went from 283.1 MB to 281.8 MB.
+Total: 12.221100 ms (FindLiveObjects: 0.896600 ms CreateObjectMapping: 0.257500 ms MarkObjects: 10.544500 ms  DeleteObjects: 0.519800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1419.201951 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_01.overrideController
+  artifactKey: Guid(290925d56c590904889ea4825dd212b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_01.overrideController using Guid(290925d56c590904889ea4825dd212b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7656430adea8b781fd2df3b03dbb116') in 0.598660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000745 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_SMG_01.overrideController
+  artifactKey: Guid(009cff106c497834c9fdfe95b7676908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_SMG_01.overrideController using Guid(009cff106c497834c9fdfe95b7676908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95d0445fc99ee30346f7ae91bd18478') in 0.038300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_01.overrideController
+  artifactKey: Guid(3299be08e7a23924ca58b58fb23fced5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_01.overrideController using Guid(3299be08e7a23924ca58b58fb23fced5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903c109e606c251985dd4466c88741f5') in 0.053641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_SMG_02.overrideController
+  artifactKey: Guid(4dc69b1f9ba15654592d56385fe1e9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_SMG_02.overrideController using Guid(4dc69b1f9ba15654592d56385fe1e9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91684574d199862990ac2b6df5d175e6') in 0.093819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_03.overrideController
+  artifactKey: Guid(b055277a99d473041ba00d05ebd901ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_03.overrideController using Guid(b055277a99d473041ba00d05ebd901ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36064d8561041b1b3433f1c6afe020d3') in 0.037494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Shotgun_01.overrideController
+  artifactKey: Guid(dcb866707a28b8f468b20fcd64677e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Shotgun_01.overrideController using Guid(dcb866707a28b8f468b20fcd64677e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26201769abac491e9028a1026490c7e6') in 0.062824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_GL_01.overrideController
+  artifactKey: Guid(1be013d77dd3bab41b92c84f428d784f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_GL_01.overrideController using Guid(1be013d77dd3bab41b92c84f428d784f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598ba9a1a0bbccdc091bccd96340857e') in 0.050140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_02.overrideController
+  artifactKey: Guid(3e4e34547bdc2ef4ab6564d4932e38d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_AR_02.overrideController using Guid(3e4e34547bdc2ef4ab6564d4932e38d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3005024f876961af549b7b928c75560d') in 0.033230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_03.overrideController
+  artifactKey: Guid(d0f061f165597314d870681ebaff4ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_03.overrideController using Guid(d0f061f165597314d870681ebaff4ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ff81897a3fbedd71958b82a62c270e') in 0.045716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_04.overrideController
+  artifactKey: Guid(e1d1c633dbbe52840b87a5f51ccb404d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_04.overrideController using Guid(e1d1c633dbbe52840b87a5f51ccb404d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19001a5aede38332a791c12ef72fd643') in 0.046913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_02.overrideController
+  artifactKey: Guid(a75a198b191d7b043a22808a18c2a5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_Handgun_02.overrideController using Guid(a75a198b191d7b043a22808a18c2a5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed21b24074a11c45f76812aaae051ce9') in 0.066974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_RL_01.overrideController
+  artifactKey: Guid(8599bb06e16d1dd4ea2288f9915e5eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Weapons/OC_LPSP_WEP_RL_01.overrideController using Guid(8599bb06e16d1dd4ea2288f9915e5eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cc7ab1f40bb25c783173d2af7b2e30') in 0.034390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 366.863152 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_RL_01.asset
+  artifactKey: Guid(1ada4df199b3a164da29b147abfd8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_RL_01.asset using Guid(1ada4df199b3a164da29b147abfd8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f9c64574452df2a35432709c580b67') in 2.572867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007220 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_01.asset
+  artifactKey: Guid(75d902efeb80a134db7945e39593637b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_01.asset using Guid(75d902efeb80a134db7945e39593637b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf1cf363a5aa352832ef5a81fb2b10c') in 0.591386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_03.asset
+  artifactKey: Guid(d54d05058ce63044f9c7442d81071396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_03.asset using Guid(d54d05058ce63044f9c7442d81071396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0302bfdffbd32bb48e29cb5160373dee') in 0.057078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_05.asset
+  artifactKey: Guid(3c47af187d3217845afb765fbff8ee93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_05.asset using Guid(3c47af187d3217845afb765fbff8ee93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51024c2292528ae993f2a1511fb5e767') in 0.083569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_03.asset
+  artifactKey: Guid(1a1ca27a8298eba41bb3920689d44e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_03.asset using Guid(1a1ca27a8298eba41bb3920689d44e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d3ecf589078094989330e2c500dbec') in 0.064335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_02.asset
+  artifactKey: Guid(e45b986debe2ea646a8bdde452143d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_02.asset using Guid(e45b986debe2ea646a8bdde452143d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860bb6c681ebe6c5f81a8fa54133a07c') in 0.104902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_02.asset
+  artifactKey: Guid(ebbbc5a0d492ab34fa75070cc98cde6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_02.asset using Guid(ebbbc5a0d492ab34fa75070cc98cde6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622af63b34df70489904ce8a82710ac1') in 0.095919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Lower/SO_Lower.asset
+  artifactKey: Guid(b5f2a744698c29743a5383df556e27ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Lower/SO_Lower.asset using Guid(b5f2a744698c29743a5383df556e27ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd980d321dada3a4d5ff4e4bd05b7cbcc') in 0.426092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_04.asset
+  artifactKey: Guid(e618c9a79a059844584f9c0ef348f40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_SMG_04.asset using Guid(e618c9a79a059844584f9c0ef348f40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a10fe7730a37e3cafb2c3b4d794f02e') in 0.110729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_01.asset
+  artifactKey: Guid(6367c2604451714479cbdcf59cf7e324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Sniper_01.asset using Guid(6367c2604451714479cbdcf59cf7e324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5a0b56674534ee26498e533238a85c') in 0.083130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Shotgun_01.asset
+  artifactKey: Guid(f095b3b8b6c28af46b448f54a8c1fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Shotgun_01.asset using Guid(f095b3b8b6c28af46b448f54a8c1fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc5a6f7a5c2293c313671f523437357') in 0.057364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.896969 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Shotgun_01.overrideController
+  artifactKey: Guid(1faa6b60e979ab943acaba86b74a23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Shotgun_01.overrideController using Guid(1faa6b60e979ab943acaba86b74a23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846954626a2057aaab7eaae3fa5df973') in 19.945289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_02.overrideController
+  artifactKey: Guid(10f0359b8acaa884f84935b3e29a4327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_02.overrideController using Guid(10f0359b8acaa884f84935b3e29a4327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33acabfa91632cda62e6b9d9a788612') in 12.079828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_01.overrideController
+  artifactKey: Guid(227c83fdfbb09484f8ce88cdfcd6a122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_01.overrideController using Guid(227c83fdfbb09484f8ce88cdfcd6a122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddcdf8ee51d0d0eba037702b90332ec') in 7.237682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_05.overrideController
+  artifactKey: Guid(e5b7cd02c74bcc24387d5226d3465762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_05.overrideController using Guid(e5b7cd02c74bcc24387d5226d3465762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58003733e7fdadfe4e2a59ea3bd89d2') in 8.808774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_03.overrideController
+  artifactKey: Guid(72af04fc692398745b4ded1eda224fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_03.overrideController using Guid(72af04fc692398745b4ded1eda224fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555ce003bbfdac1ca8f1e62e2e205766') in 7.453183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_04.overrideController
+  artifactKey: Guid(1ef37ebe38602934290eff157e183e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_04.overrideController using Guid(1ef37ebe38602934290eff157e183e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888224e81e0d611511361bb467166cdc') in 8.626115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_01.overrideController
+  artifactKey: Guid(0ef5ab816395d5c408eae1d1195c410c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_01.overrideController using Guid(0ef5ab816395d5c408eae1d1195c410c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424c41146317620614c4814704d7d044') in 6.404077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_02.overrideController
+  artifactKey: Guid(921a0029ada06e04ab83361ebdc2ced3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_SMG_02.overrideController using Guid(921a0029ada06e04ab83361ebdc2ced3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cf53f3fd9260c90b7848d9fd940592') in 6.811165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_03.overrideController
+  artifactKey: Guid(588e5a327922e1f4e9254d9b9488cad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Sniper_03.overrideController using Guid(588e5a327922e1f4e9254d9b9488cad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56a9b33ea7c65403282d29782129ef7') in 6.758231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1616.427887 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6961aa6ae010a589a441d39d024b9699') in 44.151709 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.227705 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 29.368 seconds
+Domain Reload Profiling:
+	ReloadAssembly (29373ms)
+		BeginReloadAssembly (9928ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (358ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (24ms)
+			CreateAndSetChildDomain (5488ms)
+		EndReloadAssembly (12421ms)
+			LoadAssemblies (4415ms)
+			RebuildTransferFunctionScriptingTraits (7ms)
+			SetupTypeCache (4367ms)
+			ReleaseScriptCaches (17ms)
+			RebuildScriptCaches (124ms)
+			SetupLoadedEditorAssemblies (5000ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (274ms)
+				SetLoadedEditorAssemblies (20ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (399ms)
+				ProcessInitializeOnLoadAttributes (1276ms)
+				ProcessInitializeOnLoadMethodAttributes (2899ms)
+				AfterProcessingInitializeOnLoad (128ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 146.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5137.
+Memory consumption went from 283.1 MB to 281.8 MB.
+Total: 154.591800 ms (FindLiveObjects: 4.731700 ms CreateObjectMapping: 1.022000 ms MarkObjects: 79.326300 ms  DeleteObjects: 69.506700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 213.443035 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfedc4b73a7add5e0fefbd08ba9a193e') in 0.418669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003640 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac22e15a643fdbf2977dc39ba9e6ea09') in 3.734696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.488809 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_AR_01.overrideController
+  artifactKey: Guid(1288116e5192cd84b808721e453eb7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_AR_01.overrideController using Guid(1288116e5192cd84b808721e453eb7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7b0945fb2dca9bc7b09ab8e4360662') in 48.646416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062404 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Sway Settings/SO_SD_Aiming.asset
+  artifactKey: Guid(904076570c59f964caa496918a9d3365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Sway Settings/SO_SD_Aiming.asset using Guid(904076570c59f964caa496918a9d3365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082b1fbf66fa2d7025defa4ba24b461b') in 1.228459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Recoil/SO_WEP_RD_Camera.asset
+  artifactKey: Guid(521db61b565c4104ea2dd050978ee1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Recoil/SO_WEP_RD_Camera.asset using Guid(521db61b565c4104ea2dd050978ee1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04c40fe647cb99079612f08034f0fa9') in 0.259259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Recoil/SO_WEP_RD_SMG.asset
+  artifactKey: Guid(b75e01d1fb9ac6e4c9818e3f82473f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Recoil/SO_WEP_RD_SMG.asset using Guid(b75e01d1fb9ac6e4c9818e3f82473f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fb8837811a2a5b67f3dc2e806ad190') in 0.104284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Handgun_04.asset
+  artifactKey: Guid(7af9880886c057a4f8eba40d111f8b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_Handgun_04.asset using Guid(7af9880886c057a4f8eba40d111f8b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e88f392642515330cdb9a8a73ff5b2') in 0.124295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Leaning/SO_LD_Item.asset
+  artifactKey: Guid(834b78a9d42ef8540b6b55fe2e0b8252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Leaning/SO_LD_Item.asset using Guid(834b78a9d42ef8540b6b55fe2e0b8252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fbb0e1213d022e172bc41f89d99548') in 0.125449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Handgun_02.overrideController
+  artifactKey: Guid(b44a243981f153642b5cb4a1e2ce0c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_Handgun_02.overrideController using Guid(b44a243981f153642b5cb4a1e2ce0c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de147a83551b34e54cb329b94e34f32c') in 29.505023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008805 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Sway Settings/SO_SD_Default.asset
+  artifactKey: Guid(f3be44964d61b2e4f9aa8a677ec28aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Sway Settings/SO_SD_Default.asset using Guid(f3be44964d61b2e4f9aa8a677ec28aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747b0307fd390d27dc08aa977dae3aff') in 0.054549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Feels/SO_F_Item.asset
+  artifactKey: Guid(ab00933608122e145b67b6b7cff5e1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Feels/SO_F_Item.asset using Guid(ab00933608122e145b67b6b7cff5e1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17f83462788a674b8ecd47f42c74317') in 0.165037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_AR_02.asset
+  artifactKey: Guid(634a68fe087638240a486d6b2926f2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_AR_02.asset using Guid(634a68fe087638240a486d6b2926f2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006c1b8aad44fe14370a94c29261b774') in 0.028615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Jumping/SO_AC_Land_Item.asset
+  artifactKey: Guid(41af819d5f38dbf44ab611512d5ae2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Jumping/SO_AC_Land_Item.asset using Guid(41af819d5f38dbf44ab611512d5ae2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6627ce3f17567a98ce47b728d64440b') in 0.051476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_AR_03.asset
+  artifactKey: Guid(645f88e24064205409f775480ae32bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Item Offsets/SO_IO_AR_03.asset using Guid(645f88e24064205409f775480ae32bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7290c61890e00461f3a8a55ce13f5821') in 0.031301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_RL_01.overrideController
+  artifactKey: Guid(1e7a1bd7304ade54f9fbbec8df086aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/OC_LPSP_PCH_RL_01.overrideController using Guid(1e7a1bd7304ade54f9fbbec8df086aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca70115c2f352135056d5e96d12dfa2') in 10.302685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Data/Jumping/SO_AC_Jump_Camera.asset
+  artifactKey: Guid(fd43786355cd60b4d98f0a132ee2e79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Data/Jumping/SO_AC_Jump_Camera.asset using Guid(fd43786355cd60b4d98f0a132ee2e79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0690d2780157de10f15454c1da3e2e') in 0.080415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_FP_CH.prefab
+  artifactKey: Guid(19eadcf8fbed56b4da77ca94c1b4145f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/P_LPSP_FP_CH.prefab using Guid(19eadcf8fbed56b4da77ca94c1b4145f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf8066ff87847a43f56b83c03379da1') in 182.314183 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.186249 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 41.601 seconds
+Domain Reload Profiling:
+	ReloadAssembly (41764ms)
+		BeginReloadAssembly (21805ms)
+			ExecutionOrderSort (2ms)
+			DisableScriptedObjects (661ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (13975ms)
+		EndReloadAssembly (18040ms)
+			LoadAssemblies (4688ms)
+			RebuildTransferFunctionScriptingTraits (13ms)
+			SetupTypeCache (6666ms)
+			ReleaseScriptCaches (50ms)
+			RebuildScriptCaches (202ms)
+			SetupLoadedEditorAssemblies (6803ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (740ms)
+				SetLoadedEditorAssemblies (96ms)
+				RefreshPlugins (19ms)
+				BeforeProcessingInitializeOnLoad (381ms)
+				ProcessInitializeOnLoadAttributes (2304ms)
+				ProcessInitializeOnLoadMethodAttributes (3201ms)
+				AfterProcessingInitializeOnLoad (41ms)
+				EditorAssembliesLoaded (22ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (103ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 625.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 45 unused Assets / (1.4 MB). Loaded Objects now: 5140.
+Memory consumption went from 283.2 MB to 281.9 MB.
+Total: 478.246000 ms (FindLiveObjects: 1.114800 ms CreateObjectMapping: 1.596000 ms MarkObjects: 431.707800 ms  DeleteObjects: 43.822600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022091 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.862 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9872ms)
+		BeginReloadAssembly (3535ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (129ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1496ms)
+		EndReloadAssembly (5657ms)
+			LoadAssemblies (1886ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1840ms)
+			ReleaseScriptCaches (28ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (1989ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (92ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (193ms)
+				ProcessInitializeOnLoadAttributes (643ms)
+				ProcessInitializeOnLoadMethodAttributes (987ms)
+				AfterProcessingInitializeOnLoad (69ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 18.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.3 MB). Loaded Objects now: 5143.
+Memory consumption went from 283.2 MB to 281.9 MB.
+Total: 25.086400 ms (FindLiveObjects: 0.919000 ms CreateObjectMapping: 0.617900 ms MarkObjects: 15.789700 ms  DeleteObjects: 7.756800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 599.835870 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956904524f404d8e926322e8eb399aba') in 1.284066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.325261 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c7195694889c125251672e8aa28e5b') in 0.152322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 260.110645 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab
+  artifactKey: Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles/P_LPSP_PROJ_Bullet_01.prefab using Guid(5953171a59c27394e9ad5cbb564affa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b553abe30166518669b1d53a23cef051') in 0.217018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 199.031331 seconds.
+  path: Assets/Characters/Bot/Prefabs/Enemy 1 Animation.prefab
+  artifactKey: Guid(830a4df9e07c5124c91c437b7407489a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Bot/Prefabs/Enemy 1 Animation.prefab using Guid(830a4df9e07c5124c91c437b7407489a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55337780ee770a657ab4598b047bb53c') in 3.179177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Characters/Bot/Prefabs/Enemy 3 Animation Variant.prefab
+  artifactKey: Guid(f7e0b4ea79028d243a58b922af5a1ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Bot/Prefabs/Enemy 3 Animation Variant.prefab using Guid(f7e0b4ea79028d243a58b922af5a1ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22edf4f66d1bd55849cad20f191cd20') in 0.971032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Characters/Bot/Prefabs/Enemy 2 Animation Variant.prefab
+  artifactKey: Guid(7d3381e8356e4b44b8406cce07830c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Bot/Prefabs/Enemy 2 Animation Variant.prefab using Guid(7d3381e8356e4b44b8406cce07830c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1db86e3a38bd8bb0e0e6a950e511d5') in 0.119474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.607404 seconds.
+  path: Assets/Characters/Player/Prefabs/P_LPSP_FP_CH Variant.prefab
+  artifactKey: Guid(b180c22caa7094a4792c9946484476a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Player/Prefabs/P_LPSP_FP_CH Variant.prefab using Guid(b180c22caa7094a4792c9946484476a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a19498c53a400a1a9012ff0682efa4c') in 76.051618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023187 seconds.
+  path: Assets/Characters/Player/Prefabs/Player.prefab
+  artifactKey: Guid(27bf85dcf50947a4d97dbac610d1ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Player/Prefabs/Player.prefab using Guid(27bf85dcf50947a4d97dbac610d1ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646112ead919c9bbfc8b853baf0b6609') in 0.504996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.004181 seconds.
+  path: Assets/Level/Prefabs/Demo.prefab
+  artifactKey: Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Prefabs/Demo.prefab using Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd015f7c88c1de04db03dda63200cda54') in 6.939341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.094367 seconds.
+  path: Assets/Level/Prefabs/Demo.prefab
+  artifactKey: Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Prefabs/Demo.prefab using Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915000bff9c630d6be829036eeff2f70') in 4.443090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.313349 seconds.
+  path: Assets/Level/Prefabs/Demo.prefab
+  artifactKey: Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level/Prefabs/Demo.prefab using Guid(c660bddf8f11cc14ba44362a07d88cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7692f5677d5189f802dae85aa32ccfa') in 21.315674 seconds 

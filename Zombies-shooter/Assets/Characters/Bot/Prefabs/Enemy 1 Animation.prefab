@@ -4186,6 +4186,7 @@ GameObject:
   - component: {fileID: 3765550523670746949}
   - component: {fileID: -8315325884540411513}
   - component: {fileID: -8204612207055816312}
+  - component: {fileID: -6149327533416916791}
   m_Layer: 0
   m_Name: Enemy 1 Animation
   m_TagString: Enemy
@@ -4288,7 +4289,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5209996369703070132}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.3
   m_Height: 1.9
@@ -4307,7 +4308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  healthBar: {fileID: 7993260797193592777, guid: 55d0813bfb28fe141a0398ecdab066e4, type: 3}
+  healthBar: {fileID: 7993260797193592777, guid: 55d0813bfb28fe141a0398ecdab066e4,
+    type: 3}
   currentHealth: 0
 --- !u!114 &7428476684426682195
 MonoBehaviour:
@@ -4335,7 +4337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyesTr: {fileID: 7502182635557834298}
   angleVisibility: 5
-  hitAccuracy: 50
 --- !u!114 &8566046508329525062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4396,10 +4397,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a743e7b4ffd4f438a0ea778dd3efa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  postShotDelay: 2
-  _animator: {fileID: 5268193389699030162}
   _distanceAttack: 2
   damage: 20
+--- !u!114 &-6149327533416916791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209996369703070132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4706c1f65e53624a894531483ab3e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5209997835292103392
 GameObject:
   m_ObjectHideFlags: 0
