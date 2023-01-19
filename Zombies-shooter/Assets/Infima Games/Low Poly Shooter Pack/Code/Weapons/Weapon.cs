@@ -22,7 +22,6 @@ namespace InfimaGames.LowPolyShooterPack
         private float multiplierMovementSpeed = 1.0f;
         
         [Title(label: "Firing")]
-
         [Tooltip("Is this weapon automatic? If yes, then holding down the firing button will continuously fire.")]
         [SerializeField] 
         private bool automatic;
@@ -136,6 +135,13 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("")]
         [SerializeField]
         private AudioClip audioClipBoltAction;
+
+        #endregion
+
+
+        #region PROPERTIES
+
+        public string WeaponName { get { return weaponName; } set { weaponName = value; } }
 
         #endregion
 

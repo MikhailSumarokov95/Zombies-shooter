@@ -1,5 +1,7 @@
 ﻿//Copyright 2022, Infima Games. All Rights Reserved.
 
+using System.Collections.Generic;
+
 namespace InfimaGames.LowPolyShooterPack
 {
     public class Inventory : InventoryBehaviour
@@ -28,10 +30,28 @@ namespace InfimaGames.LowPolyShooterPack
         {
             //Cache all weapons. Beware that weapons need to be parented to the object this component is on!
             weapons = GetComponentsInChildren<WeaponBehaviour>(true);
-            
+
+            var weaponsList = new List<WeaponBehaviour>();
+            var weaponsSelected = Progress.LoadWeaponsSelected();
+
+            weaponsList.Add(weapons[0]);
+
             //Disable all weapons. This makes it easier for us to only activate the one we need.
             foreach (WeaponBehaviour weapon in weapons)
+            {
                 weapon.gameObject.SetActive(false);
+
+                var nameWeapon = weapon.GetComponent<Weapon>().WeaponName;
+                if (weaponsSelected.WeaponsOptionsSelected.ContainsKey(nameWeapon))
+                {
+                    weaponsList.Add(weapon);
+
+                    weapon.GetComponent<WeaponAttachmentManager>()
+                        .SetAttachment(weaponsSelected.WeaponsOptionsSelected[nameWeapon]);
+                }    
+            }
+
+            weapons = weaponsList.ToArray();
 
             //Equip.
             Equip(equippedAtStart);

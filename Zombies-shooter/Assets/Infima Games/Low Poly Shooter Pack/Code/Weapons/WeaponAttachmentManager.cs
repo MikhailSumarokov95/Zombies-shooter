@@ -180,5 +180,27 @@ namespace InfimaGames.LowPolyShooterPack
         public override GripBehaviour GetEquippedGrip() => gripBehaviour;
 
         #endregion
+
+        #region SETTERS
+
+        public void SetAttachment(Progress.WeaponOptionsSelected attachment)
+        {
+            SetEquippedScope(attachment.ScopeIndex);
+            SetEquippedMagazine(attachment.MagazineIndex);
+            SetEquippedMuzzle(attachment.MuzzleIndex);
+            SetEquippedLaser(attachment.LaserIndex);
+            SetEquippedGrip(attachment.GripIndex);
+            Awake();
+        }
+
+        public void SetEquippedScope(int value) => scopeIndex = value;
+
+        public void SetEquippedMagazine(int value) => magazineIndex = value;
+        public void SetEquippedMuzzle(int value) => muzzleIndex = value;
+
+        public void SetEquippedLaser(int value) => laserIndex = value;
+        public void SetEquippedGrip(int value) => gripIndex = value;
+
+        #endregion
     }
 }
