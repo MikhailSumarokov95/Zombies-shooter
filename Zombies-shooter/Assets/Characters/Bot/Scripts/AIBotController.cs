@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using Bot;
 public class AIBotController : MonoBehaviour
 {
     [SerializeField] private Transform eyesTr;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using Bot;
 
 public class RangedWeapon : Weapon
 {

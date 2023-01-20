@@ -41,6 +41,11 @@ public static class Progress
         file.Close();
     }
 
+    public static bool CheckSave()
+    {
+        return File.Exists(Application.persistentDataPath + "/WeaponsBought.dat");
+    }
+
     public static WeaponsBought LoadWeaponsBought()
     {
         if (File.Exists(Application.persistentDataPath
@@ -49,7 +54,7 @@ public static class Progress
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file =
               File.Open(Application.persistentDataPath
-              + "/WeaponsSelected.dat", FileMode.Open);
+              + "/WeaponsBought.dat", FileMode.Open);
             WeaponsBought weapons = (WeaponsBought)bf.Deserialize(file);
             file.Close();
             return weapons;
@@ -82,34 +87,34 @@ public static class Progress
     [Serializable]
     public class WeaponsSelected
     {
-        public Dictionary<string, WeaponOptionsSelected> WeaponsOptionsSelected;
+        public Dictionary<string, WeaponAttachmentSelected> WeaponsAttachmentsSelected;
     }
 
     [Serializable]
-    public class WeaponOptionsSelected
+    public class WeaponAttachmentSelected
     {
         //public Sprite Sprite;
+        public bool IsSelectedWeapon;
         public int ScopeIndex;
         public int MuzzleIndex;
         public int LaserIndex;
         public int GripIndex;
-        public int MagazineIndex;
     }
 
     [Serializable]
     public class WeaponsBought
     {
-        public Dictionary<string, WeaponOptionsBought> WeaponsOptionsBought;
+        public Dictionary<string, WeaponAttachmentsBought> WeaponsAttachmentsBought;
     }
 
     [Serializable]
-    public class WeaponOptionsBought
+    public class WeaponAttachmentsBought
     {
         //public Sprite[] Sprite;
-        public int[] ScopeIndex;
-        public int[] MuzzleIndex;
-        public int[] LaserIndex;
-        public int[] GripIndex;
-        public int[] MagazineIndex;
+        public bool IsBoughtWeapon;
+        public List<int> ScopeIndex;
+        public List<int> MuzzleIndex;
+        public List<int> LaserIndex;
+        public List<int> GripIndex;
     }
 }

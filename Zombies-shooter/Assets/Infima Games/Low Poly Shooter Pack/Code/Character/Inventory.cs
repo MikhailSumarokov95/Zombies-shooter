@@ -42,12 +42,12 @@ namespace InfimaGames.LowPolyShooterPack
                 weapon.gameObject.SetActive(false);
 
                 var nameWeapon = weapon.GetComponent<Weapon>().WeaponName;
-                if (weaponsSelected.WeaponsOptionsSelected.ContainsKey(nameWeapon))
+                if (weaponsSelected.WeaponsAttachmentsSelected[nameWeapon].IsSelectedWeapon)
                 {
                     weaponsList.Add(weapon);
 
                     weapon.GetComponent<WeaponAttachmentManager>()
-                        .SetAttachment(weaponsSelected.WeaponsOptionsSelected[nameWeapon]);
+                        .SetAttachment(weaponsSelected.WeaponsAttachmentsSelected[nameWeapon]);
                 }    
             }
 
