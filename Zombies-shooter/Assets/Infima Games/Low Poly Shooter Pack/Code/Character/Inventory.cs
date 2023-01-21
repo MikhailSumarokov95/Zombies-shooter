@@ -34,8 +34,6 @@ namespace InfimaGames.LowPolyShooterPack
             var weaponsList = new List<WeaponBehaviour>();
             var weaponsSelected = Progress.LoadWeaponsSelected();
 
-            weaponsList.Add(weapons[0]);
-
             //Disable all weapons. This makes it easier for us to only activate the one we need.
             foreach (WeaponBehaviour weapon in weapons)
             {

@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
     [SerializeField] private TMP_Text currentLevelText;
-    [SerializeField] private Scene[] levels;
-    private int _currentLevel;
+    private int _currentLevel = 1;
 
     private void Start()
     {
