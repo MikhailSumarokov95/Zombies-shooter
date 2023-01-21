@@ -6,9 +6,6 @@ using System.Collections.Generic;
 
 public abstract class SelectorAttachment : MonoBehaviour
 {
-    public Action<int> OnSetAttachment;
-    [SerializeField] private Button nextButton;
-    [SerializeField] private Button previousButton;
     [SerializeField] private Button buyButton;
     [SerializeField] private Button selectButton;
     [SerializeField] private Button selectedButton;

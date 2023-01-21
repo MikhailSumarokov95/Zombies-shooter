@@ -9,9 +9,9 @@ public class Shop : MonoBehaviour
     [SerializeField] private Transform weaponsParentTr;
     [SerializeField] private SelectorAttachment selectorScope;
     [SerializeField] private Button buyWeapon;
-    [SerializeField] private Button selectedWeapon;
     [SerializeField] private Button selectWeapon;
-    
+    [SerializeField] private Button selectedWeapon;
+
     private Weapon[] _weapons;
     private int _currentWeaponNumber;
 
@@ -27,8 +27,6 @@ public class Shop : MonoBehaviour
     [ContextMenu("Save")]
     public void SetDefaultSetting()
     {
-        print("Default");
-
         var weapons = weaponsParentTr.GetComponentsInChildren<Weapon>(true);
 
         //выбраное
