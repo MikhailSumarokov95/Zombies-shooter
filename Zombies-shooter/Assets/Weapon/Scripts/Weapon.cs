@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Bot
 {
-
     public abstract class Weapon : MonoBehaviour
     {
         protected Animator _animator;

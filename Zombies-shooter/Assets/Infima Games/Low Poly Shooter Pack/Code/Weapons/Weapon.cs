@@ -10,6 +10,9 @@ namespace InfimaGames.LowPolyShooterPack
     public class Weapon : WeaponBehaviour
     {
         #region FIELDS SERIALIZED
+
+        [SerializeField]
+        private bool isShop;
         
         [Title(label: "Settings")]
         
@@ -208,6 +211,7 @@ namespace InfimaGames.LowPolyShooterPack
         
         protected override void Awake()
         {
+            if (isShop) return;
             //Get Animator.
             animator = GetComponent<Animator>();
             //Get Attachment Manager.

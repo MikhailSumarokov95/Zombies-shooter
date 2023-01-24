@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private WaveSpawn[] waviesSpawn;
     [SerializeField] private Transform[] enemySpawnPoints;
     [SerializeField] private TMP_Text numberWaveText;
-    private AIBotController[] _currentEnemy;
+    private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
 
     private void Start()
@@ -27,15 +27,15 @@ public class SpawnManager : MonoBehaviour
         {
             _isAllEnemiesKilled = false;
             numberWaveText.text = "Волна" + " " + i.ToString();
-            _currentEnemy = SpawnEnemies(waviesSpawn[i].Enemies);
+            _currentEnemyLife = SpawnEnemies(waviesSpawn[i].Enemies);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
         }
         numberWaveText.text = "Победа";
     }
 
-    private AIBotController[] SpawnEnemies(EnemySpawn[] enemies)
+    private Life[] SpawnEnemies(EnemySpawn[] enemies)
     {
-        var enemy = new List<AIBotController>();
+        var enemy = new List<Life>();
 
         var numberSpawnPoint = 0;
         for (var i = 0; i < enemies.Length; i++)
@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
             for (var j = 0; j < enemies[i].SpawnCount; j++)
             {
                 enemy.Add(Instantiate(enemies[i].Enemy.gameObject, enemySpawnPoints[numberSpawnPoint].position, enemySpawnPoints[numberSpawnPoint].rotation)
-                    .GetComponent<AIBotController>());
+                    .GetComponent<Life>());
                 numberSpawnPoint++;
                 numberSpawnPoint = MathPlus.SawChart(numberSpawnPoint, 0, enemySpawnPoints.Length - 1);
             }
@@ -53,8 +53,8 @@ public class SpawnManager : MonoBehaviour
 
     private bool CheckForkKilledEnemies()
     {
-        foreach (var enemy in _currentEnemy)
-            if (enemy != null) return false;
+        foreach (var enemy in _currentEnemyLife)
+            if (!enemy.IsDid) return false;
 
         return true;
     }

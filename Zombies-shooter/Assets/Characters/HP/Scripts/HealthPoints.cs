@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +23,7 @@ public class HealthPoints : MonoBehaviour
 
     private void Start()
     {
-        healthBar.maxValue = maxHealth;
+        if (healthBar != null) healthBar.maxValue = maxHealth;
         CurrentHealth = maxHealth;
         _life = GetComponent<Life>();
     }
