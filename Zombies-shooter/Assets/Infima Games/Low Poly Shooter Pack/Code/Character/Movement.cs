@@ -163,7 +163,14 @@ namespace InfimaGames.LowPolyShooterPack
         /// Stores the Time.time value when the character last jumped.
         /// </summary>
         private float lastJumpTime;
-        
+
+        #endregion
+
+        #region PROPERTIES
+
+        private bool _isBlockedMove;
+        public bool IsBlockedMove { get { return _isBlockedMove; } set { _isBlockedMove = value; } }
+
         #endregion
 
         #region UNITY FUNCTIONS
@@ -189,6 +196,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// Moves the camera to the character, processes jumping and plays sounds every frame.
         protected override void Update()
         {
+            if (IsBlockedMove) return;
             //Get the equipped weapon!
             equippedWeapon = playerCharacter.GetInventory().GetEquipped();
 

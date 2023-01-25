@@ -43,9 +43,15 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			StartCoroutine(DestroyAfter());
 		}
 
-		//If the bullet collides with anything
-		private void OnCollisionEnter(Collision collision)
+        private void Update()
+        {
+			print("ILife");
+        }
+
+        //If the bullet collides with anything
+        private void OnCollisionEnter(Collision collision)
 		{
+			print(collision?.gameObject.name);
 			//Ignore collisions with other projectiles.
 			if (collision.gameObject.GetComponent<Projectile>() != null)
 				return;

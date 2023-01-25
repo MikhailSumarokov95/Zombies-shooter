@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class SpawnManager : MonoBehaviour
 {
+    public Action<Life[]> OnWaveSpawned;
+    public Action OnWavesOver;
     [SerializeField] private WaveSpawn[] waviesSpawn;
     [SerializeField] private Transform[] enemySpawnPoints;
     [SerializeField] private TMP_Text numberWaveText;
@@ -18,7 +21,7 @@ public class SpawnManager : MonoBehaviour
 
     private void Update()
     {
-        _isAllEnemiesKilled = CheckForkKilledEnemies();
+        _isAllEnemiesKilled = CheckForKilledEnemies();
     }
 
     private IEnumerator StartWaves()
@@ -26,10 +29,12 @@ public class SpawnManager : MonoBehaviour
         for (var i = 0; i < waviesSpawn.Length; i++)
         {
             _isAllEnemiesKilled = false;
-            numberWaveText.text = "Волна" + " " + i.ToString();
+            numberWaveText.text = "Волна" + " " + (i + 1).ToString();
             _currentEnemyLife = SpawnEnemies(waviesSpawn[i].Enemies);
+            OnWaveSpawned?.Invoke(_currentEnemyLife);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
         }
+        OnWavesOver?.Invoke();
         numberWaveText.text = "Победа";
     }
 
@@ -51,7 +56,7 @@ public class SpawnManager : MonoBehaviour
         return enemy.ToArray();
     }
 
-    private bool CheckForkKilledEnemies()
+    private bool CheckForKilledEnemies()
     {
         foreach (var enemy in _currentEnemyLife)
             if (!enemy.IsDid) return false;

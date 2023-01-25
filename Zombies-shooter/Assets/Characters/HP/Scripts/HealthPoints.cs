@@ -24,7 +24,7 @@ public class HealthPoints : MonoBehaviour
     private void Start()
     {
         if (healthBar != null) healthBar.maxValue = maxHealth;
-        CurrentHealth = maxHealth;
+            CurrentHealth = maxHealth;
         _life = GetComponent<Life>();
     }
 
@@ -50,7 +50,7 @@ public class HealthPoints : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetTrigger("Did");
-            GetComponent<Life>().OnDid();
+            GetComponent<Life>().Did();
         }
     }
 }

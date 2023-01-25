@@ -725,47 +725,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 858268102, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 963194228, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1266027653, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453642503, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453642505, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453642506, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: waviesSpawn.Array.data[0].Enemies.Array.data[0].SpawnCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453642506, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: waviesSpawn.Array.data[0].Enemies.Array.data[1].SpawnCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608979589, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711380272, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 1711380272, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2090823787, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -773,11 +732,6 @@ PrefabInstance:
     - target: {fileID: 2090823787, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 582592632861252991, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2826181174958364908, guid: c660bddf8f11cc14ba44362a07d88cc5,
         type: 3}
@@ -838,31 +792,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2826181176175516387, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2826181176175516387, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_Lightmapping
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2826181176175516387, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2826181176175516388, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755880664152063295, guid: c660bddf8f11cc14ba44362a07d88cc5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c660bddf8f11cc14ba44362a07d88cc5, type: 3}
