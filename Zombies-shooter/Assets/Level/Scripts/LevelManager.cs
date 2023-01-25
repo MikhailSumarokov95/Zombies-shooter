@@ -45,13 +45,20 @@ public class LevelManager : MonoBehaviour
     {
         gameOverPanel.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        FindObjectOfType<Movement>().IsBlockedMove = true;
+        //FindObjectOfType<Movement>().IsBlockedMove = true;
+        OnPause(true);
     }
 
     public void SetPause(bool value)
     {
         pausePanel.gameObject.SetActive(value);
+        OnPause(value);
+    }
+
+    private void OnPause(bool value)
+    {
         IsPause = value;
         Time.timeScale = value ? 0 : 1;
+        Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
     }
 }

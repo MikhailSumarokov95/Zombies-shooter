@@ -164,6 +164,8 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private float lastJumpTime;
 
+        private LevelManager _levelManager;
+
         #endregion
 
         #region PROPERTIES
@@ -191,12 +193,14 @@ namespace InfimaGames.LowPolyShooterPack
             
             //Save the default height.
             standingHeight = controller.height;
+
+            _levelManager = FindObjectOfType<LevelManager>();
         }
 
         /// Moves the camera to the character, processes jumping and plays sounds every frame.
         protected override void Update()
         {
-            if (IsBlockedMove) return;
+            if (_levelManager.IsPause) return;
             //Get the equipped weapon!
             equippedWeapon = playerCharacter.GetInventory().GetEquipped();
 

@@ -17,6 +17,6 @@ public class Life : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
-        FindObjectOfType<KillCounter>().AddKilled();
+        if (!CompareTag("Player")) FindObjectOfType<KillCounter>().AddKilled();
     }
 }
