@@ -7,7 +7,8 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 {
 	public class ProjectileScript : MonoBehaviour
 	{
-
+		[SerializeField] private int damage = 20;
+		
 		private bool explodeSelf;
 
 		[Tooltip("Enable to use constant force, instead of force at launch only")]
@@ -198,6 +199,13 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				//Add force to nearby rigidbodies
 				if (rb != null)
 					rb.AddExplosionForce(power * 50, explosionPos, radius, 3.0F);
+
+				if (hit.GetComponent<Collider>().CompareTag("Enemy") &&
+					!hit.GetComponent<HealthPoints>().IsHit)
+				{
+					hit.GetComponent<HealthPoints>().TakeDamage(damage);
+					hit.GetComponent<HealthPoints>().IsHit = true; 
+				}
 
 				//If the explosion hit the tags "Target", and "isHit" is false
 				if (hit.GetComponent<Collider>().tag == "Target" &&

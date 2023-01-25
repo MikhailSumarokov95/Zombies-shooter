@@ -7,6 +7,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 {
 	public class GrenadeScript : MonoBehaviour
 	{
+		[SerializeField] private int damage = 20;
 
 		[Header("Timer")]
 		//Time before the grenade explodes
@@ -98,8 +99,15 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				if (rb != null)
 					rb.AddExplosionForce(power * 5, explosionPos, radius, 3.0F);
 
+				else if (hit.GetComponent<Collider>().CompareTag("Enemy") &&
+					!hit.GetComponent<HealthPoints>().IsHit)
+				{
+					hit.GetComponent<HealthPoints>().TakeDamage(damage);
+					hit.GetComponent<HealthPoints>().IsHit = true;
+				}
+
 				//If the explosion hits "Target" tag and isHit is false
-				if (hit.GetComponent<Collider>().tag == "Target"
+				else if (hit.GetComponent<Collider>().tag == "Target"
 				    && hit.gameObject.GetComponent<TargetScript>().isHit == false)
 				{
 					//Toggle "isHit" on target object
@@ -107,14 +115,14 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				}
 
 				//If the explosion hits "ExplosiveBarrel" tag
-				if (hit.GetComponent<Collider>().tag == "ExplosiveBarrel")
+				else if (hit.GetComponent<Collider>().tag == "ExplosiveBarrel")
 				{
 					//Toggle "explode" on explosive barrel object
 					hit.gameObject.GetComponent<ExplosiveBarrelScript>().explode = true;
 				}
 
 				//If the explosion hits "GasTank" tag
-				if (hit.GetComponent<Collider>().tag == "GasTank")
+				else if (hit.GetComponent<Collider>().tag == "GasTank")
 				{
 					//Toggle "isHit" on gas tank object
 					hit.gameObject.GetComponent<GasTankScript>().isHit = true;

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,9 +6,15 @@ public class HealthPoints : MonoBehaviour
 {
     [SerializeField] private int maxHealth;
     [SerializeField] private Slider healthBar;
+    [SerializeField] private int currentHealth;
     private Life _life;
 
-    [SerializeField] private int currentHealth;
+    private bool _isHit;
+    public bool IsHit { get { return _isHit;  } set { _isHit = value; } }
+
+    private bool _corotuneDelayTimerAfterHit;
+
+
     public int CurrentHealth 
     { 
         get 
@@ -34,6 +41,8 @@ public class HealthPoints : MonoBehaviour
         var remainingHealth = CurrentHealth - damage;
         if (remainingHealth <= 0) ToDead();
         CurrentHealth = remainingHealth;
+        if (!_corotuneDelayTimerAfterHit) 
+            StartCoroutine(DelayTimerAfterHit());
     }
 
     public void TakeHealth(int health)
@@ -52,5 +61,14 @@ public class HealthPoints : MonoBehaviour
             GetComponent<Animator>().SetTrigger("Did");
             GetComponent<Life>().Did();
         }
+    }
+
+    private IEnumerator DelayTimerAfterHit()
+    {
+        _corotuneDelayTimerAfterHit = true;
+        IsHit = true;
+        yield return new WaitForSeconds(1f);
+        _corotuneDelayTimerAfterHit = false;
+        IsHit = false;
     }
 }
