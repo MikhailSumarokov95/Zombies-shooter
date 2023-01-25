@@ -1,5 +1,6 @@
 using UnityEngine;
 using Bot;
+
 public class AIBotController : MonoBehaviour
 {
     [SerializeField] private Transform eyesTr;
@@ -9,6 +10,7 @@ public class AIBotController : MonoBehaviour
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
     private Weapon _weapon;
+    private LevelManager _levelManager;
 
     private void Start()
     {
@@ -16,11 +18,15 @@ public class AIBotController : MonoBehaviour
         _targetCol = _target.GetComponent<CapsuleCollider>();
         _botMove = GetComponent<BotMove>();
         _weapon = transform.GetComponentInChildren<Weapon>();
+        _levelManager = FindObjectOfType<LevelManager>();
     }
 
     private void Update()
     {
+        if (_levelManager.IsPause) return;
+
         if (_weapon.IsAttacking) return;
+
         if (DetermineIfThereObstaclesBetweenTargetAndBot() && AttackDistanceCheck())
             if (TargetVisibilityCheck()) Attack();
             else _botMove.RotateTowardsTarget();

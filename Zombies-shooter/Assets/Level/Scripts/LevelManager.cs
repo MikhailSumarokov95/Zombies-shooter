@@ -6,7 +6,12 @@ using InfimaGames.LowPolyShooterPack;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private Image gameOverPanel;
+    [SerializeField] private Image pausePanel;
     private SpawnManager _spawnManager;
+
+    private bool _isPause;
+
+    public bool IsPause { get { return _isPause; } private set { _isPause = value; } }
 
     [SerializeField] private bool isMobile;
     public bool IsMobile { get { return isMobile; } private set { isMobile = value; } }
@@ -17,10 +22,13 @@ public class LevelManager : MonoBehaviour
         _spawnManager.OnWavesOver += GameOver;
     }
 
-
     private void OnDisable()
     {
         _spawnManager.OnWavesOver -= GameOver;
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) SetPause(!IsPause);
     }
 
     public void ReturnToMenu()
@@ -38,5 +46,12 @@ public class LevelManager : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         FindObjectOfType<Movement>().IsBlockedMove = true;
+    }
+
+    public void SetPause(bool value)
+    {
+        pausePanel.gameObject.SetActive(value);
+        IsPause = value;
+        Time.timeScale = value ? 0 : 1;
     }
 }
