@@ -11,6 +11,8 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 	{
 		[SerializeField] private int damage = 5;
 
+		[SerializeField] private int speed = 100;
+
 		[Range(5, 100)]
 		[Tooltip("After how long time should the bullet prefab be destroyed?")]
 		public float destroyAfter;
@@ -42,11 +44,6 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			//Start destroy timer
 			StartCoroutine(DestroyAfter());
 		}
-
-        private void Update()
-        {
-			print("ILife");
-        }
 
         //If the bullet collides with anything
         private void OnCollisionEnter(Collision collision)
@@ -82,8 +79,16 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				Destroy(gameObject);
 			}
 
+			if (collision.transform.CompareTag("Enemy"))
+			{
+				collision.transform.gameObject.GetComponent
+					<HealthPoints>().TakeDamage(damage);
+
+				Destroy(gameObject);
+			}
+
 			//If bullet collides with "Blood" tag
-			if (collision.transform.tag == "Blood")
+			else if (collision.transform.CompareTag("Blood"))
 			{
 				//Instantiate random impact prefab from array
 				Instantiate(bloodImpactPrefabs[Random.Range
@@ -94,7 +99,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "Metal" tag
-			if (collision.transform.tag == "Metal")
+			else if (collision.transform.CompareTag("Metal"))
 			{
 				//Instantiate random impact prefab from array
 				Instantiate(metalImpactPrefabs[Random.Range
@@ -105,7 +110,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "Dirt" tag
-			if (collision.transform.tag == "Dirt")
+			else if (collision.transform.CompareTag("Dirt"))
 			{
 				//Instantiate random impact prefab from array
 				Instantiate(dirtImpactPrefabs[Random.Range
@@ -116,7 +121,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "Concrete" tag
-			if (collision.transform.tag == "Concrete")
+			else if (collision.transform.CompareTag("Concrete"))
 			{
 				//Instantiate random impact prefab from array
 				Instantiate(concreteImpactPrefabs[Random.Range
@@ -127,7 +132,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "Target" tag
-			if (collision.transform.tag == "Target")
+			else if (collision.transform.CompareTag("Target"))
 			{
 				//Toggle "isHit" on target object
 				collision.transform.gameObject.GetComponent
@@ -137,7 +142,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "ExplosiveBarrel" tag
-			if (collision.transform.tag == "ExplosiveBarrel")
+			else if (collision.transform.CompareTag("ExplosiveBarrel"))
 			{
 				//Toggle "explode" on explosive barrel object
 				collision.transform.gameObject.GetComponent
@@ -147,7 +152,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//If bullet collides with "GasTank" tag
-			if (collision.transform.tag == "GasTank")
+			else if (collision.transform.CompareTag("GasTank"))
 			{
 				//Toggle "isHit" on gas tank object
 				collision.transform.gameObject.GetComponent
@@ -155,14 +160,6 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				//Destroy bullet object
 				Destroy(gameObject);
 			}
-
-			if (collision.transform.CompareTag("Enemy"))
-            {
-				collision.transform.gameObject.GetComponent
-					<HealthPoints>().TakeDamage(damage);
-
-				Destroy(gameObject);
-            }
 		}
 
 		private IEnumerator DestroyTimer()
