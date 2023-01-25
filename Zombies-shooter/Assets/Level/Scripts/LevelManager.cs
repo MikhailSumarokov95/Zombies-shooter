@@ -59,6 +59,6 @@ public class LevelManager : MonoBehaviour
     {
         IsPause = value;
         Time.timeScale = value ? 0 : 1;
-        Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.lockState = value ? CursorLockMode.None : CursorLockMode.Locked;
     }
 }
