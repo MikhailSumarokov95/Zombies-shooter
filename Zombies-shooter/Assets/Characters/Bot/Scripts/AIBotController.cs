@@ -23,7 +23,7 @@ public class AIBotController : MonoBehaviour
 
     private void Update()
     {
-        if (_levelManager.IsPause) return;
+        if (_levelManager.StateGame != LevelManager.State.Game) return;
 
         if (_weapon.IsAttacking) return;
 

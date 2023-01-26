@@ -3,36 +3,47 @@ using UnityEngine;
 public class Money : MonoBehaviour
 {
     [SerializeField] private IconMoney[] iconsMoney;
+
     private int _amountOfMoney;
+    public int AmountOfMoney
+    {
+        get
+        {
+            return _amountOfMoney;
+        }
+
+        set
+        { 
+            _amountOfMoney = value;
+            PlayerPrefs.SetInt("money", _amountOfMoney);
+            Display—hangeMoney(_amountOfMoney);
+        }
+    }
 
     private void Start()
     {
-        _amountOfMoney = Progress.LoadMoney();
+        AmountOfMoney = PlayerPrefs.GetInt("money", 0);
     }
 
     public bool SpendMoney(int value)
     {
-        if (_amountOfMoney < value) return false;
+        if (AmountOfMoney < value) return false;
         else
         {
-            _amountOfMoney -= value;
-            Display—hangeMoney(- value);
-            Progress.SaveMoney(_amountOfMoney);
+            AmountOfMoney -= value;
             return true;
         }
     }
 
     public void MakeMoney(int value)
     {
-        _amountOfMoney += value;
-        Display—hangeMoney(value);
-        Progress.SaveMoney(_amountOfMoney);
+        AmountOfMoney += value;
     }
 
     private void Display—hangeMoney(int value)
     {
         if (iconsMoney == null) return;
         foreach (var icon in iconsMoney)
-            icon.ChangeAmountOfMoney(value);
+            icon.SetMoney(value);
     }
 }

@@ -200,7 +200,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// Moves the camera to the character, processes jumping and plays sounds every frame.
         protected override void Update()
         {
-            if (_levelManager.IsPause) return;
+            if(_levelManager.StateGame != LevelManager.State.Game) return;
             //Get the equipped weapon!
             equippedWeapon = playerCharacter.GetInventory().GetEquipped();
 
