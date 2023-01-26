@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 37
+  controlID: 68
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 140
+  controlID: 63
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 141
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -474,22 +474,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles
+    - Assets/Infima Games/Low Poly Shooter Pack/Audio/Mixers
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Projectiles
+  - Assets/Infima Games/Low Poly Shooter Pack/Audio/Mixers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ykpon\Desktop\Unity\Zombies-shooter\Zombies-shooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 210}
-    m_SelectedIDs: 72660800
-    m_LastClickedID: 550514
-    m_ExpandedIDs: 00000000bed00100c0d00100c2d00100c4d00100c6d00100c8d00100cad00100ccd00100ced00100d0d00100d2d00100d4d00100d6d00100d8d00100dad00100dcd00100ded00100e0d00100e2d00100e4d00100e6d00100e8d00100ead0010042d101004cd1010054d10100
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 22400200
+    m_LastClickedID: 147490
+    m_ExpandedIDs: 0000000030d1010032d1010034d1010036d1010038d101003cd101003ed1010044d1010046d1010048d101004ad101004cd101004ed1010054d1010056d1010058d101005ad101005cd101005ed1010062d101009ad10100aed10100b2d10100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bed00100c0d00100c2d00100c4d00100c6d00100c8d00100cad00100ccd00100ced00100d0d00100d2d00100d4d00100d6d00100d8d00100dad00100dcd00100ded00100e0d00100e2d00100e4d00100e6d00100e8d00100ead00100
+    m_ExpandedIDs: 0000000030d1010032d1010034d1010036d1010038d101003ad101003cd101003ed1010040d1010042d1010044d1010046d1010048d101004ad101004cd101004ed1010050d1010052d1010054d1010056d1010058d101005ad101005cd101005ed1010060d1010062d10100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -545,7 +545,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000042cb0000aa8b0000e68c00009a940000483b050074830000ea820000e8be030066bf03007abf0300a2bf030000000000d81e0500701f05005ce70a00dc6d0000
+    m_ExpandedInstanceIDs: c623000042cb0000aa8b0000e68c00009a940000483b050074830000ea820000e8be030066bf03007abf0300a2bf030000000000d81e0500701f05005ce70a00dc6d0000e63e0200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -905,7 +905,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.14706714, y: 0.72303605, z: -0.16229989, w: -0.6551746}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -944,9 +944,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 88007bffcc10e7ff28f5ffffb6faffffe2faffff00fbffff02fbffff247f1900168f1900a2d11900c2e01900
+      m_SelectedIDs: 7673ffff
+      m_LastClickedID: -35978
+      m_ExpandedIDs: 00fbffff02fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
