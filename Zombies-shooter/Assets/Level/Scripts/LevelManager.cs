@@ -52,6 +52,7 @@ public class LevelManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        OnPause(false);
     }
 
     public void SetActiveWinPanel(bool value)
