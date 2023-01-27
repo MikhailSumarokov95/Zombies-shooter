@@ -61,25 +61,30 @@ public class LevelManager : MonoBehaviour
 
     public void SetActiveWinPanel(bool value)
     {
+        if (value) StateGame = State.GameOver;
+        else StateGame = State.Game;
         gameOverPanel.gameObject.SetActive(value);
         OnPause(value);
     }
 
     public void SetActivePausePanel(bool value)
     {
+        if (value) StateGame = State.Pause;
+        else StateGame = State.Game;
         pausePanel.gameObject.SetActive(value);
         OnPause(value);
     }
 
     public void SetActiveWaveEndPanel(bool value)
     {
+        if (value) StateGame = State.WaveEnd;
+        else StateGame = State.Game;
         waveEndPanel.gameObject.SetActive(value);
         OnPause(value);
     }
 
     private void WinGame()
     {
-        StateGame = State.GameOver;
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
         FindObjectOfType<Level>().NextLevel();
@@ -87,14 +92,11 @@ public class LevelManager : MonoBehaviour
 
     private void EndWave()
     {
-        StateGame = State.WaveEnd;
         SetActiveWaveEndPanel(true);
     }
 
     private void OnPause(bool value)
     {
-        if (value) StateGame = State.Pause;
-        else StateGame = State.Game;
         Time.timeScale = value ? 0 : 1;
         Cursor.lockState = value ? CursorLockMode.None : CursorLockMode.Locked;
     }
