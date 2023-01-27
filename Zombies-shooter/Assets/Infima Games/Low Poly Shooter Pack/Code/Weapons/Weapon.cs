@@ -11,8 +11,13 @@ namespace InfimaGames.LowPolyShooterPack
     {
         #region FIELDS SERIALIZED
 
+        [Title(label: "Shop")]
+
         [SerializeField]
         private bool isShop;
+
+        [SerializeField]
+        private int cost;
         
         [Title(label: "Settings")]
         
@@ -145,6 +150,8 @@ namespace InfimaGames.LowPolyShooterPack
         #region PROPERTIES
 
         public string WeaponName { get { return weaponName; } set { weaponName = value; } }
+
+        public int Cost { get { return cost; } set { cost = value; } }
 
         #endregion
 

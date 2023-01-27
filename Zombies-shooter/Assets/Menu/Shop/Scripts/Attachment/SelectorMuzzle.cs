@@ -12,6 +12,8 @@ public class SelectorMuzzle : SelectorAttachment
 
     public override void BuyAttachment()
     {
+        if (!_money.SpendMoney(cast)) return;
+
         var weaponsBought = _shop.WeaponsBought;
         weaponsBought.WeaponsAttachmentsBought[_shop.CurrentWeaponName].MuzzleIndex.Add(_currentAttachment);
         _shop.WeaponsBought = weaponsBought;

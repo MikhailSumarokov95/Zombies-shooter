@@ -3,10 +3,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using InfimaGames.LowPolyShooterPack;
 using System.Collections.Generic;
+using TMPro;
 
 public abstract class SelectorAttachment : MonoBehaviour
 {
+    [SerializeField] protected int cast;
     [SerializeField] private Button buyButton;
+    [SerializeField] protected TMP_Text buyText;
     [SerializeField] private Button selectButton;
     [SerializeField] private Button selectedButton;
     protected List<int> _weaponAttachmentBought;
@@ -15,6 +18,12 @@ public abstract class SelectorAttachment : MonoBehaviour
     protected Shop _shop;
     protected WeaponAttachmentManager _weaponAttachmentManager;
     protected int _countAttachment;
+    protected Money _money;
+
+    private void Start()
+    {
+        _money = FindObjectOfType<Money>();
+    }
 
     public void AwakeSelectorAttachment(List<int> weaponAttachmentBought, int weaponAttachmentSelected, WeaponAttachmentManager weaponAttachmentManager, Shop shop)
     {
@@ -57,6 +66,7 @@ public abstract class SelectorAttachment : MonoBehaviour
         }
 
         buyButton.gameObject.SetActive(true);
+        buyText.text = cast.ToString();
     }
 
     public abstract void SetActiveAttachment(int value);

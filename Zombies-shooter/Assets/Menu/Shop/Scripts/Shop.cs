@@ -3,6 +3,7 @@ using InfimaGames.LowPolyShooterPack;
 using System;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 
 public class Shop : MonoBehaviour
 {
@@ -11,12 +12,15 @@ public class Shop : MonoBehaviour
     [SerializeField] private SelectorAttachment selectorMuzzle;
     [SerializeField] private SelectorAttachment selectorLaser;
     [SerializeField] private SelectorAttachment selectorGrip;
-    [SerializeField] private Button buyWeapon;
-    [SerializeField] private Button selectWeapon;
-    [SerializeField] private Button selectedWeapon;
+    [SerializeField] private Button buyWeaponButton;
+    [SerializeField] private TMP_Text bueWeaponText;
+    [SerializeField] private Button selectWeaponButton;
+    [SerializeField] private Button selectedWeaponButton;
 
     private Weapon[] _weapons;
     private int _currentWeaponNumber;
+    private int _cost;
+    private Money _money;
 
     private string _currentWeaponName;
     public string CurrentWeaponName { get { return _currentWeaponName; } set { _currentWeaponName = value; } }
@@ -58,6 +62,7 @@ public class Shop : MonoBehaviour
         _weaponsBought = Progress.LoadWeaponsBought();
         _weaponsSelected = Progress.LoadWeaponsSelected();
         InitButtons();
+        _money = FindObjectOfType<Money>();
     }
 
     public void ScrollThroughWeapons(int direction)
@@ -68,11 +73,14 @@ public class Shop : MonoBehaviour
         _weapons[numberNext].gameObject.SetActive(true);
         _currentWeaponNumber = numberNext;
         _currentWeaponName = _weapons[_currentWeaponNumber].WeaponName;
+        _cost = _weapons[_currentWeaponNumber].Cost;
         InitButtons();
     }
 
     public void BuyWeapon()
     {
+        if (!_money.SpendMoney(_cost)) return;
+
         var weaponsBought = WeaponsBought;
         weaponsBought.WeaponsAttachmentsBought[_currentWeaponName].IsBoughtWeapon = true;
         WeaponsBought = weaponsBought;
@@ -95,25 +103,26 @@ public class Shop : MonoBehaviour
 
     private void InitButtons()
     {
-        buyWeapon.gameObject.SetActive(false);
-        selectedWeapon.gameObject.SetActive(false);
-        selectWeapon.gameObject.SetActive(false);
+        buyWeaponButton.gameObject.SetActive(false);
+        selectedWeaponButton.gameObject.SetActive(false);
+        selectWeaponButton.gameObject.SetActive(false);
 
         if (WeaponsSelected.WeaponsAttachmentsSelected[_currentWeaponName].IsSelectedWeapon)
         {
-            selectedWeapon.gameObject.SetActive(true);
+            selectedWeaponButton.gameObject.SetActive(true);
             SetActiveAttachment(true);
         }
 
         else if (WeaponsBought.WeaponsAttachmentsBought[_currentWeaponName].IsBoughtWeapon)
         {
-            selectWeapon.gameObject.SetActive(true);
+            selectWeaponButton.gameObject.SetActive(true);
             SetActiveAttachment(true);
         }
 
         else
         {
-            buyWeapon.gameObject.SetActive(true);
+            buyWeaponButton.gameObject.SetActive(true);
+            bueWeaponText.text = _cost.ToString();
             SetActiveAttachment(false);
         }
     }
