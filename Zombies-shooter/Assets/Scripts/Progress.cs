@@ -84,6 +84,16 @@ public static class Progress
         return PlayerPrefs.GetInt("level", 1);
     }
 
+    public static void SaveBattlePass()
+    {
+        PlayerPrefs.SetInt("battlePass", 1);
+    }
+
+    public static bool LoadBattlePass()
+    {
+        return PlayerPrefs.GetInt("battlePass", 0) == 1 ? true : false;
+    }
+
     [Serializable]
     public class WeaponsSelected
     {

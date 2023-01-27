@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using InfimaGames.LowPolyShooterPack;
 
 public class LevelManager : MonoBehaviour
 {
@@ -35,6 +34,11 @@ public class LevelManager : MonoBehaviour
     {
         _spawnManager.OnWavesOver -= WinGame;
         _spawnManager.OnWaveEnd -= EndWave;
+    }
+
+    private void Start()
+    {
+        FindObjectOfType<BattlePassRewarder>(true).Awake();
     }
 
     private void Update()
@@ -78,6 +82,7 @@ public class LevelManager : MonoBehaviour
         StateGame = State.GameOver;
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
+        FindObjectOfType<Level>().NextLevel();
     }
 
     private void EndWave()

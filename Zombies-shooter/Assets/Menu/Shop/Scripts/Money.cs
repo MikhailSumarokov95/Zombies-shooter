@@ -4,25 +4,23 @@ public class Money : MonoBehaviour
 {
     [SerializeField] private IconMoney[] iconsMoney;
 
-    private int _amountOfMoney;
     public int AmountOfMoney
     {
         get
         {
-            return _amountOfMoney;
+            return Progress.LoadMoney();
         }
 
         set
         { 
-            _amountOfMoney = value;
-            PlayerPrefs.SetInt("money", _amountOfMoney);
-            Display—hangeMoney(_amountOfMoney);
+            Progress.SaveMoney(value);
+            Display—hangeMoney(value);
         }
     }
 
     private void Start()
     {
-        AmountOfMoney = PlayerPrefs.GetInt("money", 0);
+        AmountOfMoney = Progress.LoadMoney();
     }
 
     public bool SpendMoney(int value)

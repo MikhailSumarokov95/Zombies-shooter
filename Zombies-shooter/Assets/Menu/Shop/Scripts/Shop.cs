@@ -55,14 +55,18 @@ public class Shop : MonoBehaviour
         } 
     }
 
+
     private void Awake()
     {
-        if (!Progress.CheckSave()) SetDefaultSetting();
+        _money = FindObjectOfType<Money>();
+    }
+
+    private void OnEnable()
+    {
         StartInitWeapons();
         _weaponsBought = Progress.LoadWeaponsBought();
         _weaponsSelected = Progress.LoadWeaponsSelected();
         InitButtons();
-        _money = FindObjectOfType<Money>();
     }
 
     public void ScrollThroughWeapons(int direction)

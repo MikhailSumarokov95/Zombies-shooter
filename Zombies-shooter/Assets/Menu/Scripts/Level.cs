@@ -5,16 +5,22 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
     [SerializeField] private TMP_Text currentLevelText;
-    private int _currentLevel = 1;
+    public int CurrentLevel { get { return Progress.LoadLevel(); } set { Progress.SaveLevel(value); } }
 
     private void Start()
     {
-        _currentLevel = Progress.LoadLevel();
-        currentLevelText.text = _currentLevel.ToString();
+        currentLevelText.text = CurrentLevel.ToString();
     }
+
+    [ContextMenu("NextLevel")]
+    public void NextLevel()
+    {
+        CurrentLevel++;
+    }
+
 
     public void StartGame()
     {
-        SceneManager.LoadScene(_currentLevel);
+        SceneManager.LoadScene(CurrentLevel);
     }
 }
