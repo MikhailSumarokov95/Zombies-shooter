@@ -22,14 +22,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private int equippedIndex = -1;
 
-        private Progress.WeaponsBought _weaponsBought;
-
         #endregion
-
-        //private void OnDisable()
-        //{
-        //    equipped.OnReloaded -= SaveAmmunitionSum;
-        //}
 
         #region METHODS
 
@@ -40,7 +33,6 @@ namespace InfimaGames.LowPolyShooterPack
 
             var weaponsList = new List<WeaponBehaviour>();
             var weaponsSelected = Progress.LoadWeaponsSelected();
-            _weaponsBought = Progress.LoadWeaponsBought();
             
             foreach (WeaponBehaviour weapon in weapons)
             {
@@ -54,8 +46,6 @@ namespace InfimaGames.LowPolyShooterPack
 
                     weapon.GetComponent<WeaponAttachmentManager>()
                         .SetAttachment(weaponsSelected.WeaponsAttachmentsSelected[nameWeapon]);
-
-                    //weapon.AmmunitionSum = _weaponsBought.WeaponsAttachmentsBought[nameWeapon].AmmunitionSum;
                 }    
             }
 
@@ -89,8 +79,6 @@ namespace InfimaGames.LowPolyShooterPack
             equipped = weapons[equippedIndex];
             //Activate the newly-equipped weapon.
             equipped.gameObject.SetActive(true);
-
-            //equipped.OnReloaded += SaveAmmunitionSum;
 
             //Return.
             return equipped;

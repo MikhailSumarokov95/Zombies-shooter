@@ -211,24 +211,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override string WeaponName { get { return weaponName; } set { weaponName = value; } }
 
-        public override int Cost { get { return cost; } set { cost = value; } }
-
-        //public override int AmmunitionSum 
-        //{ 
-        //    get 
-        //    {
-        //        if (magazineBehaviour == null)
-        //            magazineBehaviour = attachmentManager.GetEquippedMagazine();
-        //        return magazineBehaviour.AmmunitionSum; 
-        //    } 
-
-        //    set 
-        //    { 
-        //        if (magazineBehaviour == null)
-        //            magazineBehaviour = attachmentManager.GetEquippedMagazine();
-        //        magazineBehaviour.AmmunitionSum = value;
-        //    } 
-        //}
+        public override int Cost { get { return cost; } set { cost = value; } } 
 
         #endregion
 
@@ -259,7 +242,6 @@ namespace InfimaGames.LowPolyShooterPack
             //Get Muzzle.
             muzzleBehaviour = attachmentManager.GetEquippedMuzzle();
 
-            //if (magazineBehaviour == null)
             magazineBehaviour = attachmentManager.GetEquippedMagazine();
 
             //Get Laser.

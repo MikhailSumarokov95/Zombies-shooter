@@ -4188,7 +4188,7 @@ GameObject:
   - component: {fileID: -8204612207055816312}
   - component: {fileID: -6149327533416916791}
   m_Layer: 0
-  m_Name: Enemy 1 Animation
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4336,6 +4336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyesTr: {fileID: 7502182635557834298}
   angleVisibility: 5
+  maxSpeed: 1.5
 --- !u!114 &8566046508329525062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4359,7 +4360,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.3
-  m_Speed: 2
+  m_Speed: 2.6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 100

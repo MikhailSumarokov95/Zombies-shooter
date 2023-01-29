@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 867285677361303534, guid: 7d3381e8356e4b44b8406cce07830c2f,
+        type: 3}
+      propertyPath: _distanceAttack
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032802377920406146, guid: 7d3381e8356e4b44b8406cce07830c2f,
+        type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 5361477119484682194, guid: 7d3381e8356e4b44b8406cce07830c2f,
         type: 3}
       propertyPath: m_Name
@@ -82,5 +92,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5419531198679444212, guid: 7d3381e8356e4b44b8406cce07830c2f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dbe79a9b9a7b3b5489f013faef04e70a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d3381e8356e4b44b8406cce07830c2f, type: 3}

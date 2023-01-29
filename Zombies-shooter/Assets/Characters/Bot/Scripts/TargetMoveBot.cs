@@ -7,7 +7,6 @@ public class TargetMoveBot : MonoBehaviour
         if (gameObject.CompareTag("Enemy")) return GameObject.FindGameObjectWithTag("Player").transform;
         else
         { 
-            print("null");
             return null;
         }
     }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using Bot;
 
 public class AIBotController : MonoBehaviour
@@ -6,6 +7,7 @@ public class AIBotController : MonoBehaviour
     [SerializeField] private Transform eyesTr;
     [Range(0f, 30f)]
     [SerializeField] private float angleVisibility = 5f;
+    [SerializeField] private float maxSpeed = 1.5f;
     private Transform _target;
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
@@ -19,6 +21,7 @@ public class AIBotController : MonoBehaviour
         _botMove = GetComponent<BotMove>();
         _weapon = transform.GetComponentInChildren<Weapon>();
         _levelManager = FindObjectOfType<LevelManager>();
+        RandomizerSpeed();
     }
 
     private void Update()
@@ -81,5 +84,12 @@ public class AIBotController : MonoBehaviour
     {
         _botMove.StopRun();
         _weapon.Attack(_target.gameObject);
+    }
+
+    private void RandomizerSpeed()
+    {
+        var speed = Random.Range(1, maxSpeed);
+        GetComponent<Animator>().speed *= speed;
+        GetComponent<NavMeshAgent>().speed *= speed;
     }
 }
