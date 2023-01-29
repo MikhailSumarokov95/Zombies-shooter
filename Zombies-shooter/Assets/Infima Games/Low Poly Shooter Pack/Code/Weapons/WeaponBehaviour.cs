@@ -7,9 +7,7 @@ namespace InfimaGames.LowPolyShooterPack
 {
     public abstract class WeaponBehaviour : MonoBehaviour
     {
-        public Action OnReloaded;
-
-        public abstract int AmmunitionSum { get; set; }
+        //public abstract int AmmunitionSum { get; set; }
 
         public abstract string WeaponName { get; set; }
 
@@ -173,7 +171,9 @@ namespace InfimaGames.LowPolyShooterPack
         /// Returns the weapon's attachment manager component.
         /// </summary>
         public abstract WeaponAttachmentManagerBehaviour GetAttachmentManager();
-        
+
+        public abstract MagazineBehaviour GetMagazineBehaviour();
+
         #endregion
 
         #region METHODS

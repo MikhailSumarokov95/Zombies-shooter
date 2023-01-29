@@ -1,6 +1,5 @@
 ﻿//Copyright 2022, Infima Games. All Rights Reserved.
 
-using System;
 using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
@@ -204,6 +203,8 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private Transform playerCamera;
 
+        private Progress.WeaponsBought _weaponsBought;
+
         #endregion
 
         #region PROPERTIES
@@ -212,22 +213,22 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override int Cost { get { return cost; } set { cost = value; } }
 
-        public override int AmmunitionSum 
-        { 
-            get 
-            {
-                if (magazineBehaviour == null)
-                    magazineBehaviour = attachmentManager.GetEquippedMagazine();
-                return magazineBehaviour.AmmunitionSum; 
-            } 
+        //public override int AmmunitionSum 
+        //{ 
+        //    get 
+        //    {
+        //        if (magazineBehaviour == null)
+        //            magazineBehaviour = attachmentManager.GetEquippedMagazine();
+        //        return magazineBehaviour.AmmunitionSum; 
+        //    } 
 
-            set 
-            { 
-                if (magazineBehaviour == null)
-                    magazineBehaviour = attachmentManager.GetEquippedMagazine();
-                magazineBehaviour.AmmunitionSum = value;
-            } 
-        }
+        //    set 
+        //    { 
+        //        if (magazineBehaviour == null)
+        //            magazineBehaviour = attachmentManager.GetEquippedMagazine();
+        //        magazineBehaviour.AmmunitionSum = value;
+        //    } 
+        //}
 
         #endregion
 
@@ -258,8 +259,8 @@ namespace InfimaGames.LowPolyShooterPack
             //Get Muzzle.
             muzzleBehaviour = attachmentManager.GetEquippedMuzzle();
 
-            if (magazineBehaviour == null)
-                magazineBehaviour = attachmentManager.GetEquippedMagazine();
+            //if (magazineBehaviour == null)
+            magazineBehaviour = attachmentManager.GetEquippedMagazine();
 
             //Get Laser.
             laserBehaviour = attachmentManager.GetEquippedLaser();
@@ -267,6 +268,11 @@ namespace InfimaGames.LowPolyShooterPack
             gripBehaviour = attachmentManager.GetEquippedGrip();
 
             #endregion
+
+            _weaponsBought = Progress.LoadWeaponsBought();
+
+            magazineBehaviour.AmmunitionSum = 
+                _weaponsBought.WeaponsAttachmentsBought[WeaponName].AmmunitionSum;
 
             //Max Out Ammo.
             ammunitionCurrent = magazineBehaviour.GetAmmunitionTotal();
@@ -428,6 +434,8 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         public override WeaponAttachmentManagerBehaviour GetAttachmentManager() => attachmentManager;
 
+        public override MagazineBehaviour GetMagazineBehaviour() => magazineBehaviour;
+
         #endregion
 
         #region METHODS
@@ -498,7 +506,7 @@ namespace InfimaGames.LowPolyShooterPack
             //Update the value by a certain amount.
             ammunitionCurrent = magazineBehaviour.Reload();
 
-            OnReloaded?.Invoke();
+            SaveAmmunitionSum();
         }
         /// <summary>
         /// SetSlideBack.
@@ -521,5 +529,11 @@ namespace InfimaGames.LowPolyShooterPack
         }
 
         #endregion
+
+        private void SaveAmmunitionSum()
+        {
+            _weaponsBought.WeaponsAttachmentsBought[WeaponName].AmmunitionSum = magazineBehaviour.AmmunitionSum;
+            Progress.SaveWeaponsBought(_weaponsBought);
+        }
     }
 }

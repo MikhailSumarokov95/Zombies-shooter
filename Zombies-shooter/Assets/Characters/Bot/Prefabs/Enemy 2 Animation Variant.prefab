@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 2 Animation Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5209996369703070132, guid: 830a4df9e07c5124c91c437b7407489a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5268193389699030162, guid: 830a4df9e07c5124c91c437b7407489a,
         type: 3}
       propertyPath: m_Controller
