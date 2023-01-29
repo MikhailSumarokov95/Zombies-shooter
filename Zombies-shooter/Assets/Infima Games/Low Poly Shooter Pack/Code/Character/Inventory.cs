@@ -22,10 +22,17 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private int equippedIndex = -1;
 
+        private Progress.WeaponsBought _weaponsBought;
+
         #endregion
-        
+
+        private void OnDisable()
+        {
+            equipped.OnReloaded -= SaveAmmunitionSum;
+        }
+
         #region METHODS
-        
+
         public override void Init(int equippedAtStart = 0)
         {
             //Cache all weapons. Beware that weapons need to be parented to the object this component is on!
@@ -33,10 +40,11 @@ namespace InfimaGames.LowPolyShooterPack
 
             var weaponsList = new List<WeaponBehaviour>();
             var weaponsSelected = Progress.LoadWeaponsSelected();
-
-            //Disable all weapons. This makes it easier for us to only activate the one we need.
+            _weaponsBought = Progress.LoadWeaponsBought();
+            
             foreach (WeaponBehaviour weapon in weapons)
             {
+                //Disable all weapons. This makes it easier for us to only activate the one we need.
                 weapon.gameObject.SetActive(false);
 
                 var nameWeapon = weapon.GetComponent<Weapon>().WeaponName;
@@ -46,6 +54,8 @@ namespace InfimaGames.LowPolyShooterPack
 
                     weapon.GetComponent<WeaponAttachmentManager>()
                         .SetAttachment(weaponsSelected.WeaponsAttachmentsSelected[nameWeapon]);
+
+                    weapon.AmmunitionSum = _weaponsBought.WeaponsAttachmentsBought[nameWeapon].AmmunitionSum;
                 }    
             }
 
@@ -79,6 +89,8 @@ namespace InfimaGames.LowPolyShooterPack
             equipped = weapons[equippedIndex];
             //Activate the newly-equipped weapon.
             equipped.gameObject.SetActive(true);
+
+            equipped.OnReloaded += SaveAmmunitionSum;
 
             //Return.
             return equipped;
@@ -114,5 +126,11 @@ namespace InfimaGames.LowPolyShooterPack
         public override int GetEquippedIndex() => equippedIndex;
 
         #endregion
+
+        private void SaveAmmunitionSum()
+        {
+            _weaponsBought.WeaponsAttachmentsBought[equipped.WeaponName].AmmunitionSum = equipped.AmmunitionSum;
+            Progress.SaveWeaponsBought(_weaponsBought);
+        }
     }
 }

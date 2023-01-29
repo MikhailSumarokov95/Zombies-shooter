@@ -9,8 +9,10 @@ namespace InfimaGames.LowPolyShooterPack
     /// </summary>
     public abstract class MagazineBehaviour : MonoBehaviour
     {
+        public abstract int AmmunitionSum { get; set; }
+
         #region GETTERS
-        
+
         /// <summary>
         /// Returns The Total Ammunition.
         /// </summary>
@@ -21,5 +23,7 @@ namespace InfimaGames.LowPolyShooterPack
         public abstract Sprite GetSprite();
 
         #endregion
+
+        public abstract int Reload();
     }
 }

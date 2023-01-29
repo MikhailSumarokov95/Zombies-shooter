@@ -9,6 +9,7 @@ namespace InfimaGames.LowPolyShooterPack
     /// </summary>
     public class Magazine : MagazineBehaviour
     {
+
         #region FIELDS SERIALIZED
 
         [Title(label: "Settings")]
@@ -25,6 +26,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
+        public override int AmmunitionSum { get; set; }
+
         #region GETTERS
 
         /// <summary>
@@ -37,5 +40,22 @@ namespace InfimaGames.LowPolyShooterPack
         public override Sprite GetSprite() => sprite;
 
         #endregion
+
+        public override int Reload()
+        {
+            var currentAmmunition = AmmunitionSum - ammunitionTotal;
+            if (currentAmmunition <= 0)
+            {
+                currentAmmunition = AmmunitionSum;
+                AmmunitionSum = 0;
+                return currentAmmunition;
+            }
+
+            else
+            {
+                AmmunitionSum -= ammunitionTotal;
+                return ammunitionTotal;
+            }
+        }
     }
 }

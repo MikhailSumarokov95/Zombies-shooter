@@ -6607,45 +6607,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1366407273}
     m_Modifications:
-    - target: {fileID: 1650998047549244653, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998047549244653, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998047549244653, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998048396706046, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -759.7842
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998048915897152, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5065228
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998048915897152, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1650998049237863290, guid: d258b427e93077246bb92daba500f934,
         type: 3}
       propertyPath: m_Name
       value: BattlePass
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998049237863290, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1650998049237863291, guid: d258b427e93077246bb92daba500f934,
         type: 3}
@@ -6752,15 +6717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1650998049247076817, guid: d258b427e93077246bb92daba500f934,
+    - target: {fileID: 1650998049237863294, guid: d258b427e93077246bb92daba500f934,
         type: 3}
-      propertyPath: m_Size
-      value: 0.5065228
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650998049247076817, guid: d258b427e93077246bb92daba500f934,
-        type: 3}
-      propertyPath: m_Value
-      value: -0.008497328
+      propertyPath: _rewardBattlePassPerLevel.Array.size
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d258b427e93077246bb92daba500f934, type: 3}

@@ -126,5 +126,6 @@ public static class Progress
         public List<int> MuzzleIndex;
         public List<int> LaserIndex;
         public List<int> GripIndex;
+        public int AmmunitionSum;
     }
 }

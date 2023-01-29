@@ -230,6 +230,7 @@ public class Shop : MonoBehaviour
         }
 
         weaponBought.WeaponsAttachmentsBought[weapons[0].WeaponName].IsBoughtWeapon = true; // назначение стандартной пушки
+        weaponBought.WeaponsAttachmentsBought[weapons[0].WeaponName].AmmunitionSum = 100; // назначение стандартной пушки
         Progress.SaveWeaponsBought(weaponBought);
     }
 }

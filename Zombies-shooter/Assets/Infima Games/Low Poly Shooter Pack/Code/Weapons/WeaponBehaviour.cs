@@ -1,11 +1,20 @@
 ﻿//Copyright 2022, Infima Games. All Rights Reserved.
 
+using System;
 using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
 {
     public abstract class WeaponBehaviour : MonoBehaviour
     {
+        public Action OnReloaded;
+
+        public abstract int AmmunitionSum { get; set; }
+
+        public abstract string WeaponName { get; set; }
+
+        public abstract int Cost { get; set; }
+
         #region UNITY
 
         /// <summary>

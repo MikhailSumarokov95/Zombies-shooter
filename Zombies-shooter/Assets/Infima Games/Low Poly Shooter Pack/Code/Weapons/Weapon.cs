@@ -1,5 +1,6 @@
 ﻿//Copyright 2022, Infima Games. All Rights Reserved.
 
+using System;
 using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
@@ -146,15 +147,6 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-
-        #region PROPERTIES
-
-        public string WeaponName { get { return weaponName; } set { weaponName = value; } }
-
-        public int Cost { get { return cost; } set { cost = value; } }
-
-        #endregion
-
         #region FIELDS
 
         /// <summary>
@@ -211,11 +203,36 @@ namespace InfimaGames.LowPolyShooterPack
         /// The player character's camera.
         /// </summary>
         private Transform playerCamera;
-        
+
+        #endregion
+
+        #region PROPERTIES
+
+        public override string WeaponName { get { return weaponName; } set { weaponName = value; } }
+
+        public override int Cost { get { return cost; } set { cost = value; } }
+
+        public override int AmmunitionSum 
+        { 
+            get 
+            {
+                if (magazineBehaviour == null)
+                    magazineBehaviour = attachmentManager.GetEquippedMagazine();
+                return magazineBehaviour.AmmunitionSum; 
+            } 
+
+            set 
+            { 
+                if (magazineBehaviour == null)
+                    magazineBehaviour = attachmentManager.GetEquippedMagazine();
+                magazineBehaviour.AmmunitionSum = value;
+            } 
+        }
+
         #endregion
 
         #region UNITY
-        
+
         protected override void Awake()
         {
             if (isShop) return;
@@ -238,10 +255,11 @@ namespace InfimaGames.LowPolyShooterPack
             //Get Scope.
             scopeBehaviour = attachmentManager.GetEquippedScope();
             
-            //Get Magazine.
-            magazineBehaviour = attachmentManager.GetEquippedMagazine();
             //Get Muzzle.
             muzzleBehaviour = attachmentManager.GetEquippedMuzzle();
+
+            if (magazineBehaviour == null)
+                magazineBehaviour = attachmentManager.GetEquippedMagazine();
 
             //Get Laser.
             laserBehaviour = attachmentManager.GetEquippedLaser();
@@ -459,7 +477,7 @@ namespace InfimaGames.LowPolyShooterPack
             for (var i = 0; i < shotCount; i++)
             {
                 //Determine a random spread value using all of our multipliers.
-                Vector3 spreadValue = Random.insideUnitSphere * (spread * spreadMultiplier);
+                Vector3 spreadValue = UnityEngine.Random.insideUnitSphere * (spread * spreadMultiplier);
                 //Remove the forward spread component, since locally this would go inside the object we're shooting!
                 spreadValue.z = 0;
                 //Convert to world space.
@@ -478,8 +496,9 @@ namespace InfimaGames.LowPolyShooterPack
         public override void FillAmmunition(int amount)
         {
             //Update the value by a certain amount.
-            ammunitionCurrent = amount != 0 ? Mathf.Clamp(ammunitionCurrent + amount, 
-                0, GetAmmunitionTotal()) : magazineBehaviour.GetAmmunitionTotal();
+            ammunitionCurrent = magazineBehaviour.Reload();
+
+            OnReloaded?.Invoke();
         }
         /// <summary>
         /// SetSlideBack.
