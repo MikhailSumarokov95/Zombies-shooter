@@ -277,6 +277,8 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private int shotsFired;
 
+		private GrenadeShop grenadeShop;
+
 		#endregion
 
 		#region UNITY
@@ -291,7 +293,7 @@ namespace InfimaGames.LowPolyShooterPack
 			//Always make sure that our cursor is locked when the game starts!
 			cursorLocked = true;
 			//Update the cursor's state.
-			UpdateCursorState();
+			//UpdateCursorState();
 
 			#endregion
 
@@ -310,7 +312,7 @@ namespace InfimaGames.LowPolyShooterPack
 		protected override void Start()
 		{
 			//Max out the grenades.
-			grenadeCount = grenadeTotal;
+			LoadSaveGrenade();
 			
 			//Hide knife. We do this so we don't see a giant knife stabbing through the character's hands all the time!
 			if (knife != null)
@@ -324,10 +326,23 @@ namespace InfimaGames.LowPolyShooterPack
 			layerOverlay = characterAnimator.GetLayerIndex("Layer Overlay");
 		}
 
-		/// <summary>
-		/// Update.
-		/// </summary>
-		protected override void Update()
+        private void OnEnable()
+        {
+			grenadeShop = FindObjectOfType<GrenadeShop>(true);
+			grenadeShop.OnBought += LoadSaveGrenade;
+
+		}
+
+        private void OnDisable()
+        {
+			grenadeShop.OnBought -= LoadSaveGrenade;
+		}
+
+
+        /// <summary>
+        /// Update.
+        /// </summary>
+        protected override void Update()
 		{
 			//Match Aim.
 			aiming = holdingButtonAim && CanAim();
@@ -707,13 +722,13 @@ namespace InfimaGames.LowPolyShooterPack
 		/// <summary>
 		/// Updates the cursor state based on the value of the cursorLocked variable.
 		/// </summary>
-		private void UpdateCursorState()
-		{
-			//Update cursor visibility.
-			Cursor.visible = !cursorLocked;
-			//Update cursor lock state.
-			Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
-		}
+		//private void UpdateCursorState()
+		//{
+		//	//Update cursor visibility.
+		//	Cursor.visible = !cursorLocked;
+		//	//Update cursor lock state.
+		//	Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+		//}
 
 		/// <summary>
 		/// Plays The Grenade Throwing Animation.
@@ -1327,7 +1342,7 @@ namespace InfimaGames.LowPolyShooterPack
 					//Toggle the cursor locked value.
 					cursorLocked = !cursorLocked;
 					//Update the cursor's state.
-					UpdateCursorState();
+					//UpdateCursorState();
 					break;
 			}
 		}
@@ -1415,6 +1430,8 @@ namespace InfimaGames.LowPolyShooterPack
 			//Remove Grenade.
 			if(!grenadesUnlimited)
 				grenadeCount--;
+
+			Progress.SaveGrenades(grenadeCount);
 			
 			//Get Camera Transform.
 			Transform cTransform = cameraWorld.transform;
@@ -1501,6 +1518,11 @@ namespace InfimaGames.LowPolyShooterPack
 		{
 			//Set Active.
 			knife.SetActive(active != 0);
+		}
+
+		private void LoadSaveGrenade()
+        {
+			grenadeCount = Progress.LoadGrenades();
 		}
 
 		#endregion

@@ -94,6 +94,16 @@ public static class Progress
         return PlayerPrefs.GetInt("battlePass", 0) == 1 ? true : false;
     }
 
+    public static void SaveGrenades(int value)
+    {
+        PlayerPrefs.SetInt("grenades", value);
+    }
+
+    public static int LoadGrenades()
+    {
+        return PlayerPrefs.GetInt("grenades", 0);
+    }
+
     [Serializable]
     public class WeaponsSelected
     {
