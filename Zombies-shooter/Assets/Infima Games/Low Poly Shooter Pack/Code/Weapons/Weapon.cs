@@ -485,8 +485,9 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         public override void FillAmmunition(int amount)
         {
-            //Update the value by a certain amount.
-            ammunitionCurrent = magazineBehaviour.Reload();
+            var needAmmunitionForFull = magazineBehaviour.GetAmmunitionTotal() - ammunitionCurrent;
+
+            ammunitionCurrent += magazineBehaviour.Reload(needAmmunitionForFull);
 
             SaveAmmunitionSum();
         }

@@ -24,6 +24,6 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-        public abstract int Reload();
+        public abstract int Reload(int amountOfAmmunitionTake);
     }
 }

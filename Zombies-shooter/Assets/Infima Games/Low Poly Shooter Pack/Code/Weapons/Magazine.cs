@@ -41,21 +41,24 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-        public override int Reload()
+        public override int Reload(int amountOfAmmunitionTake)
         {
-            var currentAmmunition = AmmunitionSum - ammunitionTotal;
-            if (currentAmmunition <= 0)
+            var restAmmunitionInMagazine = AmmunitionSum - amountOfAmmunitionTake;
+            int ammunitionTake;
+
+            if (restAmmunitionInMagazine <= 0)
             {
-                currentAmmunition = AmmunitionSum;
+                ammunitionTake = AmmunitionSum;
                 AmmunitionSum = 0;
-                return currentAmmunition;
             }
 
             else
             {
-                AmmunitionSum -= ammunitionTotal;
-                return ammunitionTotal;
+                AmmunitionSum -= amountOfAmmunitionTake;
+                ammunitionTake = amountOfAmmunitionTake;
             }
+
+            return ammunitionTake;
         }
     }
 }
