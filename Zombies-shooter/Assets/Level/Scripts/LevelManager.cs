@@ -39,6 +39,8 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         FindObjectOfType<BattlePassRewarder>(true).Awake();
+        OnPause(false);
+        StateGame = State.Game;
     }
 
     private void Update()
