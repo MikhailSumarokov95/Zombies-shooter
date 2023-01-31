@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
@@ -95,6 +96,7 @@ public class LevelManager : MonoBehaviour
     private void EndWave()
     {
         SetActiveWaveEndPanel(true);
+        _delayAfterEndWaveCorotine = null;
     }
 
     private void OnPause(bool value)
