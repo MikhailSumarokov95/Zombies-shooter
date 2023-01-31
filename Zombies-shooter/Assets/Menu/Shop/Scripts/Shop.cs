@@ -13,7 +13,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private SelectorAttachment selectorLaser;
     [SerializeField] private SelectorAttachment selectorGrip;
     [SerializeField] private Button buyWeaponButton;
-    [SerializeField] private TMP_Text bueWeaponText;
+    [SerializeField] private TMP_Text buyWeaponText;
     [SerializeField] private Button selectWeaponButton;
     [SerializeField] private Button selectedWeaponButton;
 
@@ -87,7 +87,12 @@ public class Shop : MonoBehaviour
 
         var weaponsBought = WeaponsBought;
         weaponsBought.WeaponsAttachmentsBought[_currentWeaponName].IsBoughtWeapon = true;
+
+        weaponsBought.WeaponsAttachmentsBought[_currentWeaponName].AmmunitionSum =
+            _weapons[_currentWeaponNumber].GetComponent<WeaponAttachmentManager>().GetEquippedMagazine().GetAmmunitionTotal();
+
         WeaponsBought = weaponsBought;
+
         InitButtons();
     }
 
@@ -102,7 +107,7 @@ public class Shop : MonoBehaviour
     public void Save()
     {
         Progress.SaveWeaponsBought(WeaponsBought);
-        Progress.SaveWeaponsSelected(WeaponsSelected);
+        Progress.SaveWeaponsSelected(WeaponsSelected);        
     }
 
     private void InitButtons()
@@ -126,7 +131,7 @@ public class Shop : MonoBehaviour
         else
         {
             buyWeaponButton.gameObject.SetActive(true);
-            bueWeaponText.text = _cost.ToString();
+            buyWeaponText.text = _cost.ToString();
             SetActiveAttachment(false);
         }
     }
@@ -207,7 +212,9 @@ public class Shop : MonoBehaviour
             weaponSelected.WeaponsAttachmentsSelected.Add(weapon.WeaponName, weaponAttachmentSelected);
         }
 
-        weaponSelected.WeaponsAttachmentsSelected[weapons[0].WeaponName].IsSelectedWeapon = true; // назначение стандартной пушки
+        weaponSelected.WeaponsAttachmentsSelected["Assault Rifle 01"].IsSelectedWeapon = true; // назначение стандартной пушки
+        weaponSelected.WeaponsAttachmentsSelected["Handgun 01"].IsSelectedWeapon = true; // назначение стандартной пушки
+
         Progress.SaveWeaponsSelected(weaponSelected);
 
         //купленое
@@ -229,8 +236,11 @@ public class Shop : MonoBehaviour
             
         }
 
-        weaponBought.WeaponsAttachmentsBought[weapons[0].WeaponName].IsBoughtWeapon = true; // назначение стандартной пушки
-        weaponBought.WeaponsAttachmentsBought[weapons[0].WeaponName].AmmunitionSum = 100; // назначение стандартной пушки
+        weaponBought.WeaponsAttachmentsBought["Assault Rifle 01"].IsBoughtWeapon = true; // назначение стандартной пушки
+        weaponBought.WeaponsAttachmentsBought["Handgun 01"].IsBoughtWeapon = true; // назначение стандартной пушки
+
         Progress.SaveWeaponsBought(weaponBought);
+
+        FindObjectOfType<AmmunitionShop>().ReplenishAmmunition();
     }
 }

@@ -205,6 +205,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         private Progress.WeaponsBought _weaponsBought;
 
+        private AmmunitionShop[] _ammunitionShop;
+
         #endregion
 
         #region PROPERTIES
@@ -219,11 +221,12 @@ namespace InfimaGames.LowPolyShooterPack
 
         protected override void Awake()
         {
+            //Get Attachment Manager.
+            attachmentManager = GetComponent<WeaponAttachmentManagerBehaviour>();
+
             if (isShop) return;
             //Get Animator.
             animator = GetComponent<Animator>();
-            //Get Attachment Manager.
-            attachmentManager = GetComponent<WeaponAttachmentManagerBehaviour>();
 
             //Cache the game mode service. We only need this right here, but we'll cache it in case we ever need it again.
             gameModeService = ServiceLocator.Current.Get<IGameModeService>();
@@ -232,6 +235,22 @@ namespace InfimaGames.LowPolyShooterPack
             //Cache the world camera. We use this in line traces.
             playerCamera = characterBehaviour.GetCameraWorld().transform;
         }
+
+        protected void OnEnable()
+        {
+            _ammunitionShop = FindObjectsOfType<AmmunitionShop>(true);
+            foreach (var shop in _ammunitionShop)
+                shop.OnReplenished += RefreshAmminitionSum;
+
+            RefreshAmminitionSum();
+        }
+
+        protected void OnDisable()
+        {
+            foreach (var shop in _ammunitionShop)
+                shop.OnReplenished -= RefreshAmminitionSum;
+        }
+
         protected override void Start()
         {
             #region Cache Attachment References
@@ -251,10 +270,7 @@ namespace InfimaGames.LowPolyShooterPack
 
             #endregion
 
-            _weaponsBought = Progress.LoadWeaponsBought();
-
-            magazineBehaviour.AmmunitionSum = 
-                _weaponsBought.WeaponsAttachmentsBought[WeaponName].AmmunitionSum;
+            RefreshAmminitionSum();
 
             //Max Out Ammo.
             ammunitionCurrent = magazineBehaviour.GetAmmunitionTotal();
@@ -517,6 +533,15 @@ namespace InfimaGames.LowPolyShooterPack
         {
             _weaponsBought.WeaponsAttachmentsBought[WeaponName].AmmunitionSum = magazineBehaviour.AmmunitionSum;
             Progress.SaveWeaponsBought(_weaponsBought);
+        }
+
+        private void RefreshAmminitionSum()
+        {
+            _weaponsBought = Progress.LoadWeaponsBought();
+
+            if (magazineBehaviour != null) 
+                magazineBehaviour.AmmunitionSum =
+                    _weaponsBought.WeaponsAttachmentsBought[WeaponName].AmmunitionSum;
         }
     }
 }
