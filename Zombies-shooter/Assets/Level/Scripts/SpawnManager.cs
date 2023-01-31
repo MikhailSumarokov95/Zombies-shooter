@@ -12,6 +12,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private WaveSpawn[] waviesSpawn;
     [SerializeField] private Transform[] enemySpawnPoints;
     [SerializeField] private TMP_Text numberWaveText;
+    [SerializeField] private int delayAfterEndWave = 6;
     private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
     private LevelManager _levelManager;
@@ -41,6 +42,7 @@ public class SpawnManager : MonoBehaviour
             _currentEnemyLife = SpawnEnemies(waviesSpawn[i].Enemies);
             OnWaveSpawned?.Invoke(_currentEnemyLife);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
+            yield return new WaitForSeconds(delayAfterEndWave);
             OnWaveEnd?.Invoke();
         }
         OnWavesOver?.Invoke();

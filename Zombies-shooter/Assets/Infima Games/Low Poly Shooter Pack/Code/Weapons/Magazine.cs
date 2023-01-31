@@ -18,6 +18,9 @@ namespace InfimaGames.LowPolyShooterPack
         [SerializeField]
         private int ammunitionTotal = 10;
 
+        [SerializeField]
+        private bool isInfinityAmmunitional;
+
         [Title(label: "Interface")]
 
         [Tooltip("Interface Sprite.")]
@@ -43,6 +46,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override int Reload(int amountOfAmmunitionTake)
         {
+            if (isInfinityAmmunitional) return amountOfAmmunitionTake;
+
             var restAmmunitionInMagazine = AmmunitionSum - amountOfAmmunitionTake;
             int ammunitionTake;
 

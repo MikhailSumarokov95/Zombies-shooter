@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 697
     width: 1109
     height: 250
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 148
+  controlID: 16
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 122
+  controlID: 15
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +191,8 @@ MonoBehaviour:
     y: 0
     width: 1109
     height: 697
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 18}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 123
+  controlID: 38
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -426,7 +426,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 615
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -474,22 +474,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Menu/AmmunitionShop/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Menu/AmmunitionShop/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ykpon\Desktop\Unity\Zombies-shooter\Zombies-shooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 786}
-    m_SelectedIDs: b0bf0800
-    m_LastClickedID: 573360
-    m_ExpandedIDs: 00000000e4cd0100e6cd0100e8cd0100eacd0100eccd0100eecd0100f0cd0100f2cd0100f4cd0100f6cd0100f8cd0100facd0100fccd0100fecd010002ce010004ce010006ce010008ce01000ace010036ce0100acbf0800
+    scrollPos: {x: 0, y: 274}
+    m_SelectedIDs: 6ed40000
+    m_LastClickedID: 54382
+    m_ExpandedIDs: 0000000098d300009ad300009cd300009ed30000a0d30000a2d30000a4d30000a6d30000a8d30000aad30000acd30000aed30000b0d30000b2d30000b8d30000bad30000bcd30000bed300005ad400005ed4000060d4000064d400001c060b00
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4cd0100e6cd0100e8cd0100eacd0100eccd0100eecd0100f0cd0100f2cd0100f4cd0100f6cd0100f8cd0100facd0100fccd0100fecd010000ce010002ce010004ce010006ce010008ce01000ace01000cce0100
+    m_ExpandedIDs: 0000000098d300009ad300009cd300009ed30000a0d30000a2d30000a4d30000a6d30000a8d30000aad30000acd30000aed30000b0d30000b2d30000b4d30000b6d30000b8d30000bad30000bcd30000bed30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,7 +561,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.21500848, y: 0.14905559, z: -0.033211496, w: 0.96460956}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -943,24 +943,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2080}
-      m_SelectedIDs: 1626f5ff
-      m_LastClickedID: -711146
-      m_ExpandedIDs: de1cf5ff421df5ffa81df5ff121ef5ff721ef5ffcc1ef5ffe41ff5ff7422f5ff1626f5ff708df6ff748df6ff7c8df6ff808df6ff8c8df6ffd69df6ffda9df6ffe29df6ffe69df6fff29df6ff8c9ff6ff909ff6ff989ff6ff9c9ff6ffa89ff6ff0aa8f6ff0ea8f6ff12a8f6ff16a8f6ff22a8f6ffb8a9f6ffbca9f6ffc4a9f6ffc8a9f6ffd4a9f6ff6aabf6ff6eabf6ff76abf6ff7aabf6ff86abf6ffb8b6f6ffbcb6f6ffc0b6f6ffc4b6f6ffc8b6f6ffd4b6f6ff36bcf6ffacf4f6ff6c1cf7ffa6c2f7fff2c4f7ff18c5f7ff1ac5f7ffd0f8f7ffeca0f8ff12a1f8ff14a1f8fffaaffcfffcaffcff78c0fcffe0a1fdff5654feff5a54feffc454fefffa54feff2055feff2255feff924cffff00fbffff02fbffff5a9a0200b409050088e20700bee3070054e40700e6e40700
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: b42b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6edbdeff7286dfff7486dfff267ce0ff4a7ce0ff4e7ce0ff5e7ce0ff627ce0ff707ce0ff7c7ce0ff967ce0ffc203e1ffc403e1ff1e1ae5ff64c9e5ff04cae5ff60cae5ff50cbe5ff6ccce5ff90cce5ff92cce5ff3ccbe6ff8eb5eaff3ab6eaff92b7eaffaeb8eaffd2b8eaffd4b8eaffe697ebffb040ecff8241ecff9041ecff4644ecff6c44ecff6e44ecff6cf9ecff1e14edff3228edff0628efff2c28efff2e28efff621cf2ff3ec4f2ff64c4f2ff66c4f2ff7ca0f3ffc493f5ff1096f5ff3696f5ff6e96f5ff78bdfbffbaeafbff28ebfbfff4ebfbff60ecfbffd2ecfbffe0f1fbff4ef2fbffdcf2fbff6cf3fbff3cccffff40ccffff48ccffff4cccffff58ccffffa2dcffffa6dcffffaedcffffb2dcffffbedcffff02fbffff706600007a6600008c6600009e660000a8660000be660000d0660000126700007c670000226800003c6800005a6800007e680000e2680000166900009a69000098010a007a0d0b00a20e0b00c60f0b00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Price 4
-        m_OriginalName: Price 4
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -713198
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
@@ -1034,7 +1034,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
