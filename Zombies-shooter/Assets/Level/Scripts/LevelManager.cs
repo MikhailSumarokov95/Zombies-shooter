@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Image gameOverPanel;
     [SerializeField] private Image pausePanel;
     [SerializeField] private Image waveEndPanel;
+    [SerializeField] private Image didPanel;
     private SpawnManager _spawnManager;
 
     [SerializeField] private State _stateGame = State.Game;
@@ -66,6 +67,21 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         OnPause(false);
+    }
+
+    public void Did()
+    {
+        OnPause(true);
+        StateGame = State.Pause;
+        didPanel.gameObject.SetActive(true);
+    }
+
+    public void Respawn()
+    {
+        OnPause(false);
+        StateGame = State.Game;
+        didPanel.gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Life>().Respawn();
     }
 
     public void SetActiveWinPanel(bool value)

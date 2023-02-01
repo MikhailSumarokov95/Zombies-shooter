@@ -4,19 +4,35 @@ using UnityEngine.AI;
 public class Life : MonoBehaviour
 {
     public bool IsDid { private set; get;} 
+
     public void Did()
     {
         if (IsDid) return;
+
         IsDid = true;
 
-        foreach (var component in GetComponents<MonoBehaviour>())
+        if (CompareTag("Player"))
         {
-            component.enabled = false;
+            FindObjectOfType<LevelManager>().Did();
         }
 
-        GetComponent<NavMeshAgent>().enabled = false;
-        GetComponent<Collider>().enabled = false;
+        else
+        {
+            foreach (var component in GetComponents<MonoBehaviour>())
+            {
+                component.enabled = false;
+            }
 
-        if (!CompareTag("Player")) FindObjectOfType<KillCounter>().AddKilled();
+            GetComponent<NavMeshAgent>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+            FindObjectOfType<KillCounter>().AddKilled();
+        }
+    }
+
+    public void Respawn()
+    {
+        IsDid = false;
+        var healthPoint = GetComponent<HealthPoints>();
+        healthPoint.TakeHealth(healthPoint.MaxHealth);
     }
 }

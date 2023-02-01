@@ -4,16 +4,18 @@ using UnityEngine.UI;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] private int maxHealth;
+
     [SerializeField] private Slider healthBar;
     [SerializeField] private int currentHealth;
     private Life _life;
+
+    [SerializeField] private int maxHealth;
+    public int MaxHealth { get { return maxHealth; } }
 
     private bool _isHit;
     public bool IsHit { get { return _isHit;  } set { _isHit = value; } }
 
     private bool _corotuneDelayTimerAfterHit;
-
 
     public int CurrentHealth 
     { 
@@ -47,7 +49,6 @@ public class HealthPoints : MonoBehaviour
 
     public void TakeHealth(int health)
     {
-        if (_life.IsDid) return;
         var remainingHealth = CurrentHealth + health;
         if (remainingHealth >= maxHealth) CurrentHealth = maxHealth;
         else CurrentHealth = remainingHealth;
@@ -55,12 +56,10 @@ public class HealthPoints : MonoBehaviour
 
     private void ToDead()
     {
-        if (gameObject.CompareTag("Player")) print("you did");
-        else
-        {
+        if (!gameObject.CompareTag("Player"))
             GetComponent<Animator>().SetTrigger("Did");
-            GetComponent<Life>().Did();
-        }
+
+        GetComponent<Life>().Did();
     }
 
     private IEnumerator DelayTimerAfterHit()
