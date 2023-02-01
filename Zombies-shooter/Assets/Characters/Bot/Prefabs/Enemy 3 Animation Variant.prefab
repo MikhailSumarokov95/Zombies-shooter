@@ -213,6 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb77fe6eb69145429f460a66868454a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distanceAttack: 20
+  _distanceAttack: 10
   bullet: {fileID: 892968947903567717, guid: fecc985b8bcb7a244b6bf58d081c2aca, type: 3}
   barrel: {fileID: 1503942945711403649}

@@ -9,6 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 867285677361303534, guid: 7d3381e8356e4b44b8406cce07830c2f,
         type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 867285677361303534, guid: 7d3381e8356e4b44b8406cce07830c2f,
+        type: 3}
       propertyPath: _distanceAttack
       value: 7
       objectReference: {fileID: 0}
