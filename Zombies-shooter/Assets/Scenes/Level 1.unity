@@ -4302,6 +4302,8 @@ MonoBehaviour:
     SpawnCount: 3
   - Enemy: {fileID: 2575222795119435182, guid: f7e0b4ea79028d243a58b922af5a1ac7, type: 3}
     SpawnCount: 3
+  boss: {fileID: 4955367636492345638, guid: e2a4bf5f9d12a6041ac173ed848ee93c, type: 3}
+  numberLevelSpawnBoss: 5
   countWave: 3
   plusEnemyWithLevel: 1
   enemySpawnPoints:
