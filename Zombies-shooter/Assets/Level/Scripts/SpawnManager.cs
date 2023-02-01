@@ -9,13 +9,18 @@ public class SpawnManager : MonoBehaviour
     public Action<Life[]> OnWaveSpawned;
     public Action OnWavesOver;
     public Action OnWaveEnd;
-    [SerializeField] private WaveSpawn[] waviesSpawn;
+    [SerializeField] private EnemySpawn[] enemiesSpawn;
+    [SerializeField] private AIBotController boss;
+    [SerializeField] private int numberLevelSpawnBoss = 5;
+    [SerializeField] private int countWave = 3;
+    [SerializeField] private int plusEnemyWithLevel = 1;
     [SerializeField] private Transform[] enemySpawnPoints;
     [SerializeField] private TMP_Text numberWaveText;
     [SerializeField] private int delayAfterEndWave = 6;
     private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
     private LevelManager _levelManager;
+    private Level _level;
 
     private int _numberWave;
     public int NumberWave { get { return _numberWave; } set { _numberWave = value; } }
@@ -23,6 +28,7 @@ public class SpawnManager : MonoBehaviour
     private void Start()
     {
         _levelManager = FindObjectOfType<LevelManager>();
+        _level = FindObjectOfType<Level>();
         StartCoroutine(StartWaves());
     }
 
@@ -34,12 +40,13 @@ public class SpawnManager : MonoBehaviour
 
     private IEnumerator StartWaves()
     {
-        for (var i = 0; i < waviesSpawn.Length; i++)
+        for (var i = 0; i < countWave; i++)
         {
             yield return new WaitUntil(() => _levelManager.StateGame == LevelManager.State.Game);
             _isAllEnemiesKilled = false;
             numberWaveText.text = "Волна" + " " + (i + 1).ToString();
-            _currentEnemyLife = SpawnEnemies(waviesSpawn[i].Enemies);
+            _currentEnemyLife = SpawnEnemies(enemiesSpawn);
+
             OnWaveSpawned?.Invoke(_currentEnemyLife);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
             yield return new WaitForSeconds(delayAfterEndWave);
@@ -54,9 +61,9 @@ public class SpawnManager : MonoBehaviour
         var enemy = new List<Life>();
 
         var numberSpawnPoint = 0;
-        for (var i = 0; i < enemies.Length; i++)
+        for (var i = 0; i < enemies.Length; i ++)
         {
-            for (var j = 0; j < enemies[i].SpawnCount; j++)
+            for (var j = 0; j < enemies[i].SpawnCount + _level.CurrentLevel * plusEnemyWithLevel; j++)
             {
                 enemy.Add(Instantiate(enemies[i].Enemy.gameObject, enemySpawnPoints[numberSpawnPoint].position, enemySpawnPoints[numberSpawnPoint].rotation)
                     .GetComponent<Life>());
@@ -64,7 +71,18 @@ public class SpawnManager : MonoBehaviour
                 numberSpawnPoint = MathPlus.SawChart(numberSpawnPoint, 0, enemySpawnPoints.Length - 1);
             }
         }
+        numberSpawnPoint++;
+
+        if (_level.CurrentLevel % numberLevelSpawnBoss == 0)
+            enemy.Add(SpawnBoss(numberSpawnPoint));
+
         return enemy.ToArray();
+    }
+
+    private Life SpawnBoss(int numberPointSpawn)
+    { 
+        return Instantiate(boss.gameObject, enemySpawnPoints[numberPointSpawn].position, enemySpawnPoints[numberPointSpawn].rotation)
+                    .GetComponent<Life>();
     }
 
     private bool CheckForKilledEnemies()

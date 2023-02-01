@@ -18,9 +18,8 @@ public class Level : MonoBehaviour
         CurrentLevel++;
     }
 
-
     public void StartGame()
     {
-        SceneManager.LoadScene(CurrentLevel);
+        SceneManager.LoadScene(1);
     }
 }

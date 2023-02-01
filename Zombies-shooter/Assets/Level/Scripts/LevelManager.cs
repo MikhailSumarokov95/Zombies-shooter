@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
         WaveEnd,
         GameOver
     }
-    
+
     [SerializeField] private Image gameOverPanel;
     [SerializeField] private Image pausePanel;
     [SerializeField] private Image waveEndPanel;
@@ -46,8 +46,8 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && 
-            (StateGame == State.Game || StateGame == State.Pause)) 
+        if (Input.GetKeyDown(KeyCode.Escape) &&
+            (StateGame == State.Game || StateGame == State.Pause))
             SetActivePausePanel(!(StateGame == State.Pause));
     }
 
@@ -57,6 +57,12 @@ public class LevelManager : MonoBehaviour
     }
 
     public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        OnPause(false);
+    }
+
+    public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         OnPause(false);
@@ -88,6 +94,7 @@ public class LevelManager : MonoBehaviour
 
     private void WinGame()
     {
+        SetActivePausePanel(false);
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
         FindObjectOfType<Level>().NextLevel();
@@ -95,6 +102,7 @@ public class LevelManager : MonoBehaviour
 
     private void EndWave()
     {
+        SetActivePausePanel(false);
         SetActiveWaveEndPanel(true);
     }
 
