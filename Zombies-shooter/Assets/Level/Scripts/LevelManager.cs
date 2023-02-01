@@ -96,7 +96,6 @@ public class LevelManager : MonoBehaviour
     private void EndWave()
     {
         SetActiveWaveEndPanel(true);
-        _delayAfterEndWaveCorotine = null;
     }
 
     private void OnPause(bool value)
