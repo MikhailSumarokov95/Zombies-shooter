@@ -350,7 +350,7 @@ MonoBehaviour:
   canReloadAimed: 1
   prefabCasing: {fileID: 1492315059354262, guid: c638dfae3f3edf843b2614dae230a771,
     type: 3}
-  prefabProjectile: {fileID: 1086664671600574, guid: 5953171a59c27394e9ad5cbb564affa8,
+  prefabProjectile: {fileID: 1205682141388442403, guid: 01e2c9d22847fd84fa2be0a1ca893ff9,
     type: 3}
   controller: {fileID: 22100000, guid: 1288116e5192cd84b808721e453eb7e7, type: 2}
   spriteBody: {fileID: 21300000, guid: bcc477d9e47ffcf41acc147a6fc51cf9, type: 3}
@@ -1715,8 +1715,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammunitionTotal: 30
-  sprite: {fileID: 21300000, guid: 51d720b69910c244aa44a082bddf0155, type: 3}
   isInfinityAmmunitional: 1
+  sprite: {fileID: 21300000, guid: 51d720b69910c244aa44a082bddf0155, type: 3}
 --- !u!4 &8388422276160512096 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 894eecaba4473bc41a05f263041a2272,
