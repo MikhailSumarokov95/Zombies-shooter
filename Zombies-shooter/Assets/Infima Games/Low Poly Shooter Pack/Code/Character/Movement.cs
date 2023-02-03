@@ -166,6 +166,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         private LevelManager _levelManager;
 
+        private bool _isMobile;
+
         #endregion
 
         #region PROPERTIES
@@ -250,8 +252,9 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private void MoveCharacter()
         {
+            Vector2 frameInput;
             //Get Movement Input!
-            Vector2 frameInput = Vector3.ClampMagnitude(playerCharacter.GetInputMovement(), 1.0f);
+            frameInput = Vector3.ClampMagnitude(playerCharacter.GetInputMovement(), 1.0f);
             //Calculate local-space direction by using the player's input.
             var desiredDirection = new Vector3(frameInput.x, 0.0f, frameInput.y);
             

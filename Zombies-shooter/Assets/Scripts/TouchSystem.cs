@@ -1,24 +1,23 @@
-using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TouchSystem : MonoBehaviour, IDragHandler, IPointerDownHandler
-{
-    public Action<Vector2> OnDragForMove;
-    private Vector2 delta = Vector2.zero;
+public class TouchSystem : MonoBehaviour, IDragHandler
+{ 
+    public static Vector3 Move = Vector2.zero;
 
-    private Vector2 startPosition = Vector2.zero;
-
-    public void OnPointerDown(PointerEventData eventData)
+    private void Awake()
     {
-        startPosition = eventData.position;
-        OnDrag(eventData);
+        if (!FindObjectOfType<LevelManager>().IsMobile)
+        {
+            gameObject.SetActive(false);
+            Destroy(this);
+        }
     }
+
+    private void LateUpdate() => Move = Vector3.zero;
 
     public void OnDrag(PointerEventData eventData)
     {
-        delta = (eventData.position - startPosition);
-        startPosition = eventData.position;
-        OnDragForMove?.Invoke(delta);
+        Move = eventData.delta;
     }
 }

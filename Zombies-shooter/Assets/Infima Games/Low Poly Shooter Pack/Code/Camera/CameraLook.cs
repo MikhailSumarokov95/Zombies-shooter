@@ -87,13 +87,15 @@ namespace InfimaGames.LowPolyShooterPack
 
             sensitivity = Progress.LoadSensitivity() * Vector2.one;
         }
+
         /// <summary>
         /// LateUpdate.
         /// </summary>
         private void LateUpdate()
         {
             //Frame Input. The Input to add this frame!
-            Vector2 frameInput = playerCharacter.IsCursorLocked() ? playerCharacter.GetInputLook() : default;
+            var frameInput = playerCharacter.IsCursorLocked() ? playerCharacter.GetInputLook() : default;
+
             //Sensitivity.
             frameInput *= sensitivity;
 

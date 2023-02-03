@@ -45,9 +45,8 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) &&
-            (StateGame == State.Game || StateGame == State.Pause))
-            SetActivePausePanel(!(StateGame == State.Pause));
+        if (Input.GetKeyDown(KeyCode.Escape) && StateGame == State.Game)
+            SetActivePausePanel(true);
     }
 
     public void ReturnToMenu()
