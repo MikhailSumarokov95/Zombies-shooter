@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using System;
 
 public class SpawnManager : MonoBehaviour
@@ -9,14 +8,13 @@ public class SpawnManager : MonoBehaviour
     public Action<Life[]> OnWaveSpawned;
     public Action OnWavesOver;
     public Action OnWaveEnd;
+    [SerializeField] private int delayAfterEndWave = 6;
     [SerializeField] private EnemySpawn[] enemiesSpawn;
     [SerializeField] private AIBotController boss;
     [SerializeField] private int numberLevelSpawnBoss = 5;
     [SerializeField] private int countWave = 3;
     [SerializeField] private int plusEnemyWithLevel = 1;
     [SerializeField] private Transform[] enemySpawnPoints;
-    [SerializeField] private TMP_Text numberWaveText;
-    [SerializeField] private int delayAfterEndWave = 6;
     private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
     private LevelManager _levelManager;
@@ -44,7 +42,6 @@ public class SpawnManager : MonoBehaviour
         {
             yield return new WaitUntil(() => _levelManager.StateGame == LevelManager.State.Game);
             _isAllEnemiesKilled = false;
-            numberWaveText.text = "Волна" + " " + (i + 1).ToString();
             _currentEnemyLife = SpawnEnemies(enemiesSpawn);
 
             OnWaveSpawned?.Invoke(_currentEnemyLife);
@@ -53,7 +50,6 @@ public class SpawnManager : MonoBehaviour
             OnWaveEnd?.Invoke();
         }
         OnWavesOver?.Invoke();
-        numberWaveText.text = "Победа";
     }
 
     private Life[] SpawnEnemies(EnemySpawn[] enemies)

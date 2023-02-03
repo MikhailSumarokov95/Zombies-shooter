@@ -9,7 +9,8 @@ public class Level : MonoBehaviour
 
     private void Start()
     {
-        currentLevelText.text = CurrentLevel.ToString();
+        if (currentLevelText != null) 
+            currentLevelText.text = CurrentLevel.ToString();
     }
 
     [ContextMenu("NextLevel")]

@@ -104,6 +104,16 @@ public static class Progress
         return PlayerPrefs.GetInt("grenades", 0);
     }
 
+    public static void SaveSensitivity(float value)
+    {
+        PlayerPrefs.SetFloat("sensitivity", value);
+    }
+
+    public static float LoadSensitivity()
+    {
+        return PlayerPrefs.GetFloat("sensitivity", 1);
+    }
+
     [Serializable]
     public class WeaponsSelected
     {

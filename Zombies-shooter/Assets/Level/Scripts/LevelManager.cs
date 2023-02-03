@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,10 +11,10 @@ public class LevelManager : MonoBehaviour
         GameOver
     }
 
-    [SerializeField] private Image gameOverPanel;
-    [SerializeField] private Image pausePanel;
-    [SerializeField] private Image waveEndPanel;
-    [SerializeField] private Image didPanel;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject waveEndPanel;
+    [SerializeField] private GameObject lossPanel;
     private SpawnManager _spawnManager;
 
     [SerializeField] private State _stateGame = State.Game;
@@ -40,7 +38,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<BattlePassRewarder>(true).Awake();
+        FindObjectOfType<BattlePassRewarder>(true)?.Awake();
         OnPause(false);
         StateGame = State.Game;
     }
@@ -73,14 +71,14 @@ public class LevelManager : MonoBehaviour
     {
         OnPause(true);
         StateGame = State.Pause;
-        didPanel.gameObject.SetActive(true);
+        lossPanel.SetActive(true);
     }
 
     public void Respawn()
     {
         OnPause(false);
         StateGame = State.Game;
-        didPanel.gameObject.SetActive(false);
+        lossPanel.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Life>().Respawn();
     }
 
@@ -88,7 +86,7 @@ public class LevelManager : MonoBehaviour
     {
         if (value) StateGame = State.GameOver;
         else StateGame = State.Game;
-        gameOverPanel.gameObject.SetActive(value);
+        gameOverPanel.SetActive(value);
         OnPause(value);
     }
 
@@ -96,7 +94,7 @@ public class LevelManager : MonoBehaviour
     {
         if (value) StateGame = State.Pause;
         else StateGame = State.Game;
-        pausePanel.gameObject.SetActive(value);
+        pausePanel.SetActive(value);
         OnPause(value);
     }
 
@@ -104,7 +102,7 @@ public class LevelManager : MonoBehaviour
     {
         if (value) StateGame = State.WaveEnd;
         else StateGame = State.Game;
-        waveEndPanel.gameObject.SetActive(value);
+        waveEndPanel.SetActive(value);
         OnPause(value);
     }
 

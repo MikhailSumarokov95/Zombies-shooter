@@ -21,7 +21,8 @@ public class GrenadeShop : MonoBehaviour
         set
         {
             _currentCount = value;
-            currentCountText.text = _currentCount.ToString();
+            if (currentCountText != null)
+                currentCountText.text = _currentCount.ToString();
             Progress.SaveGrenades(_currentCount);
             OnBought?.Invoke();
         }
@@ -49,5 +50,10 @@ public class GrenadeShop : MonoBehaviour
 
         if (_money.SpendMoney(priceForMax))
             CurrentCount = maxCount;
+    }
+
+    public void RewardFull()
+    {
+        CurrentCount = maxCount;
     }
 }

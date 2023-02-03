@@ -13,8 +13,8 @@ namespace InfimaGames.LowPolyShooterPack
         
         [Title(label: "Settings")]
         
-        [Tooltip("Sensitivity when looking around.")]
-        [SerializeField]
+        //[Tooltip("Sensitivity when looking around.")]
+        //[SerializeField]
         private Vector2 sensitivity = new Vector2(1, 1);
 
         [Tooltip("Minimum and maximum up/down rotation angle the camera can have.")]
@@ -53,10 +53,25 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private Quaternion rotationCamera;
 
+        private Setting _setting;
+
         #endregion
-        
+
         #region UNITY
+
+        private void OnEnable()
+        {
+            _setting = FindObjectOfType<Setting>();
+            if (_setting != null) 
+                _setting.OnSaveSetting += RefreshSensitivity;
+        } 
         
+        private void OnDisable()
+        {
+            if (_setting != null) 
+                _setting.OnSaveSetting -= RefreshSensitivity;
+        }
+
         /// <summary>
         /// Start.
         /// </summary>
@@ -69,6 +84,8 @@ namespace InfimaGames.LowPolyShooterPack
             rotationCharacter = playerCharacter.transform.localRotation;
             //Cache the camera's initial rotation.
             rotationCamera = transform.localRotation;
+
+            sensitivity = Progress.LoadSensitivity() * Vector2.one;
         }
         /// <summary>
         /// LateUpdate.
@@ -141,6 +158,11 @@ namespace InfimaGames.LowPolyShooterPack
 
             //Return.
             return rotation;
+        }
+
+        private void RefreshSensitivity()
+        {
+            sensitivity = Progress.LoadSensitivity() * Vector2.one;
         }
 
         #endregion
