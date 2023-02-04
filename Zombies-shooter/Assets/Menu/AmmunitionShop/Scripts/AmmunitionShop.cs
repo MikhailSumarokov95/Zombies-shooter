@@ -26,6 +26,10 @@ public class AmmunitionShop : MonoBehaviour
 
         for (var i = 0; i < _maxAmmunitionWeapon.Length; i++)
         {
+            print(_maxAmmunitionWeapon[i].NameWeapon);
+            //print(weaponsBought.WeaponsAttachmentsBought[_maxAmmunitionWeapon[i].NameWeapon]);
+            print(weaponsBought.WeaponsAttachmentsBought[_maxAmmunitionWeapon[i].NameWeapon].IsBoughtWeapon);
+            print(weaponsBought.WeaponsAttachmentsBought[_maxAmmunitionWeapon[i].NameWeapon].AmmunitionSum);
             weaponsBought.WeaponsAttachmentsBought[_maxAmmunitionWeapon[i].NameWeapon].AmmunitionSum =
                 _maxAmmunitionWeapon[i].Count;
         }
@@ -33,6 +37,19 @@ public class AmmunitionShop : MonoBehaviour
         Progress.SaveWeaponsBought(weaponsBought);
 
         OnReplenished?.Invoke();
+    }
+
+    public Progress.WeaponsBought SetDefaultAmmmunition(Progress.WeaponsBought weaponBought)
+    {
+        var weapons = weaponBought;
+
+        for (var i = 0; i < _maxAmmunitionWeapon.Length; i++)
+        {
+            weapons.WeaponsAttachmentsBought[_maxAmmunitionWeapon[i].NameWeapon].AmmunitionSum =
+                _maxAmmunitionWeapon[i].Count;
+        }
+
+        return weapons;
     }
 
     [Serializable]

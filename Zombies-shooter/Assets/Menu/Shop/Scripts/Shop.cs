@@ -240,7 +240,6 @@ public class Shop : MonoBehaviour
         weaponBought.WeaponsAttachmentsBought["Handgun 01"].IsBoughtWeapon = true; // назначение стандартной пушки
 
         Progress.SaveWeaponsBought(weaponBought);
-
-        FindObjectOfType<AmmunitionShop>().ReplenishAmmunition();
+        //Progress.SaveWeaponsBought(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought));
     }
 }

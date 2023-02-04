@@ -2849,6 +2849,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 5610709248855186126, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828703622831704066, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06235315a75c9e24f94a0f431e961dcf, type: 3}
 --- !u!224 &1457636297 stripped
@@ -4266,6 +4276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy_Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366093587077541000, guid: 33741ce0ff944b04dab391ee6293dd8d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8366093587077541007, guid: 33741ce0ff944b04dab391ee6293dd8d,
         type: 3}
