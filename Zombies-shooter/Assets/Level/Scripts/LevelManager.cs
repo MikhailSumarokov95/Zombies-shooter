@@ -38,7 +38,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<BattlePassRewarder>(true)?.Awake();
+        var battlePass = FindObjectOfType<BattlePassRewarder>(true);
+        if (battlePass != null)  battlePass.Awake();
         OnPause(false);
         StateGame = State.Game;
     }

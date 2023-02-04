@@ -11,8 +11,6 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 	{
 		[SerializeField] private int damage = 5;
 
-		[SerializeField] private int speed = 100;
-
 		[Range(5, 100)]
 		[Tooltip("After how long time should the bullet prefab be destroyed?")]
 		public float destroyAfter;

@@ -277,7 +277,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private int shotsFired;
 
-		private GrenadeShop grenadeShop;
+		private GrenadeShop[] grenadeShops;
 
 		private LevelManager _levelManager;
 
@@ -337,14 +337,22 @@ namespace InfimaGames.LowPolyShooterPack
 
 		private void OnEnable()
 		{
-			grenadeShop = FindObjectOfType<GrenadeShop>(true);
-			grenadeShop.OnBought += LoadSaveGrenade;
+			grenadeShops = FindObjectsOfType<GrenadeShop>(true);
 
+			foreach (var grenadeShop in grenadeShops)
+            {
+				if (grenadeShop != null)
+					grenadeShop.OnBought += LoadSaveGrenade;
+			}
 		}
 
 		private void OnDisable()
 		{
-			grenadeShop.OnBought -= LoadSaveGrenade;
+			foreach (var grenadeShop in grenadeShops)
+			{
+				if (grenadeShop != null)
+					grenadeShop.OnBought -= LoadSaveGrenade;
+			}
 		}
 
 
