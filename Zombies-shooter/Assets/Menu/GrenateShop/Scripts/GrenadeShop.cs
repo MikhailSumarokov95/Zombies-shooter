@@ -52,6 +52,11 @@ public class GrenadeShop : MonoBehaviour
             CurrentCount = maxCount;
     }
 
+    public void TryRewardFull()
+    {
+        GSConnect.ShowRewardedAd(GSConnect.GrenadesReward);
+    }
+
     public void RewardFull()
     {
         CurrentCount = maxCount;

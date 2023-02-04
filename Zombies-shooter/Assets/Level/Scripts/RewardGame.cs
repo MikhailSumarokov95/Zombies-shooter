@@ -32,4 +32,9 @@ public class RewardGame : MonoBehaviour
         FindObjectOfType<Money>().MakeMoney(_moneyPerWave);
         _moneyPerWave = 0;
     }
+
+    public void TryRewardDoubleMoney()
+    {
+        GSConnect.ShowRewardedAd(GSConnect.DoubleMoneyReward);
+    }
 }

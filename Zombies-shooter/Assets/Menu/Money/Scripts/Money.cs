@@ -38,6 +38,11 @@ public class Money : MonoBehaviour
         AmountOfMoney += value;
     }
 
+    public void TryReward()
+    {
+        GSConnect.ShowRewardedAd(GSConnect.MoneyReward);
+    }
+
     private void Display—hangeMoney(int value)
     {
         if (iconsMoney == null) return;

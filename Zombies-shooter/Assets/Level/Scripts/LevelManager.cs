@@ -106,8 +106,14 @@ public class LevelManager : MonoBehaviour
         OnPause(value);
     }
 
+    public void TryRewardRespawn()
+    {
+        GSConnect.ShowRewardedAd(GSConnect.ContinueReward);
+    }
+
     private void WinGame()
     {
+        GSConnect.ShowMidgameAd();
         SetActivePausePanel(false);
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
@@ -116,6 +122,7 @@ public class LevelManager : MonoBehaviour
 
     private void EndWave()
     {
+        GSConnect.ShowMidgameAd();
         SetActivePausePanel(false);
         SetActiveWaveEndPanel(true);
     }

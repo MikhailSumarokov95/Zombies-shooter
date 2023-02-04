@@ -204,10 +204,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 3233576901476224876}
+        m_TargetAssemblyTypeName: RewardGame, Assembly-CSharp
+        m_MethodName: TryRewardDoubleMoney
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -439,12 +439,12 @@ PrefabInstance:
     - target: {fileID: 1650998048396706046, guid: d258b427e93077246bb92daba500f934,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -841.76776
+      value: -760.19257
       objectReference: {fileID: 0}
     - target: {fileID: 1650998048915897152, guid: d258b427e93077246bb92daba500f934,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.23206246
+      value: 0.50679505
       objectReference: {fileID: 0}
     - target: {fileID: 1650998048915897152, guid: d258b427e93077246bb92daba500f934,
         type: 3}
@@ -611,7 +611,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 626462524}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1358,7 +1358,7 @@ RectTransform:
   - {fileID: 1769723939}
   - {fileID: 308150627}
   m_Father: {fileID: 8289361161966955613}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1883,7 +1883,7 @@ RectTransform:
   m_Children:
   - {fileID: 851119352}
   m_Father: {fileID: 626462524}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2080,10 +2080,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 1771680275}
+        m_TargetAssemblyTypeName: GrenadeShop, Assembly-CSharp
+        m_MethodName: TryRewardFull
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2187,10 +2187,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1836657955}
-  - {fileID: 506879488}
-  - {fileID: 955494653}
   - {fileID: 1086750533}
   - {fileID: 232009402}
+  - {fileID: 506879488}
+  - {fileID: 955494653}
   - {fileID: 1375421463}
   - {fileID: 1032950773}
   - {fileID: 11242244}
@@ -2629,7 +2629,7 @@ RectTransform:
   - {fileID: 5882897152989842574}
   - {fileID: 8445550400723580528}
   m_Father: {fileID: 8289361161966955613}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2729,7 +2729,7 @@ RectTransform:
   - {fileID: 1665759140}
   - {fileID: 1391885859}
   m_Father: {fileID: 626462524}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3148,10 +3148,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 626462523}
+        m_TargetAssemblyTypeName: RewardGame, Assembly-CSharp
+        m_MethodName: TryRewardDoubleMoney
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3220,6 +3220,18 @@ RectTransform:
   m_AnchoredPosition: {x: 250, y: 246}
   m_SizeDelta: {x: 451.98816, y: 188}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1056938721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 387637944294304997, guid: 0d71c1040eb783848ab881e85b11a991,
+    type: 3}
+  m_PrefabInstance: {fileID: 387637944551216610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d193e3f5dea82ea45bf24ccfd19881b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086750532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,7 +3263,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 626462524}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4336,10 +4348,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 1501401694503106070}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: TryReward
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4406,7 +4418,7 @@ PrefabInstance:
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
@@ -5410,50 +5422,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3681910845446805238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1995703067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1995703069}
-  - component: {fileID: 1995703068}
-  m_Layer: 0
-  m_Name: ---GSConnect
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1995703068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995703067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f82d09dcd4f90349aa1188f3cf3b595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1995703069
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995703067}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037543851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6233,7 +6201,7 @@ RectTransform:
   - {fileID: 77389267389959542}
   - {fileID: 77389265716876579}
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -6682,22 +6650,22 @@ PrefabInstance:
     - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1995703068}
+      objectReference: {fileID: 1056938721}
     - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShowRewardedAd
+      value: TryRewardFull
       objectReference: {fileID: 0}
     - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GSConnect, Assembly-CSharp
+      value: GrenadeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
@@ -6736,13 +6704,13 @@ PrefabInstance:
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1995703068}
+      objectReference: {fileID: 1501401694503106070}
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -6751,12 +6719,12 @@ PrefabInstance:
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShowRewardedAd
+      value: TryReward
       objectReference: {fileID: 0}
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GSConnect, Assembly-CSharp
+      value: Money, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 455493797493050135, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
@@ -7284,7 +7252,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7970,13 +7938,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1255798551890488657}
-  - {fileID: 4868221391234573610}
-  - {fileID: 77389267229068454}
-  - {fileID: 1733940511646004051}
   - {fileID: 1255798553250329371}
   - {fileID: 1255798553286930269}
   - {fileID: 1255798553146218280}
   - {fileID: 1255798551416938872}
+  - {fileID: 4868221391234573610}
+  - {fileID: 77389267229068454}
+  - {fileID: 1733940511646004051}
   - {fileID: 1255798552708431303}
   m_Father: {fileID: 8289361161791363839}
   m_RootOrder: 3
@@ -9761,7 +9729,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9893,7 +9861,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10011,7 +9979,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10420,10 +10388,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 1733940511646004080}
+        m_TargetAssemblyTypeName: GrenadeShop, Assembly-CSharp
+        m_MethodName: TryRewardFull
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10499,7 +10467,7 @@ RectTransform:
   - {fileID: 1733940511958938243}
   - {fileID: 1733940510142753494}
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -10929,7 +10897,7 @@ RectTransform:
   m_Children:
   - {fileID: 2065933378442219730}
   m_Father: {fileID: 4174766043232122240}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -11353,10 +11321,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3233576902296820738}
-  - {fileID: 9092142835872495578}
-  - {fileID: 3629146701188825451}
   - {fileID: 3233576901790833557}
   - {fileID: 3233576902023071729}
+  - {fileID: 9092142835872495578}
+  - {fileID: 3629146701188825451}
   - {fileID: 1027299119}
   - {fileID: 18365051}
   - {fileID: 1508068517}
@@ -11471,7 +11439,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3233576901476224872}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11607,7 +11575,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3233576901476224872}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11956,10 +11924,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995703068}
-        m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
-        m_MethodName: ShowRewardedAd
-        m_Mode: 5
+      - m_Target: {fileID: 1501401694503106070}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: TryReward
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12023,7 +11991,7 @@ RectTransform:
   - {fileID: 9127552306300041846}
   - {fileID: 1700551269}
   m_Father: {fileID: 3233576901476224872}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12059,6 +12027,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 26.800049
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900077678939646480, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900077678939646480, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3610302087084677037, guid: 06235315a75c9e24f94a0f431e961dcf,
         type: 3}
@@ -12175,6 +12153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Setting
       objectReference: {fileID: 0}
+    - target: {fileID: 3681910847235061471, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3895419044083323101, guid: 06235315a75c9e24f94a0f431e961dcf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -12189,6 +12172,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 26.800049
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029991868756129404, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029991868756129404, guid: 06235315a75c9e24f94a0f431e961dcf,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5332790396111347600, guid: 06235315a75c9e24f94a0f431e961dcf,
         type: 3}
@@ -12801,7 +12794,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995703068}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GSConnect, Assembly-CSharp
         m_MethodName: ShowRewardedAd
         m_Mode: 5
@@ -13030,7 +13023,7 @@ RectTransform:
   m_Children:
   - {fileID: 4174766043145306112}
   m_Father: {fileID: 4174766043232122240}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13168,7 +13161,7 @@ RectTransform:
   - {fileID: 4174766043171517895}
   - {fileID: 4174766042125688615}
   m_Father: {fileID: 4174766043232122240}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -13196,7 +13189,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4174766043232122240}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13825,10 +13818,10 @@ RectTransform:
   m_Children:
   - {fileID: 4174766043047354510}
   - {fileID: 4174766043397130881}
-  - {fileID: 2065933378709572593}
   - {fileID: 4174766042331609223}
   - {fileID: 4174766042944414020}
   - {fileID: 4174766042422114111}
+  - {fileID: 2065933378709572593}
   - {fileID: 4174766041803595072}
   - {fileID: 4174766042145081385}
   m_Father: {fileID: 8289361161791363839}
@@ -14035,7 +14028,7 @@ PrefabInstance:
     - target: {fileID: 2103115763768340634, guid: b180c22caa7094a4792c9946484476a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2103115763768340634, guid: b180c22caa7094a4792c9946484476a5,
         type: 3}
@@ -14284,7 +14277,7 @@ PrefabInstance:
     - target: {fileID: 792498534298254272, guid: 2b0ee982b7108a949a106c46ed5acb75,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 792498534298254272, guid: 2b0ee982b7108a949a106c46ed5acb75,
         type: 3}
@@ -15233,7 +15226,7 @@ RectTransform:
   - {fileID: 4868221390486487202}
   - {fileID: 4868221389457295018}
   m_Father: {fileID: 1255798552119778726}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -17852,7 +17845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6066672781617223318
 GameObject:
@@ -17884,7 +17877,6 @@ Transform:
   m_Children:
   - {fileID: 8289361161250685684}
   - {fileID: 6066672782548079774}
-  - {fileID: 1995703069}
   - {fileID: 6002538654642287711}
   - {fileID: 8289361161904561523}
   - {fileID: 6371243215633021052}
@@ -18218,7 +18210,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6415891036110536317
 GameObject:
@@ -18973,7 +18965,7 @@ RectTransform:
   m_Children:
   - {fileID: 7910666571946664552}
   m_Father: {fileID: 8289361161966955613}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -19753,7 +19745,7 @@ RectTransform:
   - {fileID: 8289361162550249038}
   - {fileID: 8289361162175133136}
   m_Father: {fileID: 8289361161966955613}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20775,7 +20767,7 @@ RectTransform:
   - {fileID: 1973002278}
   - {fileID: 1714878550}
   m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20934,7 +20926,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8289361161904561533
 GameObject:
@@ -21053,11 +21045,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 623931128}
   - {fileID: 410330952}
   - {fileID: 7910666571404744513}
   - {fileID: 858625540}
   - {fileID: 8289361160874461143}
-  - {fileID: 623931128}
   m_Father: {fileID: 8289361161791363839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21182,7 +21174,7 @@ Transform:
   - {fileID: 2092877686742338647}
   - {fileID: 8528138926170870194}
   m_Father: {fileID: 6066672781617223319}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8289361162026965346
 GameObject:
@@ -22964,7 +22956,7 @@ RectTransform:
   m_Children:
   - {fileID: 9092142836680912121}
   m_Father: {fileID: 3233576901476224872}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
