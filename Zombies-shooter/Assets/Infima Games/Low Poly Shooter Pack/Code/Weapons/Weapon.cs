@@ -18,6 +18,9 @@ namespace InfimaGames.LowPolyShooterPack
 
         [SerializeField]
         private int cost;
+
+        [SerializeField]
+        private bool isBattlepass;
         
         [Title(label: "Settings")]
         
@@ -214,6 +217,8 @@ namespace InfimaGames.LowPolyShooterPack
         public override string WeaponName { get { return weaponName; } set { weaponName = value; } }
 
         public override int Cost { get { return cost; } set { cost = value; } } 
+
+        public override bool IsBattlepass { get { return isBattlepass; } set { isBattlepass = value; } }
 
         #endregion
 

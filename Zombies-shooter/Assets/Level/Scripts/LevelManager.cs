@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GameScore;
 
 public class LevelManager : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool isMobile;
     public bool IsMobile { get { return isMobile; } private set { isMobile = value; } }
 
+    private void Awake()
+    {
+        IsMobile = GS_Device.IsMobile();
+    }
     private void OnEnable()
     {
         _spawnManager = FindObjectOfType<SpawnManager>();

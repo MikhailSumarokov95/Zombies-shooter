@@ -16,6 +16,9 @@ public class Shop : MonoBehaviour
     [SerializeField] private TMP_Text buyWeaponText;
     [SerializeField] private Button selectWeaponButton;
     [SerializeField] private Button selectedWeaponButton;
+    [SerializeField] private Button battlepassWeaponButton;
+    [SerializeField] private Button glWeaponButton;
+    [SerializeField] private Button rlWeaponButton;
 
     private Weapon[] _weapons;
     private int _currentWeaponNumber;
@@ -115,6 +118,10 @@ public class Shop : MonoBehaviour
         buyWeaponButton.gameObject.SetActive(false);
         selectedWeaponButton.gameObject.SetActive(false);
         selectWeaponButton.gameObject.SetActive(false);
+        battlepassWeaponButton.gameObject.SetActive(false);
+        glWeaponButton.gameObject.SetActive(false);
+        rlWeaponButton.gameObject.SetActive(false);
+
 
         if (WeaponsSelected.WeaponsAttachmentsSelected[_currentWeaponName].IsSelectedWeapon)
         {
@@ -126,6 +133,24 @@ public class Shop : MonoBehaviour
         {
             selectWeaponButton.gameObject.SetActive(true);
             SetActiveAttachment(true);
+        }
+
+        else if (_currentWeaponName == "Grenade Launcher 01")
+        {
+            glWeaponButton.gameObject.SetActive(true);
+            SetActiveAttachment(false);
+        }
+
+        else if (_currentWeaponName == "Rocket Launcher 01")
+        {
+            rlWeaponButton.gameObject.SetActive(true);
+            SetActiveAttachment(false);
+        }
+
+        else if (_weapons[_currentWeaponNumber].IsBattlepass)
+        {
+            battlepassWeaponButton.gameObject.SetActive(true);
+            SetActiveAttachment(false);
         }
 
         else

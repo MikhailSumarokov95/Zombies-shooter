@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+  <text id="mainMenu">Главное меню</text>
+  <text id="shop">Магазин</text>
+  <text id="switchLanguage">Сменить язык</text>
+  <text id="buyButton">Купить {0} монет</text>
+  <text id="selectButton">Выбрать</text>
+  <text id="nextButton">След</text>
+  <text id="prevButton">Пред</text>
+  <text id="exitButton">Выход</text>
+  <text id="Select_Text">Выбрать</text>
+  <text id="BattlePass">Боевой пропуск</text>
+  <text id="Level">Уровень</text>
+  <text id="Setting">Настройки</text>
+  <text id="Battlepass">Battlepass 49 ЯН</text>
+  <text id="PerAds">За рекламу</text>
+  <text id="Start">Старт</text>
+  <text id="Sensitivity">Чувствительность</text>
+  <text id="Sound">Громкость</text>
+  <text id="YouBeenInfected">ВЫ ЗАРАЖЕНЫ</text>
+  <text id="Restart">Рестарт</text>
+  <text id="ContinuePerAds">Продолжить за рекламу</text>
+  <text id="Continue">Продолжить?</text>
+  <text id="DoubleMoneyPerAds">Удвоить вознаграждения за рекламу</text>
+  <text id="NextLevel">Следующий уровень</text>
+  <text id="Win">Победа</text>
+</texts>

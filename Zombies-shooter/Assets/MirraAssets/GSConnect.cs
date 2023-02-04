@@ -282,8 +282,34 @@ public class GSConnect : MonoBehaviour {
     /// дать игроку то за что он платил.
     /// </summary>
     void OnPurchaseSuccess(string purchaseTag)
-    { 
+    {
 
+        switch (purchaseTag)
+        {
+            case "GrenadeLauncher":
+                var boughtGL = Progress.LoadWeaponsBought();
+                boughtGL.WeaponsAttachmentsBought["Grenade Launcher 01"].IsBoughtWeapon = true;
+                Progress.SaveWeaponsBought(boughtGL);
+
+                var selectedGL = Progress.LoadWeaponsSelected();
+                selectedGL.WeaponsAttachmentsSelected["Grenade Launcher 01"].IsSelectedWeapon = true;
+                Progress.SaveWeaponsSelected(selectedGL);
+                break;
+
+            case "RocketLauncher":
+                var boughtRL = Progress.LoadWeaponsBought();
+                boughtRL.WeaponsAttachmentsBought["Rocket Launcher 01"].IsBoughtWeapon = true;
+                Progress.SaveWeaponsBought(boughtRL);
+
+                var selectedRL = Progress.LoadWeaponsSelected();
+                selectedRL.WeaponsAttachmentsSelected["Rocket Launcher 01"].IsSelectedWeapon = true;
+                Progress.SaveWeaponsSelected(selectedRL);
+                break;
+
+            case "Battlepass":
+                Progress.SaveBattlePass();
+                break;
+        }
     }
 
     // Социальные сети:

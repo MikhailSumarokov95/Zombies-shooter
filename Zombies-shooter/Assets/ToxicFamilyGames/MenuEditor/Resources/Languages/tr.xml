@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<text>
+	<text id="mainMenu">Ana Menü</text>
+	<text id="shop">Alışveriş</text>
+	<text id="switchLanguage">Dili değiştir</text>
+	<text id="buyButton">{0} jeton satın alın</text>
+	<text id="selectButton">Seç</text>
+	<text id="nextButton">Sonraki</text>
+	<text id="prevButton">Önceki</text>
+	<text id="exitButton">Çıkış</text>
+	<text id="Select_Text">Seç</text>
+	<text id="BattlePass">Savaş Kartı</text>
+	<text id="Seviye">Seviye</text>
+	<text id="Ayar">Ayarlar</text>
+	<text id="Battlepass">Battlepass 49 OCAK</text>
+	<text id="PerAds">PerReklamlar</text>
+	<text id="Başlat">Başlat</text>
+	<text id="Sensitivity">Hassasiyet</text>
+	<text id="Ses">Ses Düzeyi</text>
+	<text id="YouBeenInfected">SİZLERE ENFEKSİYONLUSUNUZ</text>
+	<text id="Yeniden Başlat">Yeniden Başlat</text>
+	<text id="ContinuePerAds">Reklam Başına Devam</text>
+	<text id="Continue">Devam edilsin mi?</text>
+	<text id="DoubleMoneyPerAds">DoubleMoneyPerAds</text>
+	<text id="NextLevel">Sonraki Düzey</text>
+	<text id="Kazan">Kazan</text>
+</text>

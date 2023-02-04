@@ -10,6 +10,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         public abstract int Cost { get; set; }
 
+        public abstract bool IsBattlepass { get; set; }
+
         #region UNITY
 
         /// <summary>

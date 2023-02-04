@@ -1,4 +1,5 @@
 using UnityEngine;
+using GameScore;
 
 public class MenuManager : MonoBehaviour
 {
@@ -6,5 +7,7 @@ public class MenuManager : MonoBehaviour
     {
         if (!Progress.CheckSave()) FindObjectOfType<Shop>(true).SetDefaultSetting();
         FindObjectOfType<BattlePassRewarder>(true).Awake();
+
+        PlayerPrefs.SetString("selectedLanguage", GS_Language.Current());
     }
 }
