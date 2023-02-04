@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 using UnityEngine;
 
 public static class Progress
@@ -13,31 +10,14 @@ public static class Progress
             PlayerPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
         else
             GSPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
-
-        //BinaryFormatter bf = new BinaryFormatter();
-        //FileStream file = File.Create(Application.persistentDataPath
-        //  + "/WeaponsSelected.dat");
-        //bf.Serialize(file, weapons);
-        //file.Close();
     }
 
     public static WeaponsSelected LoadWeaponsSelected()
     {
-        return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString("weaponsSelected", null));
-
-        //if (File.Exists(Application.persistentDataPath
-        //  + "/WeaponsSelected.dat"))
-        //{
-        //    BinaryFormatter bf = new BinaryFormatter();
-        //    FileStream file =
-        //      File.Open(Application.persistentDataPath
-        //      + "/WeaponsSelected.dat", FileMode.Open);
-        //    WeaponsSelected weapons = (WeaponsSelected)bf.Deserialize(file);
-        //    file.Close();
-        //    return weapons;
-        //}
-        //else Debug.LogError("There is no save WeaponsSelected!");
-        //return null;
+        if (Application.isEditor)
+            return JsonUtility.FromJson<WeaponsSelected>(PlayerPrefs.GetString("weaponsSelected", null));
+        else
+            return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString("weaponsSelected", null));
     }
 
     public static void SaveWeaponsBought(WeaponsBought weapons)
@@ -46,12 +26,6 @@ public static class Progress
             PlayerPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
         else
             GSPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
-
-        //BinaryFormatter bf = new BinaryFormatter();
-        //FileStream file = File.Create(Application.persistentDataPath
-        //  + "/WeaponsBought.dat");
-        //bf.Serialize(file, weapons);
-        //file.Close();
     }
 
 
@@ -62,20 +36,6 @@ public static class Progress
             return JsonUtility.FromJson<WeaponsBought>(PlayerPrefs.GetString("weaponsBought", null));
         else
             return JsonUtility.FromJson<WeaponsBought>(GSPrefs.GetString("weaponsBought", null));
-
-        //if (File.Exists(Application.persistentDataPath
-        //  + "/WeaponsBought.dat"))
-        //{
-        //    BinaryFormatter bf = new BinaryFormatter();
-        //    FileStream file =
-        //      File.Open(Application.persistentDataPath
-        //      + "/WeaponsBought.dat", FileMode.Open);
-        //    WeaponsBought weapons = (WeaponsBought)bf.Deserialize(file);
-        //    file.Close();
-        //    return weapons;
-        //}
-        //else Debug.LogError("There is no save WeaponsBought!");
-        //return null;
     }
 
     public static bool CheckSave()
@@ -184,7 +144,7 @@ public static class Progress
     [Serializable]
     public class WeaponsSelected
     {
-        public Dictionary<string, WeaponAttachmentSelected> WeaponsAttachmentsSelected;
+        public TFG.Generic.Dictionary<string, WeaponAttachmentSelected> WeaponsAttachmentsSelected;
     }
 
     [Serializable]
@@ -200,7 +160,7 @@ public static class Progress
     [Serializable]
     public class WeaponsBought
     {
-        public Dictionary<string, WeaponAttachmentsBought> WeaponsAttachmentsBought;
+        public TFG.Generic.Dictionary<string, WeaponAttachmentsBought> WeaponsAttachmentsBought;
     }
 
     [Serializable]
@@ -213,59 +173,4 @@ public static class Progress
         public List<int> GripIndex;
         public int AmmunitionSum;
     }
-
-    //public static string ToString(WeaponsSelected weaponsSelected)
-    //{
-    //    //var weaponsBuilder = new StringBuilder();
-
-    //        //foreach (var weapon in weaponsSelected.WeaponsAttachmentsSelected.Keys)
-    //        //{
-    //        //    weaponsBuilder.Append('{');
-
-
-    //        //    weaponsBuilder.Append(weapon);
-    //        //    weaponsBuilder.Append(':');
-
-    //        //    weaponsBuilder.Append(weaponsSelected.WeaponsAttachmentsSelected[weapon].IsSelectedWeapon);
-    //        //    weaponsBuilder.Append(',');
-    //        //    weaponsBuilder.Append(weaponsSelected.WeaponsAttachmentsSelected[weapon].ScopeIndex);
-    //        //    weaponsBuilder.Append(',');
-    //        //    weaponsBuilder.Append(weaponsSelected.WeaponsAttachmentsSelected[weapon].MuzzleIndex);
-    //        //    weaponsBuilder.Append(',');
-    //        //    weaponsBuilder.Append(weaponsSelected.WeaponsAttachmentsSelected[weapon].LaserIndex);
-    //        //    weaponsBuilder.Append(',');
-    //        //    weaponsBuilder.Append(weaponsSelected.WeaponsAttachmentsSelected[weapon].GripIndex);
-
-    //        //    weaponsBuilder.Append('}');
-    //        //}
-
-    //        //return weaponsBuilder.ToString();
-    //}
-
-    //public static WeaponsSelected FromStringWeaponsSelected(string strWeapon)
-    //{
-    //    var weaponsSelected = new WeaponsSelected();
-    //    weaponsSelected.WeaponsAttachmentsSelected = new Dictionary<string, WeaponAttachmentSelected>();
-    //    foreach (var ch in strWeapon)
-    //    {
-    //        bool isNameWeapon = false;
-
-    //        var name = new StringBuilder();
-
-    //        var attachment = new WeaponAttachmentSelected();
-
-    //        if (ch == '{')
-    //        {
-    //            isNameWeapon = true;
-    //            continue;
-    //        }
-
-    //        if (isNameWeapon) name.Append(ch);
-
-    //        if (ch == ':')
-    //        {
-    //            isNameWeapon = false;
-    //        }
-    //    }
-    //}
 }

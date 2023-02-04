@@ -196,7 +196,7 @@ public class Shop : MonoBehaviour
 
         //выбраное
         var weaponSelected = new Progress.WeaponsSelected();
-        weaponSelected.WeaponsAttachmentsSelected = new Dictionary<string, Progress.WeaponAttachmentSelected>();
+        weaponSelected.WeaponsAttachmentsSelected = new TFG.Generic.Dictionary<string, Progress.WeaponAttachmentSelected>();
         foreach (var weapon in weapons)
         {
             var weaponAttachmentManager = weapon.GetComponent<WeaponAttachmentManager>();
@@ -219,7 +219,7 @@ public class Shop : MonoBehaviour
 
         //купленое
         var weaponBought = new Progress.WeaponsBought();
-        weaponBought.WeaponsAttachmentsBought = new Dictionary<string, Progress.WeaponAttachmentsBought>();
+        weaponBought.WeaponsAttachmentsBought = new TFG.Generic.Dictionary<string, Progress.WeaponAttachmentsBought>();
         foreach (var weapon in weapons)
         {
             var weaponAttachmentManager = weapon.GetComponent<WeaponAttachmentManager>();
@@ -239,7 +239,6 @@ public class Shop : MonoBehaviour
         weaponBought.WeaponsAttachmentsBought["Assault Rifle 01"].IsBoughtWeapon = true; // назначение стандартной пушки
         weaponBought.WeaponsAttachmentsBought["Handgun 01"].IsBoughtWeapon = true; // назначение стандартной пушки
 
-        Progress.SaveWeaponsBought(weaponBought);
-        //Progress.SaveWeaponsBought(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought));
+        Progress.SaveWeaponsBought(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought));
     }
 }
