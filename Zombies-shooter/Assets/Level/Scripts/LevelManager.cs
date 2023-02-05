@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        IsMobile = GS_Device.IsMobile();
+        if (!Application.isEditor) IsMobile = GS_Device.IsMobile();
     }
     private void OnEnable()
     {

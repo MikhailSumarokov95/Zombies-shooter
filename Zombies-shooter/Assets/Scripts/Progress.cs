@@ -130,7 +130,6 @@ public static class Progress
             GSPrefs.SetFloat("sensitivity", value);
             GSPrefs.Save();
         }
-
     }
 
     public static float LoadSensitivity()
@@ -139,6 +138,25 @@ public static class Progress
             return PlayerPrefs.GetInt("sensitivity", 1);
         else
             return GSPrefs.GetFloat("sensitivity", 1);
+    }
+
+    public static void SaveVolume(float value)
+    {
+        if (Application.isEditor)
+            PlayerPrefs.SetFloat("volume", value);
+        else
+        {
+            GSPrefs.SetFloat("volume", value);
+            GSPrefs.Save();
+        }
+    }
+
+    public static float LoadVolume()
+    {
+        if (Application.isEditor)
+            return PlayerPrefs.GetInt("volume", 1);
+        else
+            return GSPrefs.GetFloat("volume", 1);
     }
 
     [Serializable]

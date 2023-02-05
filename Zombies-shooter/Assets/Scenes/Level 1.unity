@@ -363,7 +363,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.65
+  m_fontSize: 36.9
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2198,7 +2198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &626462523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5579,7 +5579,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
+  m_fontSize: 24.6
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6609,7 +6609,7 @@ PrefabInstance:
     - target: {fileID: 387637944294304996, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 362.57
       objectReference: {fileID: 0}
     - target: {fileID: 387637944294304996, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
@@ -6694,12 +6694,12 @@ PrefabInstance:
     - target: {fileID: 387637944319734720, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 193.57
       objectReference: {fileID: 0}
     - target: {fileID: 387637944319734720, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 325.56998
       objectReference: {fileID: 0}
     - target: {fileID: 387637944319734720, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
@@ -6882,7 +6882,7 @@ PrefabInstance:
     - target: {fileID: 455493798889630724, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 349
       objectReference: {fileID: 0}
     - target: {fileID: 455493798889630724, guid: 6da1eb71499c73c4e87019a69f7db5ab,
         type: 3}
@@ -12281,7 +12281,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4174766042422114111}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13400,7 +13400,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4174766042422114111}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

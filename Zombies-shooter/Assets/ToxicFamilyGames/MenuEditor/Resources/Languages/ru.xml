@@ -20,8 +20,12 @@
   <text id="YouBeenInfected">ВЫ ЗАРАЖЕНЫ</text>
   <text id="Restart">Рестарт</text>
   <text id="ContinuePerAds">Продолжить за рекламу</text>
-  <text id="Continue">Продолжить?</text>
+  <text id="Continue">Продолжить</text>
   <text id="DoubleMoneyPerAds">Удвоить вознаграждения за рекламу</text>
   <text id="NextLevel">Следующий уровень</text>
   <text id="Win">Победа</text>
+  <text id="IsSelected">Выбрано</text>
+  <text id="Pause">Пауза</text>
+  <text id="EndWave">Конец волны</text>
+  <text id="PerAd">За рекламу</text>
 </texts>

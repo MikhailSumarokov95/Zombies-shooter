@@ -59,14 +59,14 @@ public class Setting : MonoBehaviour
 
     public void SaveSettings()
     {
-        //PlayerPrefs.SetFloat("musicVolume", musicVolume);
+        Progress.SaveVolume(MusicVolume);
         Progress.SaveSensitivity(Sensitivity);
         OnSaveSetting?.Invoke();
     }
 
     public void LoadSettings()
     {
-        //MusicVolume = PlayerPrefs.GetFloat("musicVolume", musicVolumeSlider.value);
+        MusicVolume = Progress.LoadVolume();
         Sensitivity = Progress.LoadSensitivity();
         musicVolumeSlider.value = MusicVolume;
         sensitivitySlider.value = Sensitivity;

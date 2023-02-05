@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <text>
 	<text id="mainMenu">Ana Menü</text>
-	<text id="shop">Alışveriş</text>
+	<text id="shop">Mağaza</text>
 	<text id="switchLanguage">Dili değiştir</text>
-	<text id="buyButton">{0} jeton satın alın</text>
+	<text id="buyButton">{0} madeni para satın alın</text>
 	<text id="selectButton">Seç</text>
 	<text id="nextButton">Sonraki</text>
 	<text id="prevButton">Önceki</text>
@@ -20,8 +20,12 @@
 	<text id="YouBeenInfected">SİZLERE ENFEKSİYONLUSUNUZ</text>
 	<text id="Yeniden Başlat">Yeniden Başlat</text>
 	<text id="ContinuePerAds">Reklam Başına Devam</text>
-	<text id="Continue">Devam edilsin mi?</text>
+	<text id="Continue">Devam edilsin mi</text>
 	<text id="DoubleMoneyPerAds">DoubleMoneyPerAds</text>
 	<text id="NextLevel">Sonraki Düzey</text>
 	<text id="Kazan">Kazan</text>
+	<text id="IsSelected">Seçildi</text>
+	<text id="Duraklat">Duraklat</text>
+	<text id="EndWave">Son Dalga</text>
+	<text id="PerAd">Reklam Başına</text>
 </text>
