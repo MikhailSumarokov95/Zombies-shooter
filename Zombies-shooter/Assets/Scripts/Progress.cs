@@ -9,7 +9,10 @@ public static class Progress
         if (Application.isEditor)
             PlayerPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
         else
+        {
             GSPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
+            GSPrefs.Save();
+        }
     }
 
     public static WeaponsSelected LoadWeaponsSelected()
@@ -25,10 +28,11 @@ public static class Progress
         if (Application.isEditor)
             PlayerPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
         else
+        {
             GSPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
+            GSPrefs.Save();
+        }
     }
-
-
 
     public static WeaponsBought LoadWeaponsBought()
     {
@@ -42,7 +46,8 @@ public static class Progress
     {
         if (Application.isEditor)
             return PlayerPrefs.GetString("weaponsSelected", null) == null;
-        else return GSPrefs.GetString("weaponsSelected", null) == null;
+        else
+            return GSPrefs.GetString("weaponsSelected", null) == null;
     }
 
     public static void SaveMoney(int value)

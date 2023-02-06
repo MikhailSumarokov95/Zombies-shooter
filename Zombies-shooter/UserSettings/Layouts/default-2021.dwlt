@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 137
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 106
+  controlID: 138
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -510,22 +510,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ykpon\Desktop\Unity\Zombies-shooter\Zombies-shooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 130}
-    m_SelectedIDs: bad80000
-    m_LastClickedID: 55482
-    m_ExpandedIDs: 0000000024d8000026d8000028d800002ad800002cd800002ed8000030d8000032d8000034d8000038d800003ad800003ed8000040d8000044d8000048d800004ad800004cd80000aed800000cd90000381c03007091030096a603009ea60300
+    m_SelectedIDs: 82d90000
+    m_LastClickedID: 55682
+    m_ExpandedIDs: 00000000f8d80000fad80000fcd80000fed8000000d9000002d9000004d9000006d9000008d900000ad900000cd900000ed9000010d9000012d9000014d9000016d9000018d900001ad900001cd900001ed9000020d9000022d9000024d90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,7 +553,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000024d8000026d8000028d800002ad800002cd800002ed8000030d8000032d8000034d8000036d8000038d800003ad800003cd800003ed8000040d8000042d8000044d8000046d8000048d800004ad800004cd800004ed80000
+    m_ExpandedIDs: 00000000f8d80000fad80000fcd80000fed8000000d9000002d9000004d9000006d9000008d900000ad900000cd900000ed9000010d9000012d9000014d9000016d9000018d900001ad900001cd900001ed9000020d9000022d9000024d90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -982,21 +982,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ca3ef7ff0e3ff7ffcae3f7ffbe18f8ff1a19f8ffb013f9ff7cbdf9ffc08dfaffce8dfaff86abfaffd8abfaffeaabfaff08acfaff80b1faff8eb1faffd8c0faff7a65fbff985cfcffb22dfdfff42dfdff902efdff842ffdff0642fdff1642fdff3e42fdffe659fdfff659fdff0e5cfdff1e5cfdffea5ffdff5e60fdffdc63fdffec63fdffdc65fdffec65fdff3875fdffd618feffc2ebffff00fbfffffc65000050660000e26600007299030016a3030076a30300c2a30300dea303000ea403003ca403004ca40300b2a40300f6a40300b0a9030090aa03009aaa0300d0aa03004aab0300a6ab030018ac030026ac03003aac030054ac03006eac030088ac0300acac0300f6ac0300b6ad0300caad030056af03009caf03003eb10300fcb803006a0204007a0304000a0c0400780c04009e0c0400c40c0400740d0400480e040090550400
+      m_ExpandedIDs: c2bdfdff08befdffd062feff0a98feff3e98feffb0d0feff2007ffff02fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Text (TMP)
-        m_OriginalName: Text (TMP)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 283708
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 

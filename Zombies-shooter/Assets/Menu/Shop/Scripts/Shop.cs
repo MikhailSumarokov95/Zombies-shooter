@@ -24,6 +24,7 @@ public class Shop : MonoBehaviour
     private int _currentWeaponNumber;
     private int _cost;
     private Money _money;
+    private GSConnect _gSConnect;
 
     private string _currentWeaponName;
     public string CurrentWeaponName { get { return _currentWeaponName; } set { _currentWeaponName = value; } }
@@ -70,6 +71,14 @@ public class Shop : MonoBehaviour
         _weaponsBought = Progress.LoadWeaponsBought();
         _weaponsSelected = Progress.LoadWeaponsSelected();
         InitButtons();
+
+        _gSConnect = FindObjectOfType<GSConnect>();
+        _gSConnect.OnPurchase += RefreshCurrentWeapon;
+    }
+
+    private void OnDisable()
+    {
+        _gSConnect.OnPurchase -= RefreshCurrentWeapon;
     }
 
     public void ScrollThroughWeapons(int direction)
@@ -98,6 +107,7 @@ public class Shop : MonoBehaviour
 
         InitButtons();
     }
+
 
     public void SelectWeapon()
     {
@@ -159,6 +169,13 @@ public class Shop : MonoBehaviour
             buyWeaponText.text = _cost.ToString();
             SetActiveAttachment(false);
         }
+    }
+
+    private void RefreshCurrentWeapon()
+    {
+        WeaponsBought = Progress.LoadWeaponsBought();
+        WeaponsSelected = Progress.LoadWeaponsSelected();
+        InitButtons();
     }
 
     private void StartInitWeapons()

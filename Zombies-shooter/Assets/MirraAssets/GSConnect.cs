@@ -1,10 +1,13 @@
 using GameScore;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GSConnect : MonoBehaviour {
 
     static GSConnect instance;
+
+    public Action OnPurchase;
 
     /// <summary>
     /// Состояние инициализации SDK.
@@ -283,7 +286,6 @@ public class GSConnect : MonoBehaviour {
     /// </summary>
     void OnPurchaseSuccess(string purchaseTag)
     {
-
         switch (purchaseTag)
         {
             case "GrenadeLauncher":
@@ -294,6 +296,8 @@ public class GSConnect : MonoBehaviour {
                 var selectedGL = Progress.LoadWeaponsSelected();
                 selectedGL.WeaponsAttachmentsSelected["Grenade Launcher 01"].IsSelectedWeapon = true;
                 Progress.SaveWeaponsSelected(selectedGL);
+
+                
                 break;
 
             case "RocketLauncher":
@@ -310,6 +314,8 @@ public class GSConnect : MonoBehaviour {
                 Progress.SaveBattlePass();
                 break;
         }
+
+        OnPurchase?.Invoke();
     }
 
     // Социальные сети:
