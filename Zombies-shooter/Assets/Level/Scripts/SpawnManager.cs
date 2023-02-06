@@ -11,7 +11,6 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private int delayAfterEndWave = 6;
     [SerializeField] private EnemySpawn[] enemiesSpawn;
     [SerializeField] private AIBotController boss;
-    [SerializeField] private int numberLevelSpawnBoss = 5;
     [SerializeField] private int countWave = 3;
     [SerializeField] private int plusEnemyWithLevel = 1;
     [SerializeField] private Transform[] enemySpawnPoints;
@@ -20,8 +19,8 @@ public class SpawnManager : MonoBehaviour
     private LevelManager _levelManager;
     private Level _level;
 
-    private int _numberWave;
-    public int NumberWave { get { return _numberWave; } set { _numberWave = value; } }
+    private int _numberWave = 0;
+    public int NumberWave { get { return _numberWave; } private set { _numberWave = value; } }
 
     private void Start()
     {
@@ -41,6 +40,7 @@ public class SpawnManager : MonoBehaviour
         for (var i = 0; i < countWave; i++)
         {
             yield return new WaitUntil(() => _levelManager.StateGame == LevelManager.State.Game);
+            NumberWave ++;
             _isAllEnemiesKilled = false;
             _currentEnemyLife = SpawnEnemies(enemiesSpawn);
 
@@ -69,7 +69,7 @@ public class SpawnManager : MonoBehaviour
         }
         numberSpawnPoint++;
 
-        if (_level.CurrentLevel % numberLevelSpawnBoss == 0)
+        if (NumberWave == countWave)
             enemy.Add(SpawnBoss(numberSpawnPoint));
 
         return enemy.ToArray();

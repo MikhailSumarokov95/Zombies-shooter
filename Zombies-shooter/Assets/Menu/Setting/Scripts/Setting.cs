@@ -57,6 +57,11 @@ public class Setting : MonoBehaviour
         SaveSettings();
     }
 
+    private void OnEnable()
+    {
+        LoadSettings();
+    }
+
     public void SaveSettings()
     {
         Progress.SaveVolume(MusicVolume);

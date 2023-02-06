@@ -257,7 +257,7 @@ public class Shop : MonoBehaviour
         weaponSelected.WeaponsAttachmentsSelected["Assault Rifle 01"].IsSelectedWeapon = true; // назначение стандартной пушки
         weaponSelected.WeaponsAttachmentsSelected["Handgun 01"].IsSelectedWeapon = true; // назначение стандартной пушки
 
-        Progress.SaveWeaponsSelected(weaponSelected);
+        Progress.DefaultWeaponsSelected = JsonUtility.ToJson(weaponSelected).ToString();
 
         //купленое
         var weaponBought = new Progress.WeaponsBought();
@@ -281,6 +281,6 @@ public class Shop : MonoBehaviour
         weaponBought.WeaponsAttachmentsBought["Assault Rifle 01"].IsBoughtWeapon = true; // назначение стандартной пушки
         weaponBought.WeaponsAttachmentsBought["Handgun 01"].IsBoughtWeapon = true; // назначение стандартной пушки
 
-        Progress.SaveWeaponsBought(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought));
+        Progress.DefaultWeaponsBought = JsonUtility.ToJson(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought)).ToString();
     }
 }

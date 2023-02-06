@@ -4,50 +4,37 @@ using UnityEngine;
 
 public static class Progress
 {
+    public static string DefaultWeaponsBought;
+    public static string DefaultWeaponsSelected;
+
     public static void SaveWeaponsSelected(WeaponsSelected weapons)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
-        else
-        {
-            GSPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons));
-            GSPrefs.Save();
-        }
+        Debug.Log(weapons);
+        Debug.Log(JsonUtility.ToJson(weapons));
+
+        GSPrefs.SetString("weaponsSelected", JsonUtility.ToJson(weapons).ToString());
+        GSPrefs.Save();
     }
 
     public static WeaponsSelected LoadWeaponsSelected()
     {
-        if (Application.isEditor)
-            return JsonUtility.FromJson<WeaponsSelected>(PlayerPrefs.GetString("weaponsSelected", null));
-        else
-            return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString("weaponsSelected", null));
+        Debug.Log(GSPrefs.GetString("weaponsSelected", DefaultWeaponsSelected));
+        return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString("weaponsSelected", DefaultWeaponsSelected));
     }
 
     public static void SaveWeaponsBought(WeaponsBought weapons)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
-        else
-        {
-            GSPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons));
-            GSPrefs.Save();
-        }
+        Debug.Log(weapons);
+        Debug.Log(JsonUtility.ToJson(weapons));
+
+        GSPrefs.SetString("weaponsBought", JsonUtility.ToJson(weapons).ToString());
+        GSPrefs.Save();
     }
 
     public static WeaponsBought LoadWeaponsBought()
     {
-        if (Application.isEditor)
-            return JsonUtility.FromJson<WeaponsBought>(PlayerPrefs.GetString("weaponsBought", null));
-        else
-            return JsonUtility.FromJson<WeaponsBought>(GSPrefs.GetString("weaponsBought", null));
-    }
-
-    public static bool CheckSave()
-    {
-        if (Application.isEditor)
-            return PlayerPrefs.GetString("weaponsSelected", null) == null;
-        else
-            return GSPrefs.GetString("weaponsSelected", null) == null;
+        Debug.Log(GSPrefs.GetString("weaponsBought", DefaultWeaponsBought));
+        return JsonUtility.FromJson<WeaponsBought>(GSPrefs.GetString("weaponsBought", DefaultWeaponsBought));
     }
 
     public static void SaveMoney(int value)
@@ -128,40 +115,22 @@ public static class Progress
 
     public static void SaveSensitivity(float value)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetFloat("sensitivity", value);
-        else
-        {
-            GSPrefs.SetFloat("sensitivity", value);
-            GSPrefs.Save();
-        }
+        PlayerPrefs.SetFloat("sensitivity", value);
     }
 
     public static float LoadSensitivity()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("sensitivity", 1);
-        else
-            return GSPrefs.GetFloat("sensitivity", 1);
+        return PlayerPrefs.GetFloat("sensitivity", 1);
     }
 
     public static void SaveVolume(float value)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetFloat("volume", value);
-        else
-        {
-            GSPrefs.SetFloat("volume", value);
-            GSPrefs.Save();
-        }
+        PlayerPrefs.SetFloat("volume", value);
     }
 
     public static float LoadVolume()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("volume", 1);
-        else
-            return GSPrefs.GetFloat("volume", 1);
+        return PlayerPrefs.GetFloat("volume", 1);
     }
 
     [Serializable]
