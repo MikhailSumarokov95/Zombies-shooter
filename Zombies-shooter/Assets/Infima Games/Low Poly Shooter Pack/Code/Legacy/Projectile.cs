@@ -81,6 +81,10 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				collision.transform.gameObject.GetComponent
 					<HealthPoints>().TakeDamage(damage);
 
+				Instantiate(bloodImpactPrefabs[Random.Range
+						(0, bloodImpactPrefabs.Length)], transform.position,
+					Quaternion.LookRotation(collision.contacts[0].normal));
+
 				Destroy(gameObject);
 			}
 

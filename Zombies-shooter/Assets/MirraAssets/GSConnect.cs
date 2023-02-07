@@ -296,8 +296,6 @@ public class GSConnect : MonoBehaviour {
                 var selectedGL = Progress.LoadWeaponsSelected();
                 selectedGL.WeaponsAttachmentsSelected["Grenade Launcher 01"].IsSelectedWeapon = true;
                 Progress.SaveWeaponsSelected(selectedGL);
-
-                
                 break;
 
             case "RocketLauncher":
@@ -311,7 +309,7 @@ public class GSConnect : MonoBehaviour {
                 break;
 
             case "Battlepass":
-                Progress.SaveBattlePass();
+                FindObjectOfType<BattlePassRewarder>(true).BoughtBattlePass();
                 break;
         }
 

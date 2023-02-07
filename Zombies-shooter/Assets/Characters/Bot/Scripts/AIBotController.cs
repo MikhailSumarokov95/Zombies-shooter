@@ -8,11 +8,13 @@ public class AIBotController : MonoBehaviour
     [Range(0f, 30f)]
     [SerializeField] private float angleVisibility = 5f;
     [SerializeField] private float maxSpeed = 1.5f;
+    [SerializeField] private float timeDo = 0.5f;
     private Transform _target;
     private CapsuleCollider _targetCol;
     private BotMove _botMove;
     private Weapon _weapon;
     private LevelManager _levelManager;
+    private float _timerForDo;
 
     private void Start()
     {
@@ -29,6 +31,11 @@ public class AIBotController : MonoBehaviour
         if (_levelManager.StateGame != LevelManager.State.Game) return;
 
         if (_weapon.IsAttacking) return;
+
+        _timerForDo += Time.deltaTime;
+
+        if (_timerForDo < timeDo) return;
+        _timerForDo = 0f;
 
         if (DetermineIfThereObstaclesBetweenTargetAndBot() && AttackDistanceCheck())
             if (TargetVisibilityCheck()) Attack();
