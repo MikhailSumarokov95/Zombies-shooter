@@ -15,7 +15,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private Button buyWeaponButton;
     [SerializeField] private TMP_Text buyWeaponText;
     [SerializeField] private Button selectWeaponButton;
-    [SerializeField] private Button selectedWeaponButton;
+    [SerializeField] private Image selectedWeaponButton;
     [SerializeField] private Button battlepassWeaponButton;
     [SerializeField] private Button glWeaponButton;
     [SerializeField] private Button rlWeaponButton;

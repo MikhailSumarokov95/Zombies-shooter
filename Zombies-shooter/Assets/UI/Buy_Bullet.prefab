@@ -356,41 +356,41 @@ MonoBehaviour:
   price: 100
   _maxAmmunitionWeapon:
   - NameWeapon: Assault Rifle 02
-    Count: 96
+    Count: 192
   - NameWeapon: Assault Rifle 03
-    Count: 75
+    Count: 150
   - NameWeapon: Grenade Launcher 01
-    Count: 3
+    Count: 6
   - NameWeapon: Handgun 02
-    Count: 30
+    Count: 60
   - NameWeapon: Handgun 03
-    Count: 30
+    Count: 60
   - NameWeapon: Handgun 04
-    Count: 30
+    Count: 60
   - NameWeapon: Rocket Launcher 01
-    Count: 3
+    Count: 6
   - NameWeapon: Shotgun 01
-    Count: 24
+    Count: 48
   - NameWeapon: SMG 01
-    Count: 111
+    Count: 222
   - NameWeapon: SMG 02
-    Count: 90
+    Count: 180
   - NameWeapon: SMG 03
-    Count: 115
+    Count: 230
   - NameWeapon: SMG 04
-    Count: 162
+    Count: 324
   - NameWeapon: SMG 05
-    Count: 96
+    Count: 192
   - NameWeapon: Sniper 01
-    Count: 21
+    Count: 42
   - NameWeapon: Sniper 02
-    Count: 27
+    Count: 54
   - NameWeapon: Sniper 03
-    Count: 24
+    Count: 48
   - NameWeapon: Handgun 01
-    Count: 12
+    Count: 24
   - NameWeapon: Assault Rifle 01
-    Count: 30
+    Count: 60
 --- !u!1 &8366093587593268793
 GameObject:
   m_ObjectHideFlags: 0

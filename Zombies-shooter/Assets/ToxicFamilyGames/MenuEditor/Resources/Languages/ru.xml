@@ -28,4 +28,7 @@
   <text id="Pause">Пауза</text>
   <text id="EndWave">Конец волны</text>
   <text id="PerAd">За рекламу</text>
+  <text id="Continue?">Продолжить?</text>
+  <text id="PriceBattlePass">Стоимость: 49ЯН</text>
+  <text id="Damage">Урон: </text>
 </texts>

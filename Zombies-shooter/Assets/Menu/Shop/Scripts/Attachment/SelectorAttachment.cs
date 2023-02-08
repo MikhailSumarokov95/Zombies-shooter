@@ -11,7 +11,7 @@ public abstract class SelectorAttachment : MonoBehaviour
     [SerializeField] private Button buyButton;
     [SerializeField] protected TMP_Text buyText;
     [SerializeField] private Button selectButton;
-    [SerializeField] private Button selectedButton;
+    [SerializeField] private Image selectedButton;
     protected List<int> _weaponAttachmentBought;
     protected int _weaponAttachmentSelected;
     protected int _currentAttachment;
