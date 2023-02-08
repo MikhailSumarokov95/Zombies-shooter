@@ -22,6 +22,23 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private int equippedIndex = -1;
 
+        private BattlePassRewarder _battlePass;
+
+        private void OnEnable()
+        {
+            GSConnect.OnPurchaseWeapon += RefreshInventory;
+
+            _battlePass = FindObjectOfType<BattlePassRewarder>(true);
+            _battlePass.OnBoughtBattlePass += RefreshInventory;
+        }  
+        
+        private void OnDisable()
+        {
+            GSConnect.OnPurchaseWeapon -= RefreshInventory;
+
+            _battlePass.OnBoughtBattlePass -= RefreshInventory;
+        }
+
         #endregion
 
         #region METHODS
@@ -114,5 +131,10 @@ namespace InfimaGames.LowPolyShooterPack
         public override int GetEquippedIndex() => equippedIndex;
 
         #endregion
+
+        private void RefreshInventory()
+        {
+            Init(equippedIndex);
+        }
     }
 }

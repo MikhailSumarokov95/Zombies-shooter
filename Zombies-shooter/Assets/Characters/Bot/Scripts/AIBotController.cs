@@ -24,6 +24,7 @@ public class AIBotController : MonoBehaviour
         _weapon = transform.GetComponentInChildren<Weapon>();
         _levelManager = FindObjectOfType<LevelManager>();
         RandomizerSpeed();
+        _timerForDo = Random.Range(0, timeDo);
     }
 
     private void Update()

@@ -19,12 +19,13 @@ public class Shop : MonoBehaviour
     [SerializeField] private Button battlepassWeaponButton;
     [SerializeField] private Button glWeaponButton;
     [SerializeField] private Button rlWeaponButton;
+    [SerializeField] private TMP_Text damageText;
 
     private Weapon[] _weapons;
     private int _currentWeaponNumber;
     private int _cost;
     private Money _money;
-    private GSConnect _gSConnect;
+    private BattlePassRewarder _battlePass;
 
     private string _currentWeaponName;
     public string CurrentWeaponName { get { return _currentWeaponName; } set { _currentWeaponName = value; } }
@@ -72,13 +73,15 @@ public class Shop : MonoBehaviour
         _weaponsSelected = Progress.LoadWeaponsSelected();
         InitButtons();
 
-        _gSConnect = FindObjectOfType<GSConnect>();
-        _gSConnect.OnPurchase += RefreshCurrentWeapon;
+        GSConnect.OnPurchaseWeapon += RefreshCurrentWeapon;
+        _battlePass = FindObjectOfType<BattlePassRewarder>(true);
+        _battlePass.OnBoughtBattlePass += RefreshCurrentWeapon;
     }
 
     private void OnDisable()
     {
-        _gSConnect.OnPurchase -= RefreshCurrentWeapon;
+        GSConnect.OnPurchaseWeapon -= RefreshCurrentWeapon;
+        _battlePass.OnBoughtBattlePass -= RefreshCurrentWeapon;
     }
 
     public void ScrollThroughWeapons(int direction)
@@ -132,6 +135,7 @@ public class Shop : MonoBehaviour
         glWeaponButton.gameObject.SetActive(false);
         rlWeaponButton.gameObject.SetActive(false);
 
+        InitDamageText();
 
         if (WeaponsSelected.WeaponsAttachmentsSelected[_currentWeaponName].IsSelectedWeapon)
         {
@@ -169,6 +173,11 @@ public class Shop : MonoBehaviour
             buyWeaponText.text = _cost.ToString();
             SetActiveAttachment(false);
         }
+    }
+
+    private void InitDamageText()
+    {
+        damageText.text = _weapons[_currentWeaponNumber].GetDamageProjectile().ToString();
     }
 
     private void RefreshCurrentWeapon()
@@ -257,6 +266,7 @@ public class Shop : MonoBehaviour
         weaponSelected.WeaponsAttachmentsSelected["Assault Rifle 01"].IsSelectedWeapon = true; // назначение стандартной пушки
         weaponSelected.WeaponsAttachmentsSelected["Handgun 01"].IsSelectedWeapon = true; // назначение стандартной пушки
 
+        //Progress.SaveWeaponsSelected(weaponSelected);
         Progress.DefaultWeaponsSelected = JsonUtility.ToJson(weaponSelected).ToString();
 
         //купленое
@@ -281,6 +291,7 @@ public class Shop : MonoBehaviour
         weaponBought.WeaponsAttachmentsBought["Assault Rifle 01"].IsBoughtWeapon = true; // назначение стандартной пушки
         weaponBought.WeaponsAttachmentsBought["Handgun 01"].IsBoughtWeapon = true; // назначение стандартной пушки
 
+        //Progress.SaveWeaponsBought(weaponBought);
         Progress.DefaultWeaponsBought = JsonUtility.ToJson(FindObjectOfType<AmmunitionShop>().SetDefaultAmmmunition(weaponBought)).ToString();
     }
 }

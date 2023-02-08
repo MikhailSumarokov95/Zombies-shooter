@@ -19,6 +19,7 @@ public abstract class SelectorAttachment : MonoBehaviour
     protected WeaponAttachmentManager _weaponAttachmentManager;
     protected int _countAttachment;
     protected Money _money;
+    protected int _attachmenAbsenteeNumber = -1 ;
 
     private void Start()
     {
@@ -41,7 +42,7 @@ public abstract class SelectorAttachment : MonoBehaviour
     public void ScrollThrough(int direction)
     {
         var nextAttachmen = Math.Sign(direction) + _currentAttachment;
-        nextAttachmen = MathPlus.SawChart(nextAttachmen, 0, _countAttachment - 1);
+        nextAttachmen = MathPlus.SawChart(nextAttachmen, _attachmenAbsenteeNumber, _countAttachment - 1);
         _currentAttachment = nextAttachmen;
 
         SetActiveAttachment(nextAttachmen);

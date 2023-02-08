@@ -1,5 +1,10 @@
 public class SelectorMuzzle : SelectorAttachment
 {
+    protected void Start()
+    {
+        _attachmenAbsenteeNumber = 0;
+    }
+
     public override void AwakeAttachment()
     {
         _countAttachment = _weaponAttachmentManager.MuzzleBehaviourCount;

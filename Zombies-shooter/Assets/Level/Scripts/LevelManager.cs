@@ -12,10 +12,11 @@ public class LevelManager : MonoBehaviour
         GameOver
     }
 
-    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject winGamePanel;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject waveEndPanel;
     [SerializeField] private GameObject lossPanel;
+    [SerializeField] private GameObject shopBanner;
     private SpawnManager _spawnManager;
 
     [SerializeField] private State _stateGame = State.Game;
@@ -77,6 +78,7 @@ public class LevelManager : MonoBehaviour
         OnPause(true);
         StateGame = State.Pause;
         lossPanel.SetActive(true);
+        shopBanner.SetActive(true);
     }
 
     public void Respawn()
@@ -91,7 +93,8 @@ public class LevelManager : MonoBehaviour
     {
         if (value) StateGame = State.GameOver;
         else StateGame = State.Game;
-        gameOverPanel.SetActive(value);
+        winGamePanel.SetActive(value);
+        shopBanner.SetActive(true);
         OnPause(value);
     }
 

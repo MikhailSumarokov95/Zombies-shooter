@@ -31,6 +31,8 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 		public Transform[] dirtImpactPrefabs;
 		public Transform[] concreteImpactPrefabs;
 
+		public int Damage { get { return damage; } }
+
 		private void Start()
 		{
 			//Grab the game mode service, we need it to access the player character!

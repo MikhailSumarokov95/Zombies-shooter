@@ -8,7 +8,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 	public class ProjectileScript : MonoBehaviour
 	{
 		[SerializeField] private int damage = 20;
-		
+
 		private bool explodeSelf;
 
 		[Tooltip("Enable to use constant force, instead of force at launch only")]
@@ -54,8 +54,10 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 		public ParticleSystem flameParticles;
 
 		[Tooltip("Added delay to let particle effects finish playing, " +
-		         "before destroying object")]
+				 "before destroying object")]
 		public float destroyDelay;
+
+		public int Damage { get { return damage; } }
 
 		private void Start()
 		{

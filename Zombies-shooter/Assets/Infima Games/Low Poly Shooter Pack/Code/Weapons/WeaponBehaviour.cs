@@ -1,6 +1,7 @@
 ﻿//Copyright 2022, Infima Games. All Rights Reserved.
 
 using UnityEngine;
+using InfimaGames.LowPolyShooterPack.Legacy;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -172,6 +173,8 @@ namespace InfimaGames.LowPolyShooterPack
         public abstract WeaponAttachmentManagerBehaviour GetAttachmentManager();
 
         public abstract MagazineBehaviour GetMagazineBehaviour();
+
+        public abstract int GetDamageProjectile();
 
         #endregion
 

@@ -637,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 1650998049237863291, guid: d258b427e93077246bb92daba500f934,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1650998049237863291, guid: d258b427e93077246bb92daba500f934,
         type: 3}
@@ -1814,18 +1814,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 626462522}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 558254711}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2849,7 +2837,6 @@ GameObject:
   - component: {fileID: 543237728}
   - component: {fileID: 543237731}
   - component: {fileID: 543237730}
-  - component: {fileID: 543237729}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2877,19 +2864,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 249.58789, y: 82.98096}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &543237729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543237727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0779fdcfc4ade214a84512b568669f47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: DoubleMoneyPerAds
 --- !u!114 &543237730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2998,7 +2972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 558254712}
   m_Layer: 5
-  m_Name: WInGameBanner
+  m_Name: ShopBanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3024,7 +2998,7 @@ RectTransform:
   - {fileID: 757448961}
   - {fileID: 1007058439}
   m_Father: {fileID: 8289361161791363839}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3066,7 +3040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f347c192f1c4c4995b59299acb1576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  factorMoney: 3
+  factorMoney: 6
   moneyPerWaveText: {fileID: 1665759138}
   doubleRewardButton: {fileID: 1032950770}
 --- !u!224 &626462524
@@ -7223,7 +7197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03529412, g: 0.039215688, b: 0.05882353, a: 0.7921569}
+  m_Color: {r: 0.03529412, g: 0.039215688, b: 0.05882353, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9590,7 +9564,7 @@ RectTransform:
   - {fileID: 1733940511646004051}
   - {fileID: 1255798552708431303}
   m_Father: {fileID: 8289361161791363839}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12779,7 +12753,7 @@ RectTransform:
   - {fileID: 1771680274}
   - {fileID: 377649568}
   m_Father: {fileID: 8289361161791363839}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12815,7 +12789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f347c192f1c4c4995b59299acb1576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  factorMoney: 3
+  factorMoney: 6
   moneyPerWaveText: {fileID: 4140568663942519540}
   doubleRewardButton: {fileID: 18365048}
 --- !u!114 &3233576901790833554
@@ -13528,7 +13502,7 @@ PrefabInstance:
     - target: {fileID: 3681910847235061456, guid: 06235315a75c9e24f94a0f431e961dcf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3681910847235061456, guid: 06235315a75c9e24f94a0f431e961dcf,
         type: 3}
@@ -15421,7 +15395,7 @@ RectTransform:
   - {fileID: 4174766041803595072}
   - {fileID: 4174766042145081385}
   m_Father: {fileID: 8289361161791363839}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22693,10 +22667,10 @@ RectTransform:
   m_Children:
   - {fileID: 8289361161966955613}
   - {fileID: 626462524}
-  - {fileID: 558254712}
   - {fileID: 3233576901476224872}
   - {fileID: 1255798552119778726}
   - {fileID: 4174766043232122240}
+  - {fileID: 558254712}
   - {fileID: 1973002278}
   - {fileID: 1714878550}
   m_Father: {fileID: 6066672781617223319}
@@ -22840,10 +22814,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a74b90f5e629040a6360d0580d6751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 558254711}
+  winGamePanel: {fileID: 626462522}
   pausePanel: {fileID: 1255798552119778727}
   waveEndPanel: {fileID: 3233576901476224875}
   lossPanel: {fileID: 4174766043232122243}
+  shopBanner: {fileID: 558254711}
   _stateGame: 0
   isMobile: 0
 --- !u!4 &8289361161904561523

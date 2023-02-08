@@ -7,7 +7,7 @@ public class GSConnect : MonoBehaviour {
 
     static GSConnect instance;
 
-    public Action OnPurchase;
+    public static Action OnPurchaseWeapon;
 
     /// <summary>
     /// Состояние инициализации SDK.
@@ -296,6 +296,8 @@ public class GSConnect : MonoBehaviour {
                 var selectedGL = Progress.LoadWeaponsSelected();
                 selectedGL.WeaponsAttachmentsSelected["Grenade Launcher 01"].IsSelectedWeapon = true;
                 Progress.SaveWeaponsSelected(selectedGL);
+
+                OnPurchaseWeapon?.Invoke();
                 break;
 
             case "RocketLauncher":
@@ -306,14 +308,15 @@ public class GSConnect : MonoBehaviour {
                 var selectedRL = Progress.LoadWeaponsSelected();
                 selectedRL.WeaponsAttachmentsSelected["Rocket Launcher 01"].IsSelectedWeapon = true;
                 Progress.SaveWeaponsSelected(selectedRL);
+
+                OnPurchaseWeapon?.Invoke();
                 break;
 
             case "Battlepass":
                 FindObjectOfType<BattlePassRewarder>(true).BoughtBattlePass();
                 break;
         }
-
-        OnPurchase?.Invoke();
+       
     }
 
     // Социальные сети:

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class BattlePassRewarder : MonoBehaviour
 {
+    public Action OnBoughtBattlePass;
     [SerializeField] private RewardBattlePassPerLevel[] _rewardBattlePassPerLevel;
 
     public void Awake()
@@ -20,6 +21,8 @@ public class BattlePassRewarder : MonoBehaviour
         Progress.SaveBattlePass();
         for (var i = 1; i < FindObjectOfType<Level>().CurrentLevel + 1; i++)
             RewardPerLevel(_rewardBattlePassPerLevel[i].IsHaveBattlePassReward);
+
+        OnBoughtBattlePass?.Invoke();
     }
 
     private void RewardPerLevel(RewardBattlePass reward)
