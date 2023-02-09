@@ -7,8 +7,6 @@ public class MenuManager : MonoBehaviour
     {
         FindObjectOfType<Shop>(true).SetDefaultSetting();
 
-        FindObjectOfType<BattlePassRewarder>(true).Awake();
-
         if (!Application.isEditor) PlayerPrefs.SetString("selectedLanguage", GS_Language.Current());
     }
 }

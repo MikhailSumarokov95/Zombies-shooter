@@ -19,6 +19,7 @@ public static class Progress
     public static WeaponsSelected LoadWeaponsSelected()
     {
         Debug.Log(GSPrefs.GetString("weaponsSelected", DefaultWeaponsSelected));
+
         return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString("weaponsSelected", DefaultWeaponsSelected));
     }
 
@@ -34,83 +35,52 @@ public static class Progress
     public static WeaponsBought LoadWeaponsBought()
     {
         Debug.Log(GSPrefs.GetString("weaponsBought", DefaultWeaponsBought));
+
         return JsonUtility.FromJson<WeaponsBought>(GSPrefs.GetString("weaponsBought", DefaultWeaponsBought));
     }
 
     public static void SaveMoney(int value)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetInt("money", value);
-        else
-        {
-            GSPrefs.SetInt("money", value);
-            GSPrefs.Save();
-        }
+        GSPrefs.SetInt("money", value);
+        GSPrefs.Save();
     }
 
     public static int LoadMoney()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("money", 0);
-        else
-            return GSPrefs.GetInt("money", 0);
+        return GSPrefs.GetInt("money", 0);
     }
 
     public static void SaveLevel(int value)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetInt("level", value);
-        else
-        {
-            GSPrefs.SetInt("level", value);
-            GSPrefs.Save();
-        }
+        GSPrefs.SetInt("level", value);
+        GSPrefs.Save();
     }
 
     public static int LoadLevel()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("level", 1);
-        else
-            return GSPrefs.GetInt("level", 1);
+        return GSPrefs.GetInt("level", 1);
     }
 
     public static void SaveBattlePass()
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetInt("battlePass", 1);
-        else
-        {
-            GSPrefs.SetInt("battlePass", 1);
-            GSPrefs.Save();
-        }
+        GSPrefs.SetInt("battlePass", 1);
+        GSPrefs.Save();
     }
 
     public static bool LoadBattlePass()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("battlePass", 0) == 1;
-        else
-            return GSPrefs.GetInt("battlePass", 0) == 1;
+        return GSPrefs.GetInt("battlePass", 0) == 1;
     }
 
     public static void SaveGrenades(int value)
     {
-        if (Application.isEditor)
-            PlayerPrefs.SetInt("grenades", value);
-        else
-        {
-            GSPrefs.SetInt("grenades", value);
-            GSPrefs.Save();
-        }
+        GSPrefs.SetInt("grenades", value);
+        GSPrefs.Save();
     }
 
     public static int LoadGrenades()
     {
-        if (Application.isEditor)
-            return PlayerPrefs.GetInt("grenades", 0);
-        else
-            return GSPrefs.GetInt("grenades", 0);
+        return GSPrefs.GetInt("grenades", 0);
     }
 
     public static void SaveSensitivity(float value)

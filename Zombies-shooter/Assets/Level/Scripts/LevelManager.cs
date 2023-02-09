@@ -47,8 +47,6 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        var battlePass = FindObjectOfType<BattlePassRewarder>(true);
-        if (battlePass != null)  battlePass.Awake();
         OnPause(false);
         StateGame = State.Game;
         currentWaveText.text = 1.ToString();
@@ -131,6 +129,7 @@ public class LevelManager : MonoBehaviour
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
         FindObjectOfType<Level>().NextLevel();
+        FindObjectOfType<BattlePassRewarder>().RewardPerLevel();
     }
 
     private void EndWave()

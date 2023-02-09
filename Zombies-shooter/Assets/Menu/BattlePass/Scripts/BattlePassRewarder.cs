@@ -6,26 +6,27 @@ public class BattlePassRewarder : MonoBehaviour
     public Action OnBoughtBattlePass;
     [SerializeField] private RewardBattlePassPerLevel[] _rewardBattlePassPerLevel;
 
-    public void Awake()
-    {
-        var numberLevel = FindObjectOfType<Level>().CurrentLevel;
-        var rewardBattlePass = Progress.LoadBattlePass() ?
-            _rewardBattlePassPerLevel[numberLevel].IsHaveBattlePassReward : 
-            _rewardBattlePassPerLevel[numberLevel].IsNotHaveBattlePassReward;
-        RewardPerLevel(rewardBattlePass);
-    }
-
     [ContextMenu("BoughtBattlePass")]
     public void BoughtBattlePass()
     {
         Progress.SaveBattlePass();
         for (var i = 1; i < FindObjectOfType<Level>().CurrentLevel + 1; i++)
-            RewardPerLevel(_rewardBattlePassPerLevel[i].IsHaveBattlePassReward);
+            Reward(_rewardBattlePassPerLevel[i].IsHaveBattlePassReward);
 
         OnBoughtBattlePass?.Invoke();
     }
 
-    private void RewardPerLevel(RewardBattlePass reward)
+    public void RewardPerLevel()
+    {
+        var currentLevel = FindObjectOfType<Level>().CurrentLevel;
+
+        Reward(_rewardBattlePassPerLevel[currentLevel].IsNotHaveBattlePassReward);
+
+        if (Progress.LoadBattlePass())
+            Reward(_rewardBattlePassPerLevel[currentLevel].IsHaveBattlePassReward);
+    }
+
+    private void Reward(RewardBattlePass reward)
     {
         if (reward.NameWeapon != null && reward.NameWeapon != "")
         {
