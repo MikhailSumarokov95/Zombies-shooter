@@ -1,12 +1,14 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthPoints : MonoBehaviour
 {
 
     [SerializeField] private Slider healthBar;
     [SerializeField] private int currentHealth;
+    [SerializeField] private TMP_Text currentHealthText;
     private Life _life;
 
     [SerializeField] private int maxHealth;
@@ -27,6 +29,7 @@ public class HealthPoints : MonoBehaviour
         {
             currentHealth = Mathf.Clamp(value, 0, maxHealth);
             if (healthBar != null) healthBar.value = currentHealth;
+            if (currentHealthText != null) currentHealthText.text = currentHealth.ToString();
         }
     }
 
