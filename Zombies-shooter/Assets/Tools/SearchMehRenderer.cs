@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -22,11 +23,11 @@ public class SearchMeshRenderer : MonoBehaviour
 
                 var meshLods = meshLod.GetLODs();
 
-                meshLods[0].renderers[0] = meshRed;
-
-                meshLod.size = 1;
+                meshLods[0].renderers[0] = meshRed;                
 
                 meshLod.SetLODs(meshLods);
+
+                meshLod.size = ((int)(meshLod.size * 100)) / 100;
             }
         }
     }
