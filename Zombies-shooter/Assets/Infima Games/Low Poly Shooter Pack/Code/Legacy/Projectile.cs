@@ -27,10 +27,6 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 		[Header("Impact Effect Prefabs")]
 		public Transform[] bloodImpactPrefabs;
 
-		public Transform[] metalImpactPrefabs;
-		public Transform[] dirtImpactPrefabs;
-		public Transform[] concreteImpactPrefabs;
-
 		public int Damage { get { return damage; } }
 
 		private void Start()
@@ -83,8 +79,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				collision.transform.gameObject.GetComponent
 					<HealthPoints>().TakeDamage(damage);
 
-				Instantiate(bloodImpactPrefabs[Random.Range
-						(0, bloodImpactPrefabs.Length)], transform.position,
+				Instantiate(bloodImpactPrefabs[0], transform.position,
 					Quaternion.LookRotation(collision.contacts[0].normal));
 
 				Destroy(gameObject);
@@ -101,38 +96,6 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 				Destroy(gameObject);
 			}
 
-			//If bullet collides with "Metal" tag
-			else if (collision.transform.CompareTag("Metal"))
-			{
-				//Instantiate random impact prefab from array
-				Instantiate(metalImpactPrefabs[Random.Range
-						(0, bloodImpactPrefabs.Length)], transform.position,
-					Quaternion.LookRotation(collision.contacts[0].normal));
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-
-			//If bullet collides with "Dirt" tag
-			else if (collision.transform.CompareTag("Dirt"))
-			{
-				//Instantiate random impact prefab from array
-				Instantiate(dirtImpactPrefabs[Random.Range
-						(0, bloodImpactPrefabs.Length)], transform.position,
-					Quaternion.LookRotation(collision.contacts[0].normal));
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-
-			//If bullet collides with "Concrete" tag
-			else if (collision.transform.CompareTag("Concrete"))
-			{
-				//Instantiate random impact prefab from array
-				Instantiate(concreteImpactPrefabs[Random.Range
-						(0, bloodImpactPrefabs.Length)], transform.position,
-					Quaternion.LookRotation(collision.contacts[0].normal));
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
 
 			//If bullet collides with "Target" tag
 			else if (collision.transform.CompareTag("Target"))

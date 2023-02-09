@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GameScore;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject waveEndPanel;
     [SerializeField] private GameObject lossPanel;
     [SerializeField] private GameObject shopBanner;
+    [SerializeField] private TMP_Text currentWaveText;
     private SpawnManager _spawnManager;
 
     [SerializeField] private State _stateGame = State.Game;
@@ -29,6 +31,7 @@ public class LevelManager : MonoBehaviour
     {
         if (!Application.isEditor) IsMobile = GS_Device.IsMobile();
     }
+
     private void OnEnable()
     {
         _spawnManager = FindObjectOfType<SpawnManager>();
@@ -48,6 +51,7 @@ public class LevelManager : MonoBehaviour
         if (battlePass != null)  battlePass.Awake();
         OnPause(false);
         StateGame = State.Game;
+        currentWaveText.text = 1.ToString();
     }
 
     private void Update()
@@ -111,6 +115,7 @@ public class LevelManager : MonoBehaviour
         if (value) StateGame = State.WaveEnd;
         else StateGame = State.Game;
         waveEndPanel.SetActive(value);
+        if (!value) currentWaveText.text = (int.Parse(currentWaveText.text) + 1).ToString();
         OnPause(value);
     }
 
