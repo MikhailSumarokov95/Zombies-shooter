@@ -1071,6 +1071,8 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryFire(InputAction.CallbackContext context)
 		{
+			if (_levelManager.IsMobile) return;
+
 			//Switch.
 			switch (context)
 			{
@@ -1158,8 +1160,10 @@ namespace InfimaGames.LowPolyShooterPack
 		/// 
 		public void OnTryPlayReload(InputAction.CallbackContext context)
 		{
-			//Switch.
-			switch (context)
+            if (_levelManager.IsMobile) return;
+
+            //Switch.
+            switch (context)
 			{
 				//Performed.
 				case {phase: InputActionPhase.Performed}:

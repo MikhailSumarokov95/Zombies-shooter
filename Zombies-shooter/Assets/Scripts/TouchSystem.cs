@@ -5,7 +5,7 @@ public class TouchSystem : MonoBehaviour, IDragHandler
 { 
     public static Vector3 Move = Vector2.zero;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (!FindObjectOfType<LevelManager>().IsMobile)
         {
