@@ -47,8 +47,11 @@ public class HealthPoints : MonoBehaviour
         if (remainingHealth <= 0) ToDead();
         CurrentHealth = remainingHealth;
 
-        var soundTakeDamage = Instantiate(takeDamageSoundPref, transform.position, transform.rotation);
-        Destroy(soundTakeDamage, soundTakeDamage.GetComponent<AudioSource>().clip.length);
+        if (takeDamageSoundPref != null)
+        {
+            var soundTakeDamage = Instantiate(takeDamageSoundPref, transform.position, transform.rotation);
+            Destroy(soundTakeDamage, soundTakeDamage.GetComponent<AudioSource>().clip.length);
+        }
 
         if (!_corotuneDelayTimerAfterHit) 
             StartCoroutine(DelayTimerAfterHit());

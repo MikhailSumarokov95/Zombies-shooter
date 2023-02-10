@@ -1090,7 +1090,9 @@ namespace InfimaGames.LowPolyShooterPack
 		}
 
 		private void TryFire(PhaseFire phase)
-        {
+		{
+			if (_levelManager.StateGame != LevelManager.State.Game) return;
+
 			//Block while the cursor is unlocked.
 			if (!cursorLocked)
 				return;
@@ -1187,8 +1189,9 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryInspect(InputAction.CallbackContext context)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 			
 			//Block.
@@ -1212,6 +1215,7 @@ namespace InfimaGames.LowPolyShooterPack
 			Performed,
 			Canceled
         }
+
 		public void OnTryAimingMobile()
         {
 			if (!holdingButtonAim) TryAiming(PhaseAiming.Started);
@@ -1244,8 +1248,10 @@ namespace InfimaGames.LowPolyShooterPack
 
 		private void TryAiming(PhaseAiming phase)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 
 			//Switch.
@@ -1277,8 +1283,10 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryHolster(InputAction.CallbackContext context)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 
 			//Go back if we cannot even play the holster animation.
@@ -1349,8 +1357,10 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryMelee(InputAction.CallbackContext context)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 			
 			//Switch.
@@ -1369,8 +1379,10 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryRun(InputAction.CallbackContext context)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 			
 			//Switch.
@@ -1402,8 +1414,10 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		public void OnTryJump(InputAction.CallbackContext context)
 		{
-			//Block while the cursor is unlocked.
-			if (!cursorLocked)
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Block while the cursor is unlocked.
+            if (!cursorLocked)
 				return;
 
 			//Switch.
@@ -1450,8 +1464,10 @@ namespace InfimaGames.LowPolyShooterPack
 
 		private void TryInventoryNext(float scrollValue)
         {
-			//Get the next index to switch to.
-			int indexNext = scrollValue > 0 ? inventory.GetNextIndex() : inventory.GetLastIndex();
+            if (_levelManager.StateGame != LevelManager.State.Game) return;
+
+            //Get the next index to switch to.
+            int indexNext = scrollValue > 0 ? inventory.GetNextIndex() : inventory.GetLastIndex();
 			//Get the current weapon's index.
 			int indexCurrent = inventory.GetEquippedIndex();
 
