@@ -279,10 +279,6 @@ public class GSConnect : MonoBehaviour {
                 boughtGL.WeaponsAttachmentsBought["Grenade Launcher 01"].IsBoughtWeapon = true;
                 Progress.SaveWeaponsBought(boughtGL);
 
-                var selectedGL = Progress.LoadWeaponsSelected();
-                selectedGL.WeaponsAttachmentsSelected["Grenade Launcher 01"].IsSelectedWeapon = true;
-                Progress.SaveWeaponsSelected(selectedGL);
-
                 OnPurchaseWeapon?.Invoke();
                 break;
 
@@ -290,10 +286,6 @@ public class GSConnect : MonoBehaviour {
                 var boughtRL = Progress.LoadWeaponsBought();
                 boughtRL.WeaponsAttachmentsBought["Rocket Launcher 01"].IsBoughtWeapon = true;
                 Progress.SaveWeaponsBought(boughtRL);
-
-                var selectedRL = Progress.LoadWeaponsSelected();
-                selectedRL.WeaponsAttachmentsSelected["Rocket Launcher 01"].IsSelectedWeapon = true;
-                Progress.SaveWeaponsSelected(selectedRL);
 
                 OnPurchaseWeapon?.Invoke();
                 break;

@@ -14,8 +14,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private SelectorAttachment selectorGrip;
     [SerializeField] private Button buyWeaponButton;
     [SerializeField] private TMP_Text buyWeaponText;
-    [SerializeField] private Button selectWeaponButton;
-    [SerializeField] private Image selectedWeaponButton;
+    [SerializeField] private Image boughtWeaponButton;
     [SerializeField] private Button battlepassWeaponButton;
     [SerializeField] private Button glWeaponButton;
     [SerializeField] private Button rlWeaponButton;
@@ -111,15 +110,6 @@ public class Shop : MonoBehaviour
         InitButtons();
     }
 
-
-    public void SelectWeapon()
-    {
-        var weaponsSelected = WeaponsSelected;
-        weaponsSelected.WeaponsAttachmentsSelected[_currentWeaponName].IsSelectedWeapon = true;
-        WeaponsSelected = weaponsSelected;
-        InitButtons();
-    }
-
     public void Save()
     {
         Progress.SaveWeaponsBought(WeaponsBought);
@@ -129,23 +119,16 @@ public class Shop : MonoBehaviour
     private void InitButtons()
     {
         buyWeaponButton.gameObject.SetActive(false);
-        selectedWeaponButton.gameObject.SetActive(false);
-        selectWeaponButton.gameObject.SetActive(false);
+        boughtWeaponButton.gameObject.SetActive(false);
         battlepassWeaponButton.gameObject.SetActive(false);
         glWeaponButton.gameObject.SetActive(false);
         rlWeaponButton.gameObject.SetActive(false);
 
         InitDamageText();
 
-        if (WeaponsSelected.WeaponsAttachmentsSelected[_currentWeaponName].IsSelectedWeapon)
+        if (WeaponsBought.WeaponsAttachmentsBought[_currentWeaponName].IsBoughtWeapon)
         {
-            selectedWeaponButton.gameObject.SetActive(true);
-            SetActiveAttachment(true);
-        }
-
-        else if (WeaponsBought.WeaponsAttachmentsBought[_currentWeaponName].IsBoughtWeapon)
-        {
-            selectWeaponButton.gameObject.SetActive(true);
+            boughtWeaponButton.gameObject.SetActive(true);
             SetActiveAttachment(true);
         }
 
@@ -253,7 +236,6 @@ public class Shop : MonoBehaviour
             var weaponAttachmentManager = weapon.GetComponent<WeaponAttachmentManager>();
             var weaponAttachmentSelected = new Progress.WeaponAttachmentSelected()
             {
-                IsSelectedWeapon = false,
                 GripIndex = weaponAttachmentManager.GripIndex,
                 LaserIndex = weaponAttachmentManager.LaserIndex,
                 MuzzleIndex = weaponAttachmentManager.MuzzleIndex,
@@ -262,9 +244,6 @@ public class Shop : MonoBehaviour
 
             weaponSelected.WeaponsAttachmentsSelected.Add(weapon.WeaponName, weaponAttachmentSelected);
         }
-
-        weaponSelected.WeaponsAttachmentsSelected["Assault Rifle 01"].IsSelectedWeapon = true; // назначение стандартной пушки
-        weaponSelected.WeaponsAttachmentsSelected["Handgun 01"].IsSelectedWeapon = true; // назначение стандартной пушки
 
         //Progress.SaveWeaponsSelected(weaponSelected);
         Progress.DefaultWeaponsSelected = JsonUtility.ToJson(weaponSelected).ToString();

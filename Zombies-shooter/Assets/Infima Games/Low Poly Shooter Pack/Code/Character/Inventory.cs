@@ -49,6 +49,7 @@ namespace InfimaGames.LowPolyShooterPack
             weapons = GetComponentsInChildren<WeaponBehaviour>(true);
 
             var weaponsList = new List<WeaponBehaviour>();
+            var weaponsBought = Progress.LoadWeaponsBought();
             var weaponsSelected = Progress.LoadWeaponsSelected();
             
             foreach (WeaponBehaviour weapon in weapons)
@@ -57,7 +58,7 @@ namespace InfimaGames.LowPolyShooterPack
                 weapon.gameObject.SetActive(false);
 
                 var nameWeapon = weapon.GetComponent<Weapon>().WeaponName;
-                if (weaponsSelected.WeaponsAttachmentsSelected[nameWeapon].IsSelectedWeapon)
+                if (weaponsBought.WeaponsAttachmentsBought[nameWeapon].IsBoughtWeapon)
                 {
                     weaponsList.Add(weapon);
 
