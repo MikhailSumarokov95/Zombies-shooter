@@ -21455,7 +21455,7 @@ MonoBehaviour:
   shopBanner: {fileID: 558254711}
   currentWaveText: {fileID: 959276011}
   _stateGame: 0
-  isMobile: 1
+  isMobile: 0
 --- !u!4 &8289361161904561523
 Transform:
   m_ObjectHideFlags: 0
