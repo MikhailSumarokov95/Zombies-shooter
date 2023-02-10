@@ -26,13 +26,6 @@ public class GSConnect : MonoBehaviour {
         }
     }
 
-    // Ключи для переменных игрока:
-
-    //public const string
-    //    NameKey = "key-name",
-    //    ScoreKey = "key-score";
-    // [...]
-
     // Ключи для rewarded награды:
 
     public const string
@@ -41,61 +34,14 @@ public class GSConnect : MonoBehaviour {
         MoneyReward = "money-reward",
         DoubleMoneyReward = "double-money-reward";
 
-
-        //NewQuestsKey = "reward-new-quests",
-        //ExpBoostKey = "reward-exp-boost";
-        // [...]
-
     // Ключи для внутриигровых покупок:
 
     public const string
-        Neuro500Key = "neuro-500",
-        Neuro1000Key = "neuro-1000",
-        Neuro2000Key = "neuro-2000",
-        Neuro5000Key = "neuro-5000",
-        Neuro10000Key = "neuro-10000",
-        Bruble50000Key = "bruble-50000",
-        Bruble1000000Key = "bruble-1000000";
-    // [...]
-
-    // Свойства для чтения / записи переменных игрока:
-
-    /// <summary>
-    /// Имя игрока в GameScore.
-    /// Отображается в лидерборде.
-    /// </summary>
-    //public static string Name {
-    //    get {
-    //        if (Application.isEditor)
-    //            return PlayerPrefs.GetString(NameKey, "Player");
-    //        else return GS_Player.GetName();
-    //    }
-    //    set {
-    //        if (Application.isEditor)
-    //            PlayerPrefs.SetString(NameKey, value);
-    //        else GS_Player.SetName(value);
-    //    }
-    //}
-
-    ///// <summary>
-    ///// Очки опыта игрока в GameScore.
-    ///// Отображаются в лидерборде.
-    ///// Критерий для сортировки.
-    ///// </summary>
-    //public static int Score {
-    //    get {
-    //        if (Application.isEditor)
-    //            return PlayerPrefs.GetInt(ScoreKey, 0);
-    //        else return (int)GS_Player.GetScore();
-    //    }
-    //    set {
-    //        if (Application.isEditor)
-    //            PlayerPrefs.SetInt(ScoreKey, value);
-    //        else GS_Player.SetScore(value);
-    //    }
-    //}
-
-    // [...]
+        GrenadeLauncher = "GrenadeLauncher",
+        RocketLauncher = "RocketLauncher",
+        Battlepass = "Battlepass";
+       
+   
 
     /// <summary>
     /// Вызывать сразу после важных событий,
@@ -288,7 +234,7 @@ public class GSConnect : MonoBehaviour {
     {
         switch (purchaseTag)
         {
-            case "GrenadeLauncher":
+            case GrenadeLauncher:
                 var boughtGL = Progress.LoadWeaponsBought();
                 boughtGL.WeaponsAttachmentsBought["Grenade Launcher 01"].IsBoughtWeapon = true;
                 Progress.SaveWeaponsBought(boughtGL);
@@ -300,7 +246,7 @@ public class GSConnect : MonoBehaviour {
                 OnPurchaseWeapon?.Invoke();
                 break;
 
-            case "RocketLauncher":
+            case RocketLauncher:
                 var boughtRL = Progress.LoadWeaponsBought();
                 boughtRL.WeaponsAttachmentsBought["Rocket Launcher 01"].IsBoughtWeapon = true;
                 Progress.SaveWeaponsBought(boughtRL);
@@ -312,11 +258,14 @@ public class GSConnect : MonoBehaviour {
                 OnPurchaseWeapon?.Invoke();
                 break;
 
-            case "Battlepass":
+            case Battlepass:
                 FindObjectOfType<BattlePassRewarder>(true).BoughtBattlePass();
                 break;
         }
-       
+
+        var purchaseButtons = FindObjectsOfType<PurchaseButton>();
+        foreach (var button in purchaseButtons)
+            button.RefreshBoughtText();
     }
 
     // Социальные сети:
@@ -329,4 +278,22 @@ public class GSConnect : MonoBehaviour {
         GS_Socials.Post(text);
     }
 
+    public static bool IsBought(string purchaseTag)
+    {
+        switch (purchaseTag) 
+        {
+            case GrenadeLauncher:
+                var boughtGL = Progress.LoadWeaponsBought();
+                return boughtGL.WeaponsAttachmentsBought["Grenade Launcher 01"].IsBoughtWeapon;
+                    
+            case RocketLauncher:
+                var boughtRL = Progress.LoadWeaponsBought();
+                return boughtRL.WeaponsAttachmentsBought["Rocket Launcher 01"].IsBoughtWeapon;
+
+            case Battlepass:
+                return Progress.LoadBattlePass();
+
+                default: return false;
+        }
+    }
 }

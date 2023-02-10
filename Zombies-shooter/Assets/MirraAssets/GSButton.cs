@@ -20,5 +20,4 @@ public class GSButton : MonoBehaviour {
 
     public void ShareGame() =>
         GS_Socials.Share();
-
 }
