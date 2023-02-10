@@ -5,10 +5,10 @@ using TMPro;
 
 public class HealthPoints : MonoBehaviour
 {
-
     [SerializeField] private Slider healthBar;
     [SerializeField] private int currentHealth;
     [SerializeField] private TMP_Text currentHealthText;
+    [SerializeField] private GameObject takeDamageSoundPref;
     private Life _life;
 
     [SerializeField] private int maxHealth;
@@ -46,6 +46,10 @@ public class HealthPoints : MonoBehaviour
         var remainingHealth = CurrentHealth - damage;
         if (remainingHealth <= 0) ToDead();
         CurrentHealth = remainingHealth;
+
+        var soundTakeDamage = Instantiate(takeDamageSoundPref, transform.position, transform.rotation);
+        Destroy(soundTakeDamage, soundTakeDamage.GetComponent<AudioSource>().clip.length);
+
         if (!_corotuneDelayTimerAfterHit) 
             StartCoroutine(DelayTimerAfterHit());
     }
