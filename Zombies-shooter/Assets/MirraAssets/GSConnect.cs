@@ -26,6 +26,12 @@ public class GSConnect : MonoBehaviour {
         }
     }
 
+    // Ключи для переменных игрока:
+
+    //public const string
+    //    NameKey = "key-name",
+    //    ScoreKey = "key-score";
+
     // Ключи для rewarded награды:
 
     public const string
@@ -40,8 +46,42 @@ public class GSConnect : MonoBehaviour {
         GrenadeLauncher = "GrenadeLauncher",
         RocketLauncher = "RocketLauncher",
         Battlepass = "Battlepass";
-       
-   
+
+    //Свойства для чтения / записи переменных игрока:
+
+    /// <summary>
+    /// Имя игрока в GameScore.
+    /// Отображается в лидерборде.
+    /// </summary>
+    //public static string Name
+    //{
+    //    get
+    //    {
+    //        return GS_Player.GetName();
+    //    }
+    //    set
+    //    {
+    //        GS_Player.SetName(value);
+    //    }
+    //}
+
+    /// <summary>
+    /// Очки опыта игрока в GameScore.
+    /// Отображаются в лидерборде.
+    /// Критерий для сортировки.
+    /// </summary>
+    //public static int Score
+    //{
+    //    get
+    //    {
+    //        return (int)GS_Player.GetScore();
+    //    }
+    //    set
+    //    {
+    //        GS_Player.SetScore(value);
+    //    }
+    //}
+
 
     /// <summary>
     /// Вызывать сразу после важных событий,
