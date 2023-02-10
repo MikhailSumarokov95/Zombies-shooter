@@ -1,10 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattlePassRewarder : MonoBehaviour
 {
     public Action OnBoughtBattlePass;
     [SerializeField] private RewardBattlePassPerLevel[] _rewardBattlePassPerLevel;
+    [SerializeField] private LevelAchievementMark[] levelAchievementMark;
+
+    private void OnEnable()
+    {
+        EnableLevelAchievementMark();
+    }
 
     [ContextMenu("BoughtBattlePass")]
     public void BoughtBattlePass()
@@ -39,17 +46,35 @@ public class BattlePassRewarder : MonoBehaviour
             FindObjectOfType<Money>().MakeMoney(reward.AmountMoney);
     }
 
+    private void EnableLevelAchievementMark()
+    {
+        var currentLevel = FindObjectOfType<Level>(true).CurrentLevel;
+
+        for (var i = 1; i < levelAchievementMark.Length; i++)
+        {
+            levelAchievementMark[i].CloseImage.gameObject.SetActive(!(i <= currentLevel));
+            levelAchievementMark[i].OpenedImage.gameObject.SetActive(i <= currentLevel);
+        }
+    }
+
     [Serializable]
-    public class RewardBattlePassPerLevel
+    private class RewardBattlePassPerLevel
     {
         public RewardBattlePass IsNotHaveBattlePassReward;
         public RewardBattlePass IsHaveBattlePassReward;
     }
 
     [Serializable]
-    public class RewardBattlePass
+    private class RewardBattlePass
     {
         public string NameWeapon;
         public int AmountMoney;
+    }
+
+    [Serializable]
+    private class LevelAchievementMark
+    {
+        public Image CloseImage;
+        public Image OpenedImage;
     }
 }
