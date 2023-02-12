@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.310DEAF1" = "Zombie Shooter_2023-02-09_23-23-25.png t:Texture2D"
+	"last_search.310DEAF1" = "UnitySplash-Dark t:Texture2D"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "asset"
 }

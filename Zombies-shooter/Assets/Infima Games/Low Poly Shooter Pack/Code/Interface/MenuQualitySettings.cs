@@ -2,7 +2,6 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Rendering.PostProcessing;
 
 namespace InfimaGames.LowPolyShooterPack.Interface
 {
@@ -40,19 +39,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         /// </summary>
         private bool menuIsEnabled;
 
-        /// <summary>
-        /// Main Post Processing Volume.
-        /// </summary>
-        private PostProcessVolume postProcessingVolume;
-        /// <summary>
-        /// Scope Post Processing Volume.
-        /// </summary>
-        private PostProcessVolume postProcessingVolumeScope;
-
-        /// <summary>
-        /// Depth Of Field Settings.
-        /// </summary>
-        private DepthOfField depthOfField;
 
         #endregion
 
@@ -64,14 +50,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             animatedCanvas.GetComponent<CanvasGroup>().alpha = 0;
             //Get canvas animation component.
             animationComponent = animatedCanvas.GetComponent<Animation>();
-
-            //Find post process volumes in scene and assign them.
-            postProcessingVolume = GameObject.Find("Post Processing Volume")?.GetComponent<PostProcessVolume>();
-            postProcessingVolumeScope = GameObject.Find("Post Processing Volume Scope")?.GetComponent<PostProcessVolume>();
-            
-            //Get depth of field setting from main post process volume.
-            if(postProcessingVolume != null)
-                postProcessingVolume.profile.TryGetSettings(out depthOfField);
         }
 
         protected override void Tick()
@@ -106,10 +84,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             //Play Clip.
             animationComponent.clip = animationShow;
             animationComponent.Play();
-
-            //Enable depth of field effect.
-            if(depthOfField != null)
-                depthOfField.active = true;
         }
         /// <summary>
         /// Hides the menu by playing an animation.
@@ -122,10 +96,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             //Play Clip.
             animationComponent.clip = animationHide;
             animationComponent.Play();
-
-            //Disable depth of field effect.
-            if(depthOfField != null)
-                depthOfField.active = false;
         }
 
         /// <summary>
@@ -133,11 +103,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         /// </summary>
         private void SetPostProcessingState(bool value = true)
         {
-            //Enable/Disable the volumes.
-            if(postProcessingVolume != null)
-                postProcessingVolume.enabled = value;
-            if(postProcessingVolumeScope != null)
-                postProcessingVolumeScope.enabled = value;
         }
 
         /// <summary>
