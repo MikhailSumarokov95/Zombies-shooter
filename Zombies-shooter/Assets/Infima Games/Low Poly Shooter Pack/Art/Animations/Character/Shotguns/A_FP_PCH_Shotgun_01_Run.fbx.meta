@@ -466,9 +466,9 @@ ModelImporter:
     importAnimatedCustomProperties: 0
     importConstraints: 0
     animationCompression: 1
-    animationRotationError: 0.3
-    animationPositionError: 0.3
-    animationScaleError: 0.3
+    animationRotationError: 0.1
+    animationPositionError: 0.1
+    animationScaleError: 0.1
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
