@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <text>
-	<text id="mainMenu">Ana menü</text>
+	<text id="mainMenu">Ana Menü</text>
 	<text id="shop">Mağaza</text>
 	<text id="switchLanguage">Dili değiştir</text>
 	<text id="buyButton">{0} madeni para satın alın</text>
@@ -10,28 +10,32 @@
 	<text id="exitButton">Çıkış</text>
 	<text id="Select_Text">Seç</text>
 	<text id="BattlePass">Savaş Kartı</text>
-	<text id="Seviye">Seviye</text>
-	<text id="Ayar">Ayarlar</text>
+	<text id="Level">Seviye</text>
+	<text id="Setting">Ayarlar</text>
 	<text id="Battlepass">Battlepass 49 OCAK</text>
 	<text id="PerAds">PerReklamlar</text>
-	<text id="Başlat">Başlat</text>
+	<text id="Start">Başlat</text>
 	<text id="Sensitivity">Hassasiyet</text>
-	<text id="Ses">Ses Düzeyi</text>
+	<text id="Sound">Ses Düzeyi</text>
 	<text id="YouBeenInfected">SİZLERE ENFEKSİYONLUSUNUZ</text>
-	<text id="Yeniden Başlat">Yeniden Başlat</text>
+	<text id="Restart">Yeniden Başlat</text>
 	<text id="ContinuePerAds">Reklam Başına Devam</text>
 	<text id="Continue">Devam</text>
 	<text id="DoubleMoneyPerAds">DoubleMoneyPerAds</text>
 	<text id="NextLevel">Sonraki Düzey</text>
-	<text id="Kazan">Kazan</text>
+	<text id="Win">Kazan</text>
 	<text id="IsSelected">Seçildi</text>
-	<text id="Duraklat">Duraklat</text>
+	<text id="Pause">Duraklat</text>
 	<text id="EndWave">Son Dalga</text>
 	<text id="PerAd">Reklam Başına</text>
-	<text id="Devam mı?">Devam edilsin mi?</text>
+	<text id="Continue?">Devam edilsin mi?</text>
 	<text id="PriceBattlePass">Fiyat: 49YAN</text>
 	<text id="Damage">Hasar: </text>
 	<text id="wave">Dalga</text>
 	<text id="takeTheBestWeapon">En iyi silahı alın</text>
-	<text id="Satın Alındı">Satın Alındı</text>
+	<text id="Bought">Satın Alındı</text>
+	<text id="Incline">Eğim - Q ve E</text>
+	<text id="Jump">Atla - boşluk</text>
+	<text id="WeaponChange">Silah Değişikliği - X</text>
+	<text id="Grenade">Bomba Fırlat - G</text>
 </text>

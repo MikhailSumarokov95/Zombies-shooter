@@ -34,4 +34,8 @@
 	<text id="wave">Wave</text>
 	<text id="takeTheBestWeapon">Take the best weapon</text>
 	<text id="Bought">Purchased</text>
+	<text id="Incline">Наклон - Q и E</text>
+	<text id="Jump">Прыжок - пробел</text>
+	<text id="WeaponChange">Смена оружия - X</text>
+	<text id="Grenade">Бросить гранату - G</text>
 </text>
