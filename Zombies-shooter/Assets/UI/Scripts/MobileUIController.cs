@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class MobileUIController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] mobileUI;
+    [SerializeField] private GameObject[] mobileElementsUI;
+    [SerializeField] private GameObject[] pcElementsUI;
 
     private void Start()
     {
         var isMobile = FindObjectOfType<LevelManager>().IsMobile;
 
-        foreach(var UI in mobileUI)
+        foreach(var UI in mobileElementsUI)
         {
             UI.SetActive(isMobile);
+        }
+        
+        foreach(var UI in pcElementsUI)
+        {
+            UI.SetActive(!isMobile);
         }
     }
 }
