@@ -71,14 +71,14 @@ public class Setting : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        SaveSettings();
-    }
-
     private void OnEnable()
     {
         LoadSettings();
+    }
+
+    private void OnDisable()
+    {
+        SaveSettings();
     }
 
     public void SaveSettings()
