@@ -5,7 +5,9 @@ using UnityEngine.UI;
 public class Setting : MonoBehaviour
 {
     public Action OnSaveSetting;
+    public Action OnChangeMusicVolume;
     [SerializeField] private Slider sensitivitySlider;
+    [SerializeField] private Slider soundVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
 
     private bool isActiveMusic;
@@ -36,6 +38,22 @@ public class Setting : MonoBehaviour
         }
     }
 
+    private float soundVolume;
+    public float SoundVolume
+    {
+        get
+        {
+            return soundVolume;
+        }
+        set
+        {
+            if (value < 0) soundVolume = 0;
+            else if (value > 1) soundVolume = 1;
+            else soundVolume = value;
+            AudioListener.volume = soundVolume;
+        }
+    } 
+    
     private float musicVolume;
     public float MusicVolume
     {
@@ -48,7 +66,8 @@ public class Setting : MonoBehaviour
             if (value < 0) musicVolume = 0;
             else if (value > 1) musicVolume = 1;
             else musicVolume = value;
-            AudioListener.volume = musicVolume;
+            Progress.SaveMusicVolume(musicVolume);
+            OnChangeMusicVolume?.Invoke();
         }
     }
 
@@ -64,15 +83,18 @@ public class Setting : MonoBehaviour
 
     public void SaveSettings()
     {
-        Progress.SaveVolume(MusicVolume);
+        Progress.SaveVolume(SoundVolume);
         Progress.SaveSensitivity(Sensitivity);
         OnSaveSetting?.Invoke();
     }
 
     public void LoadSettings()
     {
-        MusicVolume = Progress.LoadVolume();
+        SoundVolume = Progress.LoadVolume();
+        MusicVolume = Progress.LoadMusicVolume();
         Sensitivity = Progress.LoadSensitivity();
+
+        soundVolumeSlider.value = SoundVolume;
         musicVolumeSlider.value = MusicVolume;
         sensitivitySlider.value = Sensitivity;
     }
