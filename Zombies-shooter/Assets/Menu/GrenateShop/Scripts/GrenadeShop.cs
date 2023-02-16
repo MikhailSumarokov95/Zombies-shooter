@@ -8,6 +8,7 @@ public class GrenadeShop : MonoBehaviour
     [SerializeField] private TMP_Text currentCountText;
     [SerializeField] private int price;
     [SerializeField] private int maxCount = 10;
+    [SerializeField] private GameObject addGrenadeImage;
     private Money _money;
 
     private int _currentCount;
@@ -60,5 +61,7 @@ public class GrenadeShop : MonoBehaviour
     public void RewardFull()
     {
         CurrentCount = maxCount;
+
+        addGrenadeImage.SetActive(true);
     }
 }

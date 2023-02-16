@@ -937,28 +937,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 387637944319734723, guid: 0d71c1040eb783848ab881e85b11a991,
-        type: 3}
-      propertyPath: m_Name
-      value: Per AdsText_Value
-      objectReference: {fileID: 0}
-    - target: {fileID: 387637944319734726, guid: 0d71c1040eb783848ab881e85b11a991,
-        type: 3}
-      propertyPath: m_text
-      value: "\u0417\u0430 \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
-      objectReference: {fileID: 0}
-    - target: {fileID: 387637944319734726, guid: 0d71c1040eb783848ab881e85b11a991,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 38aecd77a18d544bfb836befe83883b7,
-        type: 2}
-    - target: {fileID: 387637944319734726, guid: 0d71c1040eb783848ab881e85b11a991,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 6434564289584660316, guid: 38aecd77a18d544bfb836befe83883b7,
-        type: 2}
     - target: {fileID: 387637944952087341, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -984,15 +962,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
+    - target: {fileID: 2648107404750946498, guid: 0d71c1040eb783848ab881e85b11a991,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 173195531}
-    - target: {fileID: 387637945553165649, guid: 0d71c1040eb783848ab881e85b11a991,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TryRewardFull
+      propertyPath: speedMove
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d71c1040eb783848ab881e85b11a991, type: 3}
@@ -1002,37 +975,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 173195529}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &173195531 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 387637944294304997, guid: 0d71c1040eb783848ab881e85b11a991,
-    type: 3}
-  m_PrefabInstance: {fileID: 173195529}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d193e3f5dea82ea45bf24ccfd19881b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &173195532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 387637944319734723, guid: 0d71c1040eb783848ab881e85b11a991,
-    type: 3}
-  m_PrefabInstance: {fileID: 173195529}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &173195533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173195532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0779fdcfc4ade214a84512b568669f47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: PerAds
 --- !u!1001 &184383685
 PrefabInstance:
   m_ObjectHideFlags: 0
