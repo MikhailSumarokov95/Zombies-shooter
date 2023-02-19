@@ -23,6 +23,17 @@ public class BattlePassRewarder : MonoBehaviour
         OnBoughtBattlePass?.Invoke();
     }
 
+    public void RewardPerLevels()
+    {
+        for (var i = 1; i < FindObjectOfType<Level>().CurrentLevel + 1; i++)
+            Reward(_rewardBattlePassPerLevel[i].IsHaveBattlePassReward);
+
+        for (var i = 1; i < FindObjectOfType<Level>().CurrentLevel + 1; i++)
+            Reward(_rewardBattlePassPerLevel[i].IsNotHaveBattlePassReward);
+
+        Progress.SaveBattlePassRewardDebug();
+    }
+
     public void RewardPerLevel()
     {
         var currentLevel = FindObjectOfType<Level>().CurrentLevel;

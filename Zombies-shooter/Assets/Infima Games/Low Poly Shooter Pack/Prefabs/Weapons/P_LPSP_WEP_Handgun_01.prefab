@@ -595,6 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isShop: 0
   cost: 0
+  isBattlepass: 0
   weaponName: Handgun 01
   multiplierMovementSpeed: 1.15
   automatic: 0
@@ -1254,7 +1255,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2853c8266ac56de4889e53b2c3f6ecdc, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6228105118461251015, guid: c472be678311843468e98214f36dec77, type: 3}
+    - {fileID: 603904550305514138, guid: c472be678311843468e98214f36dec77, type: 3}
+    - {fileID: 7251540797147615044, guid: c472be678311843468e98214f36dec77, type: 3}
+    - {fileID: 3490015173990804022, guid: c472be678311843468e98214f36dec77, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c472be678311843468e98214f36dec77, type: 3}
 --- !u!114 &680618578068352104 stripped
 MonoBehaviour:

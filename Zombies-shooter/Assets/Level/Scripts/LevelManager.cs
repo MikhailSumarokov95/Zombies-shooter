@@ -129,7 +129,7 @@ public class LevelManager : MonoBehaviour
         SetActiveWaveEndPanel(false);
         SetActiveWinPanel(true);
         FindObjectOfType<Level>().NextLevel();
-        FindObjectOfType<BattlePassRewarder>().RewardPerLevel();
+        FindObjectOfType<BattlePassRewarder>(true).RewardPerLevel();
     }
 
     private void EndWave()

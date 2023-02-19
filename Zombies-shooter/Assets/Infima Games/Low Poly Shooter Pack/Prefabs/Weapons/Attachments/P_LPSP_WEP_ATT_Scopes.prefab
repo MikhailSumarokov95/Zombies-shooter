@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5551271041699693956}
   - {fileID: 5174065636845427425}
@@ -64,6 +65,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8364751549121548446}
   m_RootOrder: 0
@@ -405,7 +407,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4667989031635653520, guid: ec5fdd40e62797947a90a79df17d15f5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec5fdd40e62797947a90a79df17d15f5, type: 3}
 --- !u!4 &6164686463225042770 stripped
 Transform:
@@ -515,7 +518,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6473436051456624741, guid: bdf11905568039047a943adbe62f5e53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdf11905568039047a943adbe62f5e53, type: 3}
 --- !u!4 &9106014947430092324 stripped
 Transform:
@@ -625,7 +629,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8078389598300230548, guid: 2cadd769aff535a4fb4d7bf045dc579d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2cadd769aff535a4fb4d7bf045dc579d, type: 3}
 --- !u!4 &241158883577983143 stripped
 Transform:
@@ -735,7 +740,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6481022855187090128, guid: 95e9b96c3ea7be948b7b8c162831d0ee, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 95e9b96c3ea7be948b7b8c162831d0ee, type: 3}
 --- !u!4 &1349881915802534223 stripped
 Transform:

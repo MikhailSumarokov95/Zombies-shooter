@@ -23,7 +23,6 @@ public class RewardImage : MonoBehaviour
     {
         if (timeMove > _timerMove)
         {
-            print("move");
             _transform.Translate(speedMove * Vector3.up * Time.unscaledDeltaTime);
             _timerMove += Time.unscaledDeltaTime;
         }

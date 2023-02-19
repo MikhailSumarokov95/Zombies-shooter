@@ -113,6 +113,17 @@ public static class Progress
         return PlayerPrefs.GetFloat("MusicVolume", 1);
     }
 
+    public static void SaveBattlePassRewardDebug()
+    {
+        GSPrefs.SetInt("battlePassRewardDebug", 1);
+        GSPrefs.Save();
+    }
+
+    public static bool LoadBattlePassRewardDebug()
+    {
+        return GSPrefs.GetInt("battlePassRewardDebug", 0) == 1;
+    }
+
     [Serializable]
     public class WeaponsSelected
     {
@@ -122,7 +133,6 @@ public static class Progress
     [Serializable]
     public class WeaponAttachmentSelected
     {
-        //public bool IsSelectedWeapon;
         public int ScopeIndex;
         public int MuzzleIndex;
         public int LaserIndex;
