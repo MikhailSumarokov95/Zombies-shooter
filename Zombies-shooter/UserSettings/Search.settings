@@ -10,6 +10,9 @@ scopes = {
 	"last_search.310DEAF1" = "Standard Surface t:Shader"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "asset"
+	"last_search.2138236A" = ""
+	"OpenInspectorPreview.2138236A" = "0"
+	"currentGroup.2138236A" = "asset"
 }
 providers = {
 	adb = {
@@ -63,7 +66,6 @@ searchItemFavorites = [
 ]
 savedSearchesSortOrder = 0
 showSavedSearchPanel = false
-hideTabs = false
 expandedQueries = [
 ]
 queryBuilder = false

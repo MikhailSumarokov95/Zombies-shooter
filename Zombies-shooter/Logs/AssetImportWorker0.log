@@ -15,7 +15,7 @@ C:/Users/Mikhail/Desktop/Unity/Zombies-shooter/Zombies-shooter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53387
+53340
 Successfully changed project path to: C:/Users/Mikhail/Desktop/Unity/Zombies-shooter/Zombies-shooter
 C:/Users/Mikhail/Desktop/Unity/Zombies-shooter/Zombies-shooter
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Mikhail/Desktop/Unity/Zombies-shooter/Zombies-shooter
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7436] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2149948801 [EditorId] 2149948801 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QCT10TA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5168] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 3532978636 [EditorId] 3532978636 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QCT10TA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7436] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2149948801 [EditorId] 2149948801 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QCT10TA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5168] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 3532978636 [EditorId] 3532978636 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QCT10TA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 167.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 168.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,173 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006709 seconds.
+Registered in 0.006760 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 173.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 176.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.681 seconds
+- Completed reload, in  0.688 seconds
 Domain Reload Profiling:
-	ReloadAssembly (681ms)
+	ReloadAssembly (689ms)
 		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (514ms)
+		EndReloadAssembly (518ms)
 			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (101ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (337ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (341ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (174ms)
+				RefreshPlugins (177ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (109ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008055 seconds.
+Registered in 0.008089 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 168.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 174.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.398 seconds
+- Completed reload, in  1.376 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1399ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (1377ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1190ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (726ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (169ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (347ms)
-				ProcessInitializeOnLoadMethodAttributes (95ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4774 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (30.2 KB). Loaded Objects now: 5253.
-Memory consumption went from 268.2 MB to 268.1 MB.
-Total: 3.598300 ms (FindLiveObjects: 0.343500 ms CreateObjectMapping: 0.244900 ms MarkObjects: 2.981800 ms  DeleteObjects: 0.027400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 334273.967476 seconds.
-  path: Assets/Materials/New Material.mat
-  artifactKey: Guid(5697d0d5c6c865647806728f8df99779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/New Material.mat using Guid(5697d0d5c6c865647806728f8df99779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74fcfac1c38a0cfd0a8f0c53320bf9e3') in 0.133070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Menu/Shop
-  artifactKey: Guid(59c977c858d0e4a449c9724c09ae660a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu/Shop using Guid(59c977c858d0e4a449c9724c09ae660a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3c11b09437ef8b9aebf3882656fd38') in 0.005728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Menu/Scripts
-  artifactKey: Guid(58055087a3f759b49b888cca78f3f258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu/Scripts using Guid(58055087a3f759b49b888cca78f3f258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f6c6486ca549fd64088d0c42a01aa2') in 0.006121 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Menu/Setting
-  artifactKey: Guid(0cb1aa3ddacc8f2458fa2606bf969f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu/Setting using Guid(0cb1aa3ddacc8f2458fa2606bf969f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36135d87a48e880e626c3bb594d0cb5') in 0.004975 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007356 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.128 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1128ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (902ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (1164ms)
 			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (293ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (428ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (687ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
+				RefreshPlugins (175ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (25.7 KB). Loaded Objects now: 5297.
-Memory consumption went from 282.3 MB to 282.3 MB.
-Total: 3.270100 ms (FindLiveObjects: 0.341300 ms CreateObjectMapping: 0.230900 ms MarkObjects: 2.670600 ms  DeleteObjects: 0.026500 ms)
+Unloading 4774 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (30.2 KB). Loaded Objects now: 5253.
+Memory consumption went from 268.2 MB to 268.1 MB.
+Total: 3.613400 ms (FindLiveObjects: 0.349700 ms CreateObjectMapping: 0.248300 ms MarkObjects: 2.986800 ms  DeleteObjects: 0.027800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -247,188 +166,358 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 292.984387 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_Inventory.prefab
-  artifactKey: Guid(9482e0a2ae6a92742bbe72e00f29f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_Inventory.prefab using Guid(9482e0a2ae6a92742bbe72e00f29f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4c51a28684ce68850ede152e0e9174') in 3.557646 seconds 
+  Time since last request: 612056.592082 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa19c23bebf17c98c7ade4702096a55') in 0.010958 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_03.prefab
-  artifactKey: Guid(4a4b8a3ad4e704d41951ddfdb2797d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_03.prefab using Guid(4a4b8a3ad4e704d41951ddfdb2797d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b5dd976fbf7667d81ce577f8134426') in 2.232726 seconds 
+  Time since last request: 11.623669 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247af27ce308aa07b6cba7afdae71d08') in 0.005756 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_02.prefab
-  artifactKey: Guid(8e4a73c62bb7a404db9c33a2c4369c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_02.prefab using Guid(8e4a73c62bb7a404db9c33a2c4369c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09855768085b0171b5de3e657fabb343') in 2.636943 seconds 
+  Time since last request: 78.149372 seconds.
+  path: Assets/ToxicFamilyGames/MenuEditor
+  artifactKey: Guid(79736df5040e0fb478059d7ed65bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToxicFamilyGames/MenuEditor using Guid(79736df5040e0fb478059d7ed65bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8d10016d67ac923aeec8bfbe8a932b') in 0.005705 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_SMG_01.prefab
-  artifactKey: Guid(f01300d92eca1d34c977ec94fe940f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_SMG_01.prefab using Guid(f01300d92eca1d34c977ec94fe940f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b8c0e96395ba201a5099a6ff291704') in 2.175658 seconds 
+  Time since last request: 1.353450 seconds.
+  path: Assets/ToxicFamilyGames/MenuEditor/Resources
+  artifactKey: Guid(cf6b758ad3569f4448ab47ad056dae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToxicFamilyGames/MenuEditor/Resources using Guid(cf6b758ad3569f4448ab47ad056dae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77eae32ed9f196fa8efa5143357ba9b4') in 0.006133 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_03.prefab
-  artifactKey: Guid(464d2b315a1ed6b408948cc2fc04e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_03.prefab using Guid(464d2b315a1ed6b408948cc2fc04e8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f05e9c569d8815619c15df61b7d01ae') in 2.623628 seconds 
+  Time since last request: 1.133078 seconds.
+  path: Assets/ToxicFamilyGames/MenuEditor/Resources/Languages
+  artifactKey: Guid(dc42ebc66ca1e5c4d861d1086fb7c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToxicFamilyGames/MenuEditor/Resources/Languages using Guid(dc42ebc66ca1e5c4d861d1086fb7c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f45ffccfdb25f5691b84794ff3a37d') in 0.005583 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_RL_01.prefab
-  artifactKey: Guid(201b59cc0f9baa643817e6c1d0198649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_RL_01.prefab using Guid(201b59cc0f9baa643817e6c1d0198649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51071eec200c476f0a37998887b0163') in 2.148843 seconds 
+  Time since last request: 1.332352 seconds.
+  path: Assets/ToxicFamilyGames/MenuEditor/Resources/Languages/tr.xml
+  artifactKey: Guid(1058935cf3d95534a80aa38fe7b44c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToxicFamilyGames/MenuEditor/Resources/Languages/tr.xml using Guid(1058935cf3d95534a80aa38fe7b44c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad809a9b03e61723be8cef34be75abf5') in 0.028853 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_04.prefab
-  artifactKey: Guid(6ff85997fd470764cb6d04a3cdb9ef78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_04.prefab using Guid(6ff85997fd470764cb6d04a3cdb9ef78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a386ab1793482ae0d0d55f1a8de0a171') in 2.627743 seconds 
+  Time since last request: 77.973718 seconds.
+  path: Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset
+  artifactKey: Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset using Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bad76cfc1bed22a17fc51d2afc3a309') in 0.107264 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_02.prefab
-  artifactKey: Guid(f985fca8d5251c049ab9579d483160b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_AR_02.prefab using Guid(f985fca8d5251c049ab9579d483160b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7dcb55a4d58f1f7f749edcd8c700e1') in 2.168147 seconds 
+  Time since last request: 109.782552 seconds.
+  path: Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset
+  artifactKey: Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset using Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f27bcd03965769480352e568fecb03') in 0.028115 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_GL_01.prefab
-  artifactKey: Guid(12038d9fe9b50784c91441fad6056ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_GL_01.prefab using Guid(12038d9fe9b50784c91441fad6056ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aff25e67480d9eda62b03c6c07c49b0') in 2.172254 seconds 
+  Time since last request: 88.066729 seconds.
+  path: Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset
+  artifactKey: Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI PRO Kit - Sci-Fi/ResourcesData/Fonts/NEXON Football Gothic L SDF.asset using Guid(38aecd77a18d544bfb836befe83883b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fac5402db971576f997741987c6a3e') in 0.025816 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Shotgun_01.prefab
-  artifactKey: Guid(e1be29c2c2f53c947819b92d236806c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Shotgun_01.prefab using Guid(e1be29c2c2f53c947819b92d236806c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820cb2d9c49b1af99156e4cd507ec0c2') in 2.201267 seconds 
+  Time since last request: 518.082986 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black SDF.asset
+  artifactKey: Guid(743007a36275e5d4fa34744e1708a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black SDF.asset using Guid(743007a36275e5d4fa34744e1708a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c351c48268ec76f1645646d9164857') in 0.056137 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_01.prefab
-  artifactKey: Guid(d3308534d30856e42b7a585baa7a886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/P_LPSP_WEP_Handgun_01.prefab using Guid(d3308534d30856e42b7a585baa7a886b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cddebb99d5ec6b3586f348ce2ed634e') in 2.613549 seconds 
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black.ttf
+  artifactKey: Guid(31e5d93e4358f014bbc3bbe86e901884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black.ttf using Guid(31e5d93e4358f014bbc3bbe86e901884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c35f723f3eab1c56b935a10199164cb') in 0.030654 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.388539 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab
-  artifactKey: Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab using Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec8de186e320a14f6ea6ababd034636d') in 0.010237 seconds 
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldItalic SDF.asset
+  artifactKey: Guid(e15049c84d703d2468022ffbb28e8413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldItalic SDF.asset using Guid(e15049c84d703d2468022ffbb28e8413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca0794ad4e10e70478165f6411e84aa') in 0.041681 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.195352 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_08.prefab
-  artifactKey: Guid(ec5fdd40e62797947a90a79df17d15f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_08.prefab using Guid(ec5fdd40e62797947a90a79df17d15f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043b451518a36c87fe5e562ae64fd866') in 0.020145 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Condensed SDF.asset
+  artifactKey: Guid(52822dc6e80b18c4b84fa37fb0a9018f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Condensed SDF.asset using Guid(52822dc6e80b18c4b84fa37fb0a9018f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f79caf6169f76b47265bad5d8021e5') in 0.047171 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_02.prefab
-  artifactKey: Guid(36b623c00545cdb49a842dc448ffc5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_02.prefab using Guid(36b623c00545cdb49a842dc448ffc5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1c1447ef9b89c216fc735904d6eb14') in 0.014586 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_Magazine.prefab
-  artifactKey: Guid(32e37db670c44c249b0a036c3e638aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_Magazine.prefab using Guid(32e37db670c44c249b0a036c3e638aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08df3170691edfe03c7c91689dccb1f8') in 0.013343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/RT_Scope_Zoomed.renderTexture
-  artifactKey: Guid(6094ab3ba8b3cd54387ba4a7068ec08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/RT_Scope_Zoomed.renderTexture using Guid(6094ab3ba8b3cd54387ba4a7068ec08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d51f6787b241f09e76299769e426a70') in 0.020959 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_01.prefab
-  artifactKey: Guid(209489031a3ced84dbe74e379aae2c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_01.prefab using Guid(209489031a3ced84dbe74e379aae2c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8251ac1e95bbfb7877f8570c0580be') in 0.012684 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-MediumItalic SDF.asset
+  artifactKey: Guid(daba0dfea04fc864fa94d8d38d5711af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-MediumItalic SDF.asset using Guid(daba0dfea04fc864fa94d8d38d5711af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd49449594cf4efc00ae287e2ae5c30') in 0.045228 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_03.prefab
-  artifactKey: Guid(232d12e5a30c1684ca33398f69a2f100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Silencer_03.prefab using Guid(232d12e5a30c1684ca33398f69a2f100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '608237420bc6a89c1d7439a97c9f291a') in 0.013942 seconds 
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensed.ttf
+  artifactKey: Guid(239439bd5ebfca640827c70e1fb1c42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensed.ttf using Guid(239439bd5ebfca640827c70e1fb1c42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242c5030f01259c1c0c0e0afcd52502f') in 0.026434 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.070201 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_07.prefab
-  artifactKey: Guid(95e9b96c3ea7be948b7b8c162831d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_07.prefab using Guid(95e9b96c3ea7be948b7b8c162831d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a5aa736cc143bd3f93d13d410e51c2') in 0.023021 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic SDF.asset
+  artifactKey: Guid(3978f8829341dfd49af0d2e6b11feca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic SDF.asset using Guid(3978f8829341dfd49af0d2e6b11feca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acdc38c6ab8882e80226b6afc07d8f1') in 0.042847 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.733921 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab
-  artifactKey: Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab using Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6b50fb5a29ead351078567a3b16454') in 0.007314 seconds 
+  Time since last request: 0.000016 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensedItalic SDF.asset
+  artifactKey: Guid(bc077dc6397cf62428435a668f8746aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensedItalic SDF.asset using Guid(bc077dc6397cf62428435a668f8746aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4cb226cf627bd08ec92c30acf0d5d7') in 0.044283 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.336211 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_06.prefab
-  artifactKey: Guid(bdf11905568039047a943adbe62f5e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_06.prefab using Guid(bdf11905568039047a943adbe62f5e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c55e9265ebb72ae50f4f821f7800097') in 0.014261 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Bold SDF.asset
+  artifactKey: Guid(45b1ec5744ef249478cc066079c5fd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Bold SDF.asset using Guid(45b1ec5744ef249478cc066079c5fd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0e092b9398829a69da07b87a29e040') in 0.045768 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.235190 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab
-  artifactKey: Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/P_LPSP_WEP_ATT_Scopes.prefab using Guid(c472be678311843468e98214f36dec77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c5769e3391ec11ed2d14d3deda824b') in 0.006607 seconds 
+  Time since last request: 0.000016 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Italic SDF.asset
+  artifactKey: Guid(f9767962b93992a46a913b8f7f8ae703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Italic SDF.asset using Guid(f9767962b93992a46a913b8f7f8ae703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a39f6a2e687339d0dc3f28e3fc148e') in 0.044195 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.742251 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_08.prefab
-  artifactKey: Guid(ec5fdd40e62797947a90a79df17d15f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_08.prefab using Guid(ec5fdd40e62797947a90a79df17d15f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878161b6314fcd32affe921e66fd5098') in 0.011818 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensed SDF.asset
+  artifactKey: Guid(789ee531d579d5345bf51ebc991ad775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensed SDF.asset using Guid(789ee531d579d5345bf51ebc991ad775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c703cafb6b6de1df6d12abdc13c4b6f5') in 0.040963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Light.ttf
+  artifactKey: Guid(686c25c1783ef1a41b1aad637e8f53df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Light.ttf using Guid(686c25c1783ef1a41b1aad637e8f53df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8499a673caa723894bfca7949ac665f5') in 0.025964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BlackItalic SDF.asset
+  artifactKey: Guid(435242418ac67894ca1191dbf30fdfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BlackItalic SDF.asset using Guid(435242418ac67894ca1191dbf30fdfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc99ca0796001fc4e7d1a65bd81b75f') in 0.043712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Condensed.ttf
+  artifactKey: Guid(0d5779195e1dfdc4d9554bfc011e05a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Condensed.ttf using Guid(0d5779195e1dfdc4d9554bfc011e05a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f750707bc95e0b0b88f933ed62d53f') in 0.022300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BlackItalic.ttf
+  artifactKey: Guid(a0fd37744c1b908409624a3ac2c0366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BlackItalic.ttf using Guid(a0fd37744c1b908409624a3ac2c0366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1820406f210a36437d6e5146368b8c17') in 0.013158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(358f63cb1d6beff499b4e2187862df7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Bold.ttf using Guid(358f63cb1d6beff499b4e2187862df7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f78488951be6855481fcb11c79ae26') in 0.019252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic.ttf
+  artifactKey: Guid(b02c7827679f4cb4cbe9af238ff51e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic.ttf using Guid(b02c7827679f4cb4cbe9af238ff51e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d88b1a2fbb5773a5ab04b4c92da2b8') in 0.027829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Italic.ttf
+  artifactKey: Guid(22954dadfbab16941999153777796a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Italic.ttf using Guid(22954dadfbab16941999153777796a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a56dbd152ddda1b9b3920ae02fcbfe') in 0.013373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Light SDF.asset
+  artifactKey: Guid(c58b0993d1e4c0b4ba36df160842c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Light SDF.asset using Guid(c58b0993d1e4c0b4ba36df160842c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efbff509da289277566a996dffee6bd') in 0.038050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset
+  artifactKey: Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset using Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c61d90fcf4d1e80489e7fda8e17c0e') in 0.037787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic.ttf
+  artifactKey: Guid(59f1f4dd7ea683d4f98f73bd91a90f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic.ttf using Guid(59f1f4dd7ea683d4f98f73bd91a90f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7268a940731754ff18abf8d7be53e473') in 0.013634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensedItalic.ttf
+  artifactKey: Guid(2ddddd2b056e5b648b67982819ccaa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldCondensedItalic.ttf using Guid(2ddddd2b056e5b648b67982819ccaa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5fd7826e1ccbbb8dad9b4500e6a39d') in 0.015064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Medium SDF.asset
+  artifactKey: Guid(3d68ba70dced00f4d8c9714edf29e952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Medium SDF.asset using Guid(3d68ba70dced00f4d8c9714edf29e952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cd4c204ccdd3219794c4837d88fb52') in 0.040661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Medium.ttf
+  artifactKey: Guid(d54993fa5357cd84886f23aa9dd39b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Medium.ttf using Guid(d54993fa5357cd84886f23aa9dd39b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc72cf919475ef297cbb24931191af82') in 0.014421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldItalic.ttf
+  artifactKey: Guid(189454d3eeaf6aa47a37e35fe9730838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-BoldItalic.ttf using Guid(189454d3eeaf6aa47a37e35fe9730838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fc0f1dddb2ba01b8f1c8fa72a2735f') in 0.016556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.667967 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black SDF.asset
+  artifactKey: Guid(743007a36275e5d4fa34744e1708a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Black SDF.asset using Guid(743007a36275e5d4fa34744e1708a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b3d7321979bfa9c763d4555f675b57') in 0.042104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.019358 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-MediumItalic.ttf
+  artifactKey: Guid(c7c128ef930a408458b4085a2c7bbfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-MediumItalic.ttf using Guid(c7c128ef930a408458b4085a2c7bbfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f9344caf2b546c3cbe80874740bdfb') in 0.014549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Regular.ttf
+  artifactKey: Guid(3b77f1cae85921045a6f661b20670385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Regular.ttf using Guid(3b77f1cae85921045a6f661b20670385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9632f21005a2a2192fd66b60f9c02401') in 0.024024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Thin SDF.asset
+  artifactKey: Guid(156ff347f440bdf45b8931655a5d5c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Thin SDF.asset using Guid(156ff347f440bdf45b8931655a5d5c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95b9059c3a62c6dc3b34b8bcfd7c47b') in 0.042119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Regular SDF.asset
+  artifactKey: Guid(4317f4a728f52834a9a13f0f00152805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Regular SDF.asset using Guid(4317f4a728f52834a9a13f0f00152805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917b0890b773ad5149b47da2e59f1973') in 0.038616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.314565 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic SDF.asset
+  artifactKey: Guid(3978f8829341dfd49af0d2e6b11feca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-CondensedItalic SDF.asset using Guid(3978f8829341dfd49af0d2e6b11feca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60aeacb86ef506915e30d75e2dce640') in 0.032725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.760681 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Thin.ttf
+  artifactKey: Guid(ae9482397d732d44bb0917ebd6e1adad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-Thin.ttf using Guid(ae9482397d732d44bb0917ebd6e1adad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b429928071bd320e5811764e133d6654') in 0.019062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-ThinItalic.ttf
+  artifactKey: Guid(10366063971f934438bc49816f73d569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-ThinItalic.ttf using Guid(10366063971f934438bc49816f73d569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a8d928df404f7e329fc9768bb259c1') in 0.034008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-ThinItalic SDF.asset
+  artifactKey: Guid(33e7438d1e06c0b4eb9ea87b1280cfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-ThinItalic SDF.asset using Guid(33e7438d1e06c0b4eb9ea87b1280cfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f7c0db6d7e812838c96d3902cb3950') in 0.045691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.329529 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset
+  artifactKey: Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset using Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7761391f6928ff6e953b4f507a1daa7') in 0.032634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 109.847669 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset
+  artifactKey: Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset using Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5b8b33ece7bb875cc8cc4d0c492610') in 0.027705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.534956 seconds.
+  path: Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset
+  artifactKey: Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Infima Games/Low Poly Shooter Pack/Art/Fonts/Roboto-LightItalic SDF.asset using Guid(872d4ef16428fcf4c93352f8aa5cb271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91bf23f48a453d3396f96bacb209ee6') in 0.042013 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (22.9 KB). Loaded Objects now: 5299.
+Memory consumption went from 169.0 MB to 169.0 MB.
+Total: 3.685000 ms (FindLiveObjects: 0.408300 ms CreateObjectMapping: 0.376400 ms MarkObjects: 2.878100 ms  DeleteObjects: 0.021600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 210.861238 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3077b489b7b49144df5181b0d110900') in 0.005224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.438508 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a98540ae4bde9e3e094f968358a484') in 0.006159 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007652 seconds.
+Registered in 0.007959 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
+- Completed reload, in  1.595 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1148ms)
-		BeginReloadAssembly (126ms)
+	ReloadAssembly (1595ms)
+		BeginReloadAssembly (222ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (921ms)
-			LoadAssemblies (84ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1238ms)
+			LoadAssemblies (175ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (590ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (444ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (459ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (234ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (243ms)
 				ProcessInitializeOnLoadMethodAttributes (112ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.11 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (25.8 KB). Loaded Objects now: 5311.
-Memory consumption went from 285.0 MB to 285.0 MB.
-Total: 3.230900 ms (FindLiveObjects: 0.355200 ms CreateObjectMapping: 0.325300 ms MarkObjects: 2.513500 ms  DeleteObjects: 0.035800 ms)
+Unloading 31 unused Assets / (24.8 KB). Loaded Objects now: 5301.
+Memory consumption went from 282.5 MB to 282.4 MB.
+Total: 3.221300 ms (FindLiveObjects: 0.408600 ms CreateObjectMapping: 0.283000 ms MarkObjects: 2.501500 ms  DeleteObjects: 0.027500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -437,316 +526,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 28.654321 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_05.prefab
-  artifactKey: Guid(2cadd769aff535a4fb4d7bf045dc579d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_05.prefab using Guid(2cadd769aff535a4fb4d7bf045dc579d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b585ff4a3fb316732b2c3418f46fd0') in 0.077455 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007423 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.165 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1166ms)
-		BeginReloadAssembly (134ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (927ms)
-			LoadAssemblies (87ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (296ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (460ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (238ms)
-				ProcessInitializeOnLoadMethodAttributes (123ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (24.7 KB). Loaded Objects now: 5314.
-Memory consumption went from 285.0 MB to 285.0 MB.
-Total: 4.021400 ms (FindLiveObjects: 0.323400 ms CreateObjectMapping: 0.243300 ms MarkObjects: 3.426900 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 8.467074 seconds.
-  path: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_05.prefab
-  artifactKey: Guid(2cadd769aff535a4fb4d7bf045dc579d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Weapons/Attachments/Specific/P_LPSP_WEP_ATT_Scope_05.prefab using Guid(2cadd769aff535a4fb4d7bf045dc579d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01f33aad53317e33a81634a619527e0') in 0.069285 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007281 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.144 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1145ms)
-		BeginReloadAssembly (133ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (912ms)
-			LoadAssemblies (88ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (449ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (241ms)
-				ProcessInitializeOnLoadMethodAttributes (113ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (25.7 KB). Loaded Objects now: 5317.
-Memory consumption went from 285.0 MB to 285.0 MB.
-Total: 3.262400 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.242500 ms MarkObjects: 2.635700 ms  DeleteObjects: 0.035200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007337 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.095 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1096ms)
-		BeginReloadAssembly (119ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (885ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (288ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (431ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (100ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (24.6 KB). Loaded Objects now: 5320.
-Memory consumption went from 284.8 MB to 284.8 MB.
-Total: 3.505900 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.243200 ms MarkObjects: 2.908800 ms  DeleteObjects: 0.022500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 739.979470 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(d19d3d7bf3948c64492ffcf3c39655f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79086d1489ad0d3e232b2bc5c6e74ec6') in 0.011016 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007337 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1119ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (904ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (442ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (234ms)
-				ProcessInitializeOnLoadMethodAttributes (111ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (25.6 KB). Loaded Objects now: 5323.
-Memory consumption went from 284.9 MB to 284.8 MB.
-Total: 3.520200 ms (FindLiveObjects: 0.331700 ms CreateObjectMapping: 0.334100 ms MarkObjects: 2.820900 ms  DeleteObjects: 0.032700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007302 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.134 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1135ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (918ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (465ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (248ms)
-				ProcessInitializeOnLoadMethodAttributes (113ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (24.7 KB). Loaded Objects now: 5326.
-Memory consumption went from 284.9 MB to 284.8 MB.
-Total: 3.701900 ms (FindLiveObjects: 0.347300 ms CreateObjectMapping: 0.332100 ms MarkObjects: 2.992800 ms  DeleteObjects: 0.028900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007636 seconds.
+Registered in 0.007290 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -755,97 +542,40 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.101 seconds
+- Completed reload, in  1.098 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1102ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (887ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (881ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
+			SetupTypeCache (288ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (435ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (117ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (25.7 KB). Loaded Objects now: 5329.
-Memory consumption went from 285.1 MB to 285.0 MB.
-Total: 3.399400 ms (FindLiveObjects: 0.341800 ms CreateObjectMapping: 0.263400 ms MarkObjects: 2.769400 ms  DeleteObjects: 0.023800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007277 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.101 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1101ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (882ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (428ms)
+			SetupLoadedEditorAssemblies (430ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (2ms)
 				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadAttributes (229ms)
 				ProcessInitializeOnLoadMethodAttributes (103ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (24.7 KB). Loaded Objects now: 5332.
-Memory consumption went from 285.1 MB to 285.0 MB.
-Total: 3.215700 ms (FindLiveObjects: 0.339300 ms CreateObjectMapping: 0.346800 ms MarkObjects: 2.503200 ms  DeleteObjects: 0.025600 ms)
+Unloading 31 unused Assets / (25.6 KB). Loaded Objects now: 5304.
+Memory consumption went from 282.5 MB to 282.5 MB.
+Total: 3.298000 ms (FindLiveObjects: 0.335400 ms CreateObjectMapping: 0.312000 ms MarkObjects: 2.619500 ms  DeleteObjects: 0.030200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -854,61 +584,68 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 759.217361 seconds.
+  Time since last request: 290.953660 seconds.
   path: Assets/Scenes/Level 1.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709387aa4b833e0e6964e867810f49e2') in 0.010291 seconds 
+Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245d43f5c5f907c977255991c2f503cb') in 0.010960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 245.933320 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c24a0314252872e0b936fc5a07ba67') in 0.002129 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010026 seconds.
+Registered in 0.007403 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mikhail\Desktop\Unity\Zombies-shooter\Zombies-shooter\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.102 seconds
+- Completed reload, in  1.135 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1103ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (1136ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (870ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (913ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
+			SetupTypeCache (300ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (420ms)
+			SetupLoadedEditorAssemblies (446ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (219ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (24.6 KB). Loaded Objects now: 5335.
-Memory consumption went from 285.1 MB to 285.1 MB.
-Total: 3.518700 ms (FindLiveObjects: 0.354700 ms CreateObjectMapping: 0.290800 ms MarkObjects: 2.842200 ms  DeleteObjects: 0.030300 ms)
+Unloading 31 unused Assets / (24.7 KB). Loaded Objects now: 5307.
+Memory consumption went from 282.5 MB to 282.5 MB.
+Total: 3.200300 ms (FindLiveObjects: 0.325100 ms CreateObjectMapping: 0.272000 ms MarkObjects: 2.575100 ms  DeleteObjects: 0.027400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -917,31 +654,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (22.9 KB). Loaded Objects now: 5335.
-Memory consumption went from 177.3 MB to 177.3 MB.
-Total: 2.947100 ms (FindLiveObjects: 0.317600 ms CreateObjectMapping: 0.259300 ms MarkObjects: 2.348300 ms  DeleteObjects: 0.021400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1973.946379 seconds.
-  path: Assets/Lowpoly Style/Shared Scripts/UVOffset.cs
-  artifactKey: Guid(2c9c36f202021164ba042a939b6061a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lowpoly Style/Shared Scripts/UVOffset.cs using Guid(2c9c36f202021164ba042a939b6061a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e5c085918e1071ad42c4f0bb7d611d') in 0.012877 seconds 
