@@ -22,23 +22,6 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private int equippedIndex = -1;
 
-        private BattlePassRewarder _battlePass;
-
-        private void OnEnable()
-        {
-            GSConnect.OnPurchaseWeapon += RefreshInventory;
-
-            _battlePass = FindObjectOfType<BattlePassRewarder>(true);
-            _battlePass.OnBoughtBattlePass += RefreshInventory;
-        }  
-        
-        private void OnDisable()
-        {
-            GSConnect.OnPurchaseWeapon -= RefreshInventory;
-
-            _battlePass.OnBoughtBattlePass -= RefreshInventory;
-        }
-
         #endregion
 
         #region METHODS
@@ -84,8 +67,8 @@ namespace InfimaGames.LowPolyShooterPack
                 return equipped;
 
             //No point in allowing equipping the already-equipped weapon.
-            if (equippedIndex == index)
-                return equipped;
+            //if (equippedIndex == index)
+            //    return equipped;
             
             //Disable the currently equipped weapon, if we have one.
             if (equipped != null)
@@ -132,10 +115,5 @@ namespace InfimaGames.LowPolyShooterPack
         public override int GetEquippedIndex() => equippedIndex;
 
         #endregion
-
-        private void RefreshInventory()
-        {
-            Init(equippedIndex);
-        }
     }
 }

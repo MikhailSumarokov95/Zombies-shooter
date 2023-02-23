@@ -283,14 +283,16 @@ namespace InfimaGames.LowPolyShooterPack
 
 		private Joystick _joystick;
 
-		#endregion
+        private BattlePassRewarder _battlePass;
 
-		#region UNITY
+        #endregion
 
-		/// <summary>
-		/// Awake.
-		/// </summary>
-		protected override void Awake()
+        #region UNITY
+
+        /// <summary>
+        /// Awake.
+        /// </summary>
+        protected override void Awake()
 		{
 			#region Lock Cursor
 
@@ -344,7 +346,12 @@ namespace InfimaGames.LowPolyShooterPack
 				if (grenadeShop != null)
 					grenadeShop.OnBought += LoadSaveGrenade;
 			}
-		}
+
+            GSConnect.OnPurchaseWeapon += RefreshInventory;
+
+            _battlePass = FindObjectOfType<BattlePassRewarder>(true);
+            _battlePass.OnBoughtBattlePass += RefreshInventory;
+        }
 
 		private void OnDisable()
 		{
@@ -353,7 +360,11 @@ namespace InfimaGames.LowPolyShooterPack
 				if (grenadeShop != null)
 					grenadeShop.OnBought -= LoadSaveGrenade;
 			}
-		}
+
+            GSConnect.OnPurchaseWeapon -= RefreshInventory;
+
+            _battlePass.OnBoughtBattlePass -= RefreshInventory;
+        }
 
 
 		/// <summary>
@@ -1720,8 +1731,13 @@ namespace InfimaGames.LowPolyShooterPack
 			grenadeCount = Progress.LoadGrenades();
 		}
 
-		#endregion
+        private void RefreshInventory()
+        {
+			GetInventory().Init(GetInventory().GetEquippedIndex());
+        }
 
-		#endregion
-	}
+        #endregion
+
+        #endregion
+    }
 }
